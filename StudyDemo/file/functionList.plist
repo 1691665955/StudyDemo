@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Category</key>
+		<string>常用工具与方法</string>
+		<key>Function</key>
+		<array>
+			<string>二维码生成与读取</string>
+			<string>获取通讯录信息</string>
+			<string>JS与0C交互</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Category</key>
+		<string>常用控件与自定义UI</string>
+		<key>Function</key>
+		<array>
+			<string>使用xib自定义view</string>
+		</array>
+	</dict>
+</array>
+</plist>

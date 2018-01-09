@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+		<style type="text/css">
+			button {
+				margin-top: 20px;
+				margin-left: 10%;
+				width: 35%;
+				height: 40px;
+			}
+			
+			* {
+				font-size: 14px;
+			}
+		</style>
+		<title></title>
+	</head>
+
+	<body>
+		<div>
+			<button onclick="sendAlert()">发送警告</button>
+			<button id="openLightBtn" onclick="openLight()">打开闪光灯</button>
+		</div>
+		<div style="text-align: center;">
+			<input id="displayView" type="text" style="width: 80%;height: 40px;margin-top: 20px;text-align: center;" placeholder="等待原生界面传值" />
+		</div>
+	</body>
+
+	<script type="text/javascript">
+        
+		/**
+		 * JS发送指令给原生界面
+		 */
+		function sendAlert() {
+            showAlert("提示","JS给OC的警告");
+		}
+
+		function openLight() {
+			lightOperate();
+		}
+
+		/**
+		 * 接受来自原生界面的指令
+		 */
+		function receiveInfo(str) {
+			var textView = document.getElementById("displayView");
+			textView.value = str;
+		}
+
+		function updateLightState(state) {
+			var btn = document.getElementById("openLightBtn");
+			if(state == 1) {
+				btn.innerText = "关闭闪光灯";
+			} else {
+				btn.innerText = "打开闪光灯";
+			}
+		}
+	</script>
+
+</html>
