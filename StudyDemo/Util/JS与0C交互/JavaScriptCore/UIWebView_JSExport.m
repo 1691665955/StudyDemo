@@ -28,6 +28,12 @@
     self.webView.delegate = self;
     self.webView.scrollView.bounces = NO;
     [self.view addSubview:self.webView];
+    
+    if (iOS11Later) {
+        adjustsScrollViewInsets_NO(self.webView.scrollView, self);
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 }
 
 - (void)sendInfoToJS {

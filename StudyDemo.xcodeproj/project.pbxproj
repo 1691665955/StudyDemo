@@ -7,9 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC22007333D00A69E70 /* MZNavigationController.m */; };
+		6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC6200737D300A69E70 /* UIImage+MZTool.m */; };
+		6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5A2007493D004D66F8 /* AboutNullVC.m */; };
+		6A587B5F200752D3004D66F8 /* DataHandleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5E200752D3004D66F8 /* DataHandleVC.m */; };
+		6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B62200753E3004D66F8 /* FloatNumberDealWithRoundVC.m */; };
+		6A587B6720075BC6004D66F8 /* DrawFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B6620075BC6004D66F8 /* DrawFuncVC.m */; };
+		6A587B6B20075CB2004D66F8 /* CreateImageWithColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B6A20075CB2004D66F8 /* CreateImageWithColorVC.m */; };
+		6A587B6F20075F8F004D66F8 /* BezierPathVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B6E20075F8F004D66F8 /* BezierPathVC.m */; };
+		6A587B7320076145004D66F8 /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B7220076145004D66F8 /* LineView.m */; };
+		6A587B76200764CB004D66F8 /* PolygonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B75200764CB004D66F8 /* PolygonView.m */; };
+		6A587B7920076863004D66F8 /* RectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B7820076863004D66F8 /* RectangleView.m */; };
+		6A587B7C20076971004D66F8 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B7B20076971004D66F8 /* CircleView.m */; };
+		6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B7E20076AFB004D66F8 /* ArcView.m */; };
+		6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B8120076D14004D66F8 /* cornerRadiusView.m */; };
+		6A587B8720089D7D004D66F8 /* ShapeLayerMaskVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B8620089D7D004D66F8 /* ShapeLayerMaskVC.m */; };
+		6A587B8B2008A74A004D66F8 /* MZCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B8A2008A74A004D66F8 /* MZCircleProgress.m */; };
+		6A587B91200B7992004D66F8 /* UILabel+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B90200B7992004D66F8 /* UILabel+MZTool.m */; };
+		6A587B95200B7D76004D66F8 /* LineLabelTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B94200B7D76004D66F8 /* LineLabelTestVC.m */; };
+		6A587B9E200C2D3F004D66F8 /* ClipsImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B9D200C2D3F004D66F8 /* ClipsImageVC.m */; };
+		6A587BA0200C2E34004D66F8 /* 艾斯.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A587B9F200C2E34004D66F8 /* 艾斯.jpg */; };
+		6A587BA6200C47A1004D66F8 /* TestAttrinuteStringTapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BA5200C47A1004D66F8 /* TestAttrinuteStringTapVC.m */; };
+		6A587BAA200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BA8200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m */; };
+		6A587BAF200C4D57004D66F8 /* UILabelTextFitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BAE200C4D57004D66F8 /* UILabelTextFitVC.m */; };
+		6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BB1200C4F20004D66F8 /* ViewFitFuncVC.m */; };
+		6A587BB9200C55E5004D66F8 /* UIImageViewFitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BB8200C55E5004D66F8 /* UIImageViewFitVC.m */; };
+		6A587BBE200C8116004D66F8 /* TestFitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BBD200C8116004D66F8 /* TestFitCell.m */; };
+		6A587BC2200C82CD004D66F8 /* TestFitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BC1200C82CD004D66F8 /* TestFitModel.m */; };
+		6A587BC5200C86AF004D66F8 /* TestCellFitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BC4200C86AF004D66F8 /* TestCellFitVC.m */; };
+		6A587BC7200C886E004D66F8 /* 路飞.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A587BC6200C886E004D66F8 /* 路飞.jpg */; };
+		6A587BCB200C8C7A004D66F8 /* 索隆.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A587BCA200C8C7A004D66F8 /* 索隆.jpg */; };
+		6A587BCF200C8D8B004D66F8 /* WebViewFitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BCE200C8D8B004D66F8 /* WebViewFitVC.m */; };
+		6A587BD7200C989D004D66F8 /* testFit.html in Resources */ = {isa = PBXBuildFile; fileRef = 6A587BD6200C989D004D66F8 /* testFit.html */; };
+		6A587BD9200C9D15004D66F8 /* 孙亚龙.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A587BD8200C9D15004D66F8 /* 孙亚龙.jpg */; };
+		6A587BF5200D8CB9004D66F8 /* WaterFlowTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BF4200D8CB9004D66F8 /* WaterFlowTestVC.m */; };
+		6A587BFB200D8D50004D66F8 /* MZWaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BFA200D8D50004D66F8 /* MZWaterFlowLayout.m */; };
+		6A587BFE200D911D004D66F8 /* WaterFlowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587BFD200D911D004D66F8 /* WaterFlowModel.m */; };
+		6A587C02200D9846004D66F8 /* WaterFlowTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587C00200D9846004D66F8 /* WaterFlowTestCell.m */; };
+		6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A587C01200D9846004D66F8 /* WaterFlowTestCell.xib */; };
+		6A587C05200D9EFD004D66F8 /* waterFlow.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A587C04200D9EFD004D66F8 /* waterFlow.plist */; };
 		6A8540E11FFB0EC000913301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540E01FFB0EC000913301 /* AppDelegate.m */; };
 		6A8540E41FFB0EC000913301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540E31FFB0EC000913301 /* ViewController.m */; };
-		6A8540E71FFB0EC000913301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540E51FFB0EC000913301 /* Main.storyboard */; };
 		6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540E81FFB0EC000913301 /* Assets.xcassets */; };
 		6A8540EC1FFB0EC000913301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540EA1FFB0EC000913301 /* LaunchScreen.storyboard */; };
 		6A8540EF1FFB0EC000913301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540EE1FFB0EC000913301 /* main.m */; };
@@ -49,6 +87,77 @@
 
 /* Begin PBXFileReference section */
 		1683615C0CA75C38E66F3962 /* libPods-StudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A518DC12007333D00A69E70 /* MZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
+		6A518DC22007333D00A69E70 /* MZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
+		6A518DC5200737D300A69E70 /* UIImage+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MZTool.h"; sourceTree = "<group>"; };
+		6A518DC6200737D300A69E70 /* UIImage+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MZTool.m"; sourceTree = "<group>"; };
+		6A587B592007493D004D66F8 /* AboutNullVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutNullVC.h; sourceTree = "<group>"; };
+		6A587B5A2007493D004D66F8 /* AboutNullVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutNullVC.m; sourceTree = "<group>"; };
+		6A587B5D200752D3004D66F8 /* DataHandleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHandleVC.h; sourceTree = "<group>"; };
+		6A587B5E200752D3004D66F8 /* DataHandleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHandleVC.m; sourceTree = "<group>"; };
+		6A587B61200753E3004D66F8 /* FloatNumberDealWithRoundVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FloatNumberDealWithRoundVC.h; sourceTree = "<group>"; };
+		6A587B62200753E3004D66F8 /* FloatNumberDealWithRoundVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FloatNumberDealWithRoundVC.m; sourceTree = "<group>"; };
+		6A587B6520075BC6004D66F8 /* DrawFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawFuncVC.h; sourceTree = "<group>"; };
+		6A587B6620075BC6004D66F8 /* DrawFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawFuncVC.m; sourceTree = "<group>"; };
+		6A587B6920075CB2004D66F8 /* CreateImageWithColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateImageWithColorVC.h; sourceTree = "<group>"; };
+		6A587B6A20075CB2004D66F8 /* CreateImageWithColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateImageWithColorVC.m; sourceTree = "<group>"; };
+		6A587B6D20075F8F004D66F8 /* BezierPathVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierPathVC.h; sourceTree = "<group>"; };
+		6A587B6E20075F8F004D66F8 /* BezierPathVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierPathVC.m; sourceTree = "<group>"; };
+		6A587B7120076145004D66F8 /* LineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		6A587B7220076145004D66F8 /* LineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		6A587B74200764CB004D66F8 /* PolygonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PolygonView.h; sourceTree = "<group>"; };
+		6A587B75200764CB004D66F8 /* PolygonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PolygonView.m; sourceTree = "<group>"; };
+		6A587B7720076863004D66F8 /* RectangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RectangleView.h; sourceTree = "<group>"; };
+		6A587B7820076863004D66F8 /* RectangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RectangleView.m; sourceTree = "<group>"; };
+		6A587B7A20076971004D66F8 /* CircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		6A587B7B20076971004D66F8 /* CircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		6A587B7D20076AFB004D66F8 /* ArcView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcView.h; sourceTree = "<group>"; };
+		6A587B7E20076AFB004D66F8 /* ArcView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcView.m; sourceTree = "<group>"; };
+		6A587B8020076D14004D66F8 /* cornerRadiusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cornerRadiusView.h; sourceTree = "<group>"; };
+		6A587B8120076D14004D66F8 /* cornerRadiusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cornerRadiusView.m; sourceTree = "<group>"; };
+		6A587B8520089D7D004D66F8 /* ShapeLayerMaskVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerMaskVC.h; sourceTree = "<group>"; };
+		6A587B8620089D7D004D66F8 /* ShapeLayerMaskVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerMaskVC.m; sourceTree = "<group>"; };
+		6A587B892008A74A004D66F8 /* MZCircleProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZCircleProgress.h; sourceTree = "<group>"; };
+		6A587B8A2008A74A004D66F8 /* MZCircleProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZCircleProgress.m; sourceTree = "<group>"; };
+		6A587B8F200B7992004D66F8 /* UILabel+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+MZTool.h"; sourceTree = "<group>"; };
+		6A587B90200B7992004D66F8 /* UILabel+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MZTool.m"; sourceTree = "<group>"; };
+		6A587B93200B7D76004D66F8 /* LineLabelTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LineLabelTestVC.h; sourceTree = "<group>"; };
+		6A587B94200B7D76004D66F8 /* LineLabelTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LineLabelTestVC.m; sourceTree = "<group>"; };
+		6A587B9C200C2D3F004D66F8 /* ClipsImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClipsImageVC.h; sourceTree = "<group>"; };
+		6A587B9D200C2D3F004D66F8 /* ClipsImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClipsImageVC.m; sourceTree = "<group>"; };
+		6A587B9F200C2E34004D66F8 /* 艾斯.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "艾斯.jpg"; sourceTree = "<group>"; };
+		6A587BA4200C47A1004D66F8 /* TestAttrinuteStringTapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAttrinuteStringTapVC.h; sourceTree = "<group>"; };
+		6A587BA5200C47A1004D66F8 /* TestAttrinuteStringTapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAttrinuteStringTapVC.m; sourceTree = "<group>"; };
+		6A587BA8200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YBAttributeTextTapAction.m"; sourceTree = "<group>"; };
+		6A587BA9200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+YBAttributeTextTapAction.h"; sourceTree = "<group>"; };
+		6A587BAD200C4D57004D66F8 /* UILabelTextFitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelTextFitVC.h; sourceTree = "<group>"; };
+		6A587BAE200C4D57004D66F8 /* UILabelTextFitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelTextFitVC.m; sourceTree = "<group>"; };
+		6A587BB0200C4F20004D66F8 /* ViewFitFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFitFuncVC.h; sourceTree = "<group>"; };
+		6A587BB1200C4F20004D66F8 /* ViewFitFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewFitFuncVC.m; sourceTree = "<group>"; };
+		6A587BB7200C55E5004D66F8 /* UIImageViewFitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewFitVC.h; sourceTree = "<group>"; };
+		6A587BB8200C55E5004D66F8 /* UIImageViewFitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewFitVC.m; sourceTree = "<group>"; };
+		6A587BBC200C8116004D66F8 /* TestFitCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFitCell.h; sourceTree = "<group>"; };
+		6A587BBD200C8116004D66F8 /* TestFitCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFitCell.m; sourceTree = "<group>"; };
+		6A587BC0200C82CD004D66F8 /* TestFitModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFitModel.h; sourceTree = "<group>"; };
+		6A587BC1200C82CD004D66F8 /* TestFitModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFitModel.m; sourceTree = "<group>"; };
+		6A587BC3200C86AF004D66F8 /* TestCellFitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCellFitVC.h; sourceTree = "<group>"; };
+		6A587BC4200C86AF004D66F8 /* TestCellFitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCellFitVC.m; sourceTree = "<group>"; };
+		6A587BC6200C886E004D66F8 /* 路飞.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "路飞.jpg"; sourceTree = "<group>"; };
+		6A587BCA200C8C7A004D66F8 /* 索隆.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "索隆.jpg"; sourceTree = "<group>"; };
+		6A587BCD200C8D8B004D66F8 /* WebViewFitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewFitVC.h; sourceTree = "<group>"; };
+		6A587BCE200C8D8B004D66F8 /* WebViewFitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewFitVC.m; sourceTree = "<group>"; };
+		6A587BD6200C989D004D66F8 /* testFit.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = testFit.html; sourceTree = "<group>"; };
+		6A587BD8200C9D15004D66F8 /* 孙亚龙.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "孙亚龙.jpg"; sourceTree = "<group>"; };
+		6A587BF3200D8CB9004D66F8 /* WaterFlowTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowTestVC.h; sourceTree = "<group>"; };
+		6A587BF4200D8CB9004D66F8 /* WaterFlowTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowTestVC.m; sourceTree = "<group>"; };
+		6A587BF9200D8D50004D66F8 /* MZWaterFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZWaterFlowLayout.h; sourceTree = "<group>"; };
+		6A587BFA200D8D50004D66F8 /* MZWaterFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWaterFlowLayout.m; sourceTree = "<group>"; };
+		6A587BFC200D911D004D66F8 /* WaterFlowModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowModel.h; sourceTree = "<group>"; };
+		6A587BFD200D911D004D66F8 /* WaterFlowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowModel.m; sourceTree = "<group>"; };
+		6A587BFF200D9846004D66F8 /* WaterFlowTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFlowTestCell.h; sourceTree = "<group>"; };
+		6A587C00200D9846004D66F8 /* WaterFlowTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFlowTestCell.m; sourceTree = "<group>"; };
+		6A587C01200D9846004D66F8 /* WaterFlowTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WaterFlowTestCell.xib; sourceTree = "<group>"; };
+		6A587C04200D9EFD004D66F8 /* waterFlow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = waterFlow.plist; sourceTree = "<group>"; };
 		6A8540DC1FFB0EC000913301 /* StudyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8540DF1FFB0EC000913301 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A8540E01FFB0EC000913301 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,9 +190,7 @@
 		6A85412A1FFB58CE00913301 /* GetContactMethodListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetContactMethodListVC.m; sourceTree = "<group>"; };
 		6A85412C1FFB670700913301 /* ContactsUIVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsUIVC.h; sourceTree = "<group>"; };
 		6A85412D1FFB670700913301 /* ContactsUIVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsUIVC.m; sourceTree = "<group>"; };
-		6A8541331FFB70F900913301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A8541341FFB70FA00913301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6A8541351FFB710100913301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		6A8541361FFB710100913301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6A85413B1FFB8E5200913301 /* XibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
 		6A85413C1FFB8E5200913301 /* XibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
@@ -138,6 +245,288 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6A518DC0200732A900A69E70 /* 自定义NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				6A518DC12007333D00A69E70 /* MZNavigationController.h */,
+				6A518DC22007333D00A69E70 /* MZNavigationController.m */,
+			);
+			path = "自定义NavigationController";
+			sourceTree = "<group>";
+		};
+		6A518DC42007375E00A69E70 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6A518DC5200737D300A69E70 /* UIImage+MZTool.h */,
+				6A518DC6200737D300A69E70 /* UIImage+MZTool.m */,
+				6A587B8F200B7992004D66F8 /* UILabel+MZTool.h */,
+				6A587B90200B7992004D66F8 /* UILabel+MZTool.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		6A587B58200748EF004D66F8 /* 关于(null)和<null> */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B592007493D004D66F8 /* AboutNullVC.h */,
+				6A587B5A2007493D004D66F8 /* AboutNullVC.m */,
+			);
+			path = "关于(null)和<null>";
+			sourceTree = "<group>";
+		};
+		6A587B5C20075269004D66F8 /* 数据处理 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B6020075388004D66F8 /* 处理小数点问题 */,
+				6A587B58200748EF004D66F8 /* 关于(null)和<null> */,
+				6A587B5D200752D3004D66F8 /* DataHandleVC.h */,
+				6A587B5E200752D3004D66F8 /* DataHandleVC.m */,
+			);
+			path = "数据处理";
+			sourceTree = "<group>";
+		};
+		6A587B6020075388004D66F8 /* 处理小数点问题 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B61200753E3004D66F8 /* FloatNumberDealWithRoundVC.h */,
+				6A587B62200753E3004D66F8 /* FloatNumberDealWithRoundVC.m */,
+			);
+			path = "处理小数点问题";
+			sourceTree = "<group>";
+		};
+		6A587B6420075B3B004D66F8 /* 绘图 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B9B200C2D05004D66F8 /* 截取图片 */,
+				6A587B92200B7CC5004D66F8 /* 划掉效果的UILabel */,
+				6A587B8320089D03004D66F8 /* view的遮罩效果 */,
+				6A587B6C20075EA2004D66F8 /* 贝塞尔曲线 */,
+				6A587B6820075C7B004D66F8 /* 根据颜色生成图片 */,
+				6A587B6520075BC6004D66F8 /* DrawFuncVC.h */,
+				6A587B6620075BC6004D66F8 /* DrawFuncVC.m */,
+			);
+			path = "绘图";
+			sourceTree = "<group>";
+		};
+		6A587B6820075C7B004D66F8 /* 根据颜色生成图片 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B6920075CB2004D66F8 /* CreateImageWithColorVC.h */,
+				6A587B6A20075CB2004D66F8 /* CreateImageWithColorVC.m */,
+			);
+			path = "根据颜色生成图片";
+			sourceTree = "<group>";
+		};
+		6A587B6C20075EA2004D66F8 /* 贝塞尔曲线 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B7020076135004D66F8 /* View */,
+				6A587B6D20075F8F004D66F8 /* BezierPathVC.h */,
+				6A587B6E20075F8F004D66F8 /* BezierPathVC.m */,
+			);
+			path = "贝塞尔曲线";
+			sourceTree = "<group>";
+		};
+		6A587B7020076135004D66F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B7120076145004D66F8 /* LineView.h */,
+				6A587B7220076145004D66F8 /* LineView.m */,
+				6A587B74200764CB004D66F8 /* PolygonView.h */,
+				6A587B75200764CB004D66F8 /* PolygonView.m */,
+				6A587B7720076863004D66F8 /* RectangleView.h */,
+				6A587B7820076863004D66F8 /* RectangleView.m */,
+				6A587B7A20076971004D66F8 /* CircleView.h */,
+				6A587B7B20076971004D66F8 /* CircleView.m */,
+				6A587B7D20076AFB004D66F8 /* ArcView.h */,
+				6A587B7E20076AFB004D66F8 /* ArcView.m */,
+				6A587B8020076D14004D66F8 /* cornerRadiusView.h */,
+				6A587B8120076D14004D66F8 /* cornerRadiusView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A587B8320089D03004D66F8 /* view的遮罩效果 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B8420089D24004D66F8 /* view的遮罩效果 */,
+			);
+			path = "view的遮罩效果";
+			sourceTree = "<group>";
+		};
+		6A587B8420089D24004D66F8 /* view的遮罩效果 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B882008A6AB004D66F8 /* 圆形进度条 */,
+				6A587B8520089D7D004D66F8 /* ShapeLayerMaskVC.h */,
+				6A587B8620089D7D004D66F8 /* ShapeLayerMaskVC.m */,
+			);
+			path = "view的遮罩效果";
+			sourceTree = "<group>";
+		};
+		6A587B882008A6AB004D66F8 /* 圆形进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B892008A74A004D66F8 /* MZCircleProgress.h */,
+				6A587B8A2008A74A004D66F8 /* MZCircleProgress.m */,
+			);
+			path = "圆形进度条";
+			sourceTree = "<group>";
+		};
+		6A587B92200B7CC5004D66F8 /* 划掉效果的UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B93200B7D76004D66F8 /* LineLabelTestVC.h */,
+				6A587B94200B7D76004D66F8 /* LineLabelTestVC.m */,
+			);
+			path = "划掉效果的UILabel";
+			sourceTree = "<group>";
+		};
+		6A587B9B200C2D05004D66F8 /* 截取图片 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B9F200C2E34004D66F8 /* 艾斯.jpg */,
+				6A587B9C200C2D3F004D66F8 /* ClipsImageVC.h */,
+				6A587B9D200C2D3F004D66F8 /* ClipsImageVC.m */,
+			);
+			path = "截取图片";
+			sourceTree = "<group>";
+		};
+		6A587BA1200C473E004D66F8 /* 可点击字符串 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BA7200C4BC6004D66F8 /* YBAttributeTextTapAction */,
+				6A587BA4200C47A1004D66F8 /* TestAttrinuteStringTapVC.h */,
+				6A587BA5200C47A1004D66F8 /* TestAttrinuteStringTapVC.m */,
+			);
+			path = "可点击字符串";
+			sourceTree = "<group>";
+		};
+		6A587BA7200C4BC6004D66F8 /* YBAttributeTextTapAction */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BA9200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.h */,
+				6A587BA8200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m */,
+			);
+			name = YBAttributeTextTapAction;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		6A587BAB200C4CE5004D66F8 /* 试图的自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BF2200D8C6B004D66F8 /* UICollectionView实现瀑布流 */,
+				6A587BCC200C8D57004D66F8 /* UIWebView高度自适应 */,
+				6A587BBA200C80CC004D66F8 /* UITableViewCell自适应 */,
+				6A587BB3200C54F6004D66F8 /* UIImageView自适应图片 */,
+				6A587BAC200C4D05004D66F8 /* UILabel字符串的自适应 */,
+				6A587BB0200C4F20004D66F8 /* ViewFitFuncVC.h */,
+				6A587BB1200C4F20004D66F8 /* ViewFitFuncVC.m */,
+			);
+			path = "试图的自适应";
+			sourceTree = "<group>";
+		};
+		6A587BAC200C4D05004D66F8 /* UILabel字符串的自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BAD200C4D57004D66F8 /* UILabelTextFitVC.h */,
+				6A587BAE200C4D57004D66F8 /* UILabelTextFitVC.m */,
+			);
+			path = "UILabel字符串的自适应";
+			sourceTree = "<group>";
+		};
+		6A587BB3200C54F6004D66F8 /* UIImageView自适应图片 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BB7200C55E5004D66F8 /* UIImageViewFitVC.h */,
+				6A587BB8200C55E5004D66F8 /* UIImageViewFitVC.m */,
+			);
+			path = "UIImageView自适应图片";
+			sourceTree = "<group>";
+		};
+		6A587BBA200C80CC004D66F8 /* UITableViewCell自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BCA200C8C7A004D66F8 /* 索隆.jpg */,
+				6A587BC6200C886E004D66F8 /* 路飞.jpg */,
+				6A587BBF200C82BA004D66F8 /* Model */,
+				6A587BBB200C80E5004D66F8 /* View */,
+				6A587BC3200C86AF004D66F8 /* TestCellFitVC.h */,
+				6A587BC4200C86AF004D66F8 /* TestCellFitVC.m */,
+			);
+			path = "UITableViewCell自适应";
+			sourceTree = "<group>";
+		};
+		6A587BBB200C80E5004D66F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BBC200C8116004D66F8 /* TestFitCell.h */,
+				6A587BBD200C8116004D66F8 /* TestFitCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A587BBF200C82BA004D66F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BC0200C82CD004D66F8 /* TestFitModel.h */,
+				6A587BC1200C82CD004D66F8 /* TestFitModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A587BCC200C8D57004D66F8 /* UIWebView高度自适应 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BD8200C9D15004D66F8 /* 孙亚龙.jpg */,
+				6A587BD6200C989D004D66F8 /* testFit.html */,
+				6A587BCD200C8D8B004D66F8 /* WebViewFitVC.h */,
+				6A587BCE200C8D8B004D66F8 /* WebViewFitVC.m */,
+			);
+			path = "UIWebView高度自适应";
+			sourceTree = "<group>";
+		};
+		6A587BF2200D8C6B004D66F8 /* UICollectionView实现瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				6A587C04200D9EFD004D66F8 /* waterFlow.plist */,
+				6A587BF8200D8CDB004D66F8 /* WaterFlowLayout */,
+				6A587BF7200D8CD2004D66F8 /* Model */,
+				6A587BF6200D8CBF004D66F8 /* View */,
+				6A587BF3200D8CB9004D66F8 /* WaterFlowTestVC.h */,
+				6A587BF4200D8CB9004D66F8 /* WaterFlowTestVC.m */,
+			);
+			path = "UICollectionView实现瀑布流";
+			sourceTree = "<group>";
+		};
+		6A587BF6200D8CBF004D66F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BFF200D9846004D66F8 /* WaterFlowTestCell.h */,
+				6A587C00200D9846004D66F8 /* WaterFlowTestCell.m */,
+				6A587C01200D9846004D66F8 /* WaterFlowTestCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A587BF7200D8CD2004D66F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BFC200D911D004D66F8 /* WaterFlowModel.h */,
+				6A587BFD200D911D004D66F8 /* WaterFlowModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A587BF8200D8CDB004D66F8 /* WaterFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				6A587BF9200D8D50004D66F8 /* MZWaterFlowLayout.h */,
+				6A587BFA200D8D50004D66F8 /* MZWaterFlowLayout.m */,
+			);
+			path = WaterFlowLayout;
+			sourceTree = "<group>";
+		};
 		6A8540D31FFB0EC000913301 = {
 			isa = PBXGroup;
 			children = (
@@ -159,16 +548,16 @@
 		6A8540DE1FFB0EC000913301 /* StudyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6A8541171FFB41DB00913301 /* ThirdParty */,
+				6A518DC42007375E00A69E70 /* Category */,
 				6A8540FB1FFB1EC500913301 /* UI */,
 				6A8540FA1FFB1EBE00913301 /* Util */,
-				6A8540F81FFB19CD00913301 /* common */,
-				6A8540F51FFB133F00913301 /* file */,
 				6A8540DF1FFB0EC000913301 /* AppDelegate.h */,
 				6A8540E01FFB0EC000913301 /* AppDelegate.m */,
 				6A8540E21FFB0EC000913301 /* ViewController.h */,
 				6A8540E31FFB0EC000913301 /* ViewController.m */,
-				6A8540E51FFB0EC000913301 /* Main.storyboard */,
+				6A8541171FFB41DB00913301 /* ThirdParty */,
+				6A8540F81FFB19CD00913301 /* common */,
+				6A8540F51FFB133F00913301 /* file */,
 				6A8540E81FFB0EC000913301 /* Assets.xcassets */,
 				6A8540EA1FFB0EC000913301 /* LaunchScreen.storyboard */,
 				6A8540ED1FFB0EC000913301 /* Info.plist */,
@@ -197,6 +586,7 @@
 		6A8540FA1FFB1EBE00913301 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6A587B5C20075269004D66F8 /* 数据处理 */,
 				6AF7BA012003569100AC2015 /* BaseVC */,
 				6AF6B19B1FFF803400CBB30F /* JS与0C交互 */,
 				6A85411E1FFB52AF00913301 /* 获取系统联系人 */,
@@ -208,6 +598,10 @@
 		6A8540FB1FFB1EC500913301 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6A587BAB200C4CE5004D66F8 /* 试图的自适应 */,
+				6A587BA1200C473E004D66F8 /* 可点击字符串 */,
+				6A587B6420075B3B004D66F8 /* 绘图 */,
+				6A518DC0200732A900A69E70 /* 自定义NavigationController */,
 				6A85413A1FFB8DDB00913301 /* xib适配问题 */,
 				6A8541081FFB298D00913301 /* Button */,
 			);
@@ -446,19 +840,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A587BA0200C2E34004D66F8 /* 艾斯.jpg in Resources */,
 				6A8541131FFB359F00913301 /* barcode.png in Resources */,
+				6A587C05200D9EFD004D66F8 /* waterFlow.plist in Resources */,
+				6A587BD7200C989D004D66F8 /* testFit.html in Resources */,
 				6AF7B9DF2000643200AC2015 /* index1.html in Resources */,
 				6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */,
+				6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */,
+				6A587BC7200C886E004D66F8 /* 路飞.jpg in Resources */,
 				6A8541011FFB239F00913301 /* scan.wav in Resources */,
+				6A587BD9200C9D15004D66F8 /* 孙亚龙.jpg in Resources */,
 				6A8540EC1FFB0EC000913301 /* LaunchScreen.storyboard in Resources */,
 				6AF7B9F7200348DD00AC2015 /* index3.html in Resources */,
 				6AF6B19A1FFF7C4E00CBB30F /* XibTestCell.xib in Resources */,
 				6AF7B9EB20032E5E00AC2015 /* index2.html in Resources */,
+				6A587BCB200C8C7A004D66F8 /* 索隆.jpg in Resources */,
 				6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */,
 				6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */,
 				6A8540F71FFB13BD00913301 /* functionList.plist in Resources */,
 				6AF7B9FC200350DD00AC2015 /* index4.html in Resources */,
-				6A8540E71FFB0EC000913301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +871,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StudyDemo/Pods-StudyDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,45 +923,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A587B8720089D7D004D66F8 /* ShapeLayerMaskVC.m in Sources */,
 				6A85410E1FFB2FB600913301 /* CreateBarCodeVC.m in Sources */,
+				6A587BA6200C47A1004D66F8 /* TestAttrinuteStringTapVC.m in Sources */,
 				6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */,
+				6A587B6B20075CB2004D66F8 /* CreateImageWithColorVC.m in Sources */,
+				6A587BB9200C55E5004D66F8 /* UIImageViewFitVC.m in Sources */,
+				6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */,
 				6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */,
+				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
 				6AF7B9E72003219E00AC2015 /* UIWebView_URL.m in Sources */,
+				6A587BBE200C8116004D66F8 /* TestFitCell.m in Sources */,
 				6AF6B1991FFF7C4E00CBB30F /* XibTestCell.m in Sources */,
 				6AF7B9F5200347A100AC2015 /* UIWebView_JSContext.m in Sources */,
+				6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */,
 				6A8540FF1FFB1F5100913301 /* ScanBarCodeVC.m in Sources */,
+				6A587C02200D9846004D66F8 /* WaterFlowTestCell.m in Sources */,
+				6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */,
+				6A587BC5200C86AF004D66F8 /* TestCellFitVC.m in Sources */,
+				6A587B76200764CB004D66F8 /* PolygonView.m in Sources */,
+				6A587B6720075BC6004D66F8 /* DrawFuncVC.m in Sources */,
 				6A8541111FFB34B600913301 /* VerifyImageBarCodeVC.m in Sources */,
+				6A587BAA200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				6A85413D1FFB8E5200913301 /* XibView.m in Sources */,
+				6A587BFE200D911D004D66F8 /* WaterFlowModel.m in Sources */,
+				6A587BFB200D8D50004D66F8 /* MZWaterFlowLayout.m in Sources */,
+				6A587B6F20075F8F004D66F8 /* BezierPathVC.m in Sources */,
+				6A587B9E200C2D3F004D66F8 /* ClipsImageVC.m in Sources */,
+				6A587BCF200C8D8B004D66F8 /* WebViewFitVC.m in Sources */,
+				6A587BC2200C82CD004D66F8 /* TestFitModel.m in Sources */,
 				6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */,
 				6AF7B9FA20034DD600AC2015 /* UIWebView_JSExport.m in Sources */,
+				6A587B7C20076971004D66F8 /* CircleView.m in Sources */,
 				6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */,
+				6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */,
+				6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */,
 				6A8540E41FFB0EC000913301 /* ViewController.m in Sources */,
 				6A85412B1FFB58CE00913301 /* GetContactMethodListVC.m in Sources */,
+				6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */,
 				6A8541281FFB567100913301 /* MZContactModel.m in Sources */,
+				6A587B5F200752D3004D66F8 /* DataHandleVC.m in Sources */,
 				6AF6B19E1FFF817400CBB30F /* WKWebView_MessageHandler.m in Sources */,
+				6A587B91200B7992004D66F8 /* UILabel+MZTool.m in Sources */,
 				6A8541071FFB298500913301 /* MZButton.m in Sources */,
 				6AF7B9EE20033AE400AC2015 /* WKWebView_URL.m in Sources */,
 				6A8540EF1FFB0EC000913301 /* main.m in Sources */,
 				6A8541241FFB547A00913301 /* AddressBookController.m in Sources */,
+				6A587B8B2008A74A004D66F8 /* MZCircleProgress.m in Sources */,
+				6A587B95200B7D76004D66F8 /* LineLabelTestVC.m in Sources */,
+				6A587BF5200D8CB9004D66F8 /* WaterFlowTestVC.m in Sources */,
 				6A8540E11FFB0EC000913301 /* AppDelegate.m in Sources */,
+				6A587BAF200C4D57004D66F8 /* UILabelTextFitVC.m in Sources */,
+				6A587B7920076863004D66F8 /* RectangleView.m in Sources */,
 				6A8541211FFB53F600913301 /* MBProgressHUD+SN.m in Sources */,
+				6A587B7320076145004D66F8 /* LineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6A8540E51FFB0EC000913301 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A8541331FFB70F900913301 /* Base */,
-				6A8541351FFB710100913301 /* zh-Hans */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6A8540EA1FFB0EC000913301 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

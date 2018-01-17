@@ -23,12 +23,12 @@
 }
 
 - (void)initUI {
-    UILabel *tipLB = [[UILabel alloc] initWithFrame:CGRectMake(0, 64+20, SCREEN_WIDTH, 20)];
+    UILabel *tipLB = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 20)];
     tipLB.text = @"请输入字符串生成二维码";
     tipLB.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:tipLB];
     
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(30, 64+50, SCREEN_WIDTH-60, 40)];
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(30, 50, SCREEN_WIDTH-60, 40)];
     textField.textAlignment = NSTextAlignmentCenter;
     textField.delegate = self;
     textField.layer.borderColor = [UIColor grayColor].CGColor;
@@ -106,6 +106,10 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {

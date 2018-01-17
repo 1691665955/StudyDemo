@@ -21,7 +21,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"xib适配问题";
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) style:UITableViewStylePlain];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navi_Height) style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
     [tableView registerNib:[UINib nibWithNibName:@"XibTestCell" bundle:nil] forCellReuseIdentifier:@"XibTestCell"];

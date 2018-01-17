@@ -10,7 +10,7 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-#define SCANVIEW_EdgeTop 164
+#define SCANVIEW_EdgeTop 100
 #define SCANVIEW_EdgeLeft 50.0
 
 #define TINTCOLOR_ALPHA 0.4  //浅色透明度
@@ -64,7 +64,7 @@
     
     _preview =[AVCaptureVideoPreviewLayer layerWithSession:_session];
     _preview.videoGravity =AVLayerVideoGravityResizeAspectFill;
-    _preview.frame = CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64);
+    _preview.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navi_Height);
     [self.view.layer insertSublayer:_preview atIndex:0];
 }
 

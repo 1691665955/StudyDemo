@@ -28,12 +28,18 @@
     WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
     configuration.preferences = preferences;
     
-    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) configuration:configuration];
+    self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navi_Height) configuration:configuration];
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"index2.html" withExtension:nil];
     [self.webView loadRequest:[NSURLRequest requestWithURL:url]];
     self.webView.scrollView.bounces = NO;
     self.webView.navigationDelegate = self;
     [self.view addSubview:self.webView];
+    
+    if (iOS11Later) {
+        adjustsScrollViewInsets_NO(self.webView.scrollView, self);
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     
     //监听是否加载完毕
     [self.webView addObserver:self forKeyPath:@"loading" options:NSKeyValueObservingOptionNew context:nil];

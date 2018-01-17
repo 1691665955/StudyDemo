@@ -26,7 +26,7 @@
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"相册" style:UIBarButtonItemStylePlain target:self action:@selector(gotoPhotoAlbum)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, SCREEN_WIDTH-100, SCREEN_WIDTH-100)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 50, SCREEN_WIDTH-100, SCREEN_WIDTH-100)];
     imageView.image = [UIImage imageNamed:@"barcode"];
     [self.view addSubview:imageView];
     self.imageView = imageView;

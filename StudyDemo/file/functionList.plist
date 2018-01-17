@@ -9,7 +9,8 @@
 		<array>
 			<string>二维码生成与读取</string>
 			<string>获取通讯录信息</string>
-			<string>JS与0C交互</string>
+			<string>JS与OC交互</string>
+			<string>数据处理</string>
 		</array>
 	</dict>
 	<dict>
@@ -18,6 +19,9 @@
 		<key>Function</key>
 		<array>
 			<string>使用xib自定义view</string>
+			<string>绘图</string>
+			<string>可点击字符串</string>
+			<string>试图的自适应</string>
 		</array>
 	</dict>
 </array>
