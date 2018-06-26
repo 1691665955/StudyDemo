@@ -12,6 +12,7 @@
 #import "ShapeLayerMaskVC.h"
 #import "LineLabelTestVC.h"
 #import "ClipsImageVC.h"
+#import "WaveViewTestVC.h"
 @interface DrawFuncVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -46,11 +47,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSArray *titles = @[@"根据颜色生成图片",@"贝塞尔曲线绘制",@"view的遮罩效果",@"划掉效果的UILabel",@"截取图片"];
+    NSArray *titles = @[@"根据颜色生成图片",@"贝塞尔曲线绘制",@"view的遮罩效果",@"划掉效果的UILabel",@"截取图片",@"双波浪UI"];
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     cell.textLabel.text = titles[indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -75,12 +76,12 @@
     } else if (indexPath.row == 4) {
         ClipsImageVC *vc = [[ClipsImageVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 5) {
+        WaveViewTestVC *vc = [[WaveViewTestVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end

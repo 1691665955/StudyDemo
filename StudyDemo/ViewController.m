@@ -12,6 +12,8 @@
 #import "GetContactMethodListVC.h"
 #import "JavaScriptAndOCFunVC.h"
 #import "DataHandleVC.h"
+#import "TestRuntimeVC.h"
+#import "SystemFuncVC.h"
 
 //UI
 #import "XibViewTestVC.h"
@@ -93,6 +95,12 @@
         } else if (indexPath.row == 3) {
             DataHandleVC *vc = [[DataHandleVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 4) {
+            TestRuntimeVC *vc = [[TestRuntimeVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 5) {
+            SystemFuncVC *vc = [[SystemFuncVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
     } else {
         if (indexPath.row == 0) {
@@ -145,10 +153,7 @@
     return footerView;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 
 @end

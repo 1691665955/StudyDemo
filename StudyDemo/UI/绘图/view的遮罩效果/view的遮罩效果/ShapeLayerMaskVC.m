@@ -14,6 +14,9 @@
 @property (nonatomic, strong)NSTimer *timer;
 @property (nonatomic, assign)NSInteger power;
 @property (nonatomic, strong)MZCircleProgress *progressView;
+
+@property (nonatomic, strong)UIView *couponView;
+@property (nonatomic, strong)CAShapeLayer *shapeLayer;
 @end
 
 @implementation ShapeLayerMaskVC
@@ -26,6 +29,7 @@
     [self setupMaskView];
     [self setupDynamicView];
     [self setupCircleView];
+    [self setupCouponView];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -44,9 +48,9 @@
     CGFloat rightSpace = 10;
     CGFloat topSpace = 15;
     CGFloat height = 10;
-    
+//
     CGSize size = view.frame.size;
-    
+
     //拐点
     CGPoint point1 = CGPointMake(0, 0);
     CGPoint point2 = CGPointMake(size.width-rightSpace, 0);
@@ -55,7 +59,7 @@
     CGPoint point5 = CGPointMake(size.width-rightSpace, topSpace+height);
     CGPoint point6 = CGPointMake(size.width-rightSpace, size.height);
     CGPoint point7 = CGPointMake(0, size.height);
-    
+
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:point1];
     [path addLineToPoint:point2];
@@ -65,10 +69,8 @@
     [path addLineToPoint:point6];
     [path addLineToPoint:point7];
     [path closePath];
-    
     CAShapeLayer *layer = [CAShapeLayer layer];
     layer.path = path.CGPath;
-    
     view.layer.mask = layer;
 }
 
@@ -115,15 +117,75 @@
 }
 
 - (void)setupCircleView {
-    MZCircleProgress *view = [[MZCircleProgress alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-200)/2, 250, 200, 200)];
+    MZCircleProgress *view = [[MZCircleProgress alloc] initWithFrame:CGRectMake(200, 200, 100, 100)];
     view.ratio = 0;
     self.progressView = view;
     [self.view addSubview:view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupCouponView {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 350, SCREEN_WIDTH-40, 100)];
+    view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:view];
+    self.couponView = view;
 }
+
+- (void)viewDidLayoutSubviews {
+    [self.shapeLayer removeFromSuperlayer];
+    self.shapeLayer = nil;
+    
+    NSInteger radius = 5;//波浪纹的半径
+    CGSize size = self.couponView.frame.size;
+    NSInteger count = (NSInteger)size.height/(radius*3);//波浪纹个数，这里让波浪纹的半径和波浪之间的间隙相同
+    CGFloat y = ((size.height-(int)(size.height))+(int)(size.height)%15+5)/2;
+    if ((int)(size.height)%(3*radius)+radius<2*radius) {
+        count--;
+        y += radius*1.5;
+    }
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    UIBezierPath *linePath = [UIBezierPath bezierPath];
+    [path moveToPoint:CGPointMake(0, size.height)];
+    [path addLineToPoint:CGPointMake(size.width, size.height)];
+    
+    [linePath moveToPoint:CGPointMake(0, size.height)];
+    [linePath addLineToPoint:CGPointMake(size.width, size.height)];
+    
+    for(int i=0; i<count;i++) {
+        [path addLineToPoint:CGPointMake(size.width, size.height-(y+radius*3*i))];
+        [path addArcWithCenter:CGPointMake(size.width, size.height-(y+radius*3*i+radius)) radius:radius startAngle:M_PI_2 endAngle:M_PI_2*3 clockwise:YES];
+        
+        [linePath addLineToPoint:CGPointMake(size.width, size.height-(y+radius*3*i))];
+        [linePath addArcWithCenter:CGPointMake(size.width, size.height-(y+radius*3*i+radius)) radius:radius startAngle:M_PI_2 endAngle:M_PI_2*3 clockwise:YES];
+    }
+    [path addLineToPoint:CGPointMake(size.width, 0)];
+    [path addLineToPoint:CGPointMake(0, 0)];
+    
+    [linePath addLineToPoint:CGPointMake(size.width, 0)];
+    [linePath addLineToPoint:CGPointMake(0, 0)];
+    
+    for(int i=0; i<count;i++) {
+        [path addLineToPoint:CGPointMake(0, y+radius*3*i)];
+        [path addArcWithCenter:CGPointMake(0, y+radius*3*i+radius) radius:radius startAngle:-M_PI_2 endAngle:M_PI_2 clockwise:YES];
+        
+        [linePath addLineToPoint:CGPointMake(0, y+radius*3*i)];
+        [linePath addArcWithCenter:CGPointMake(0, y+radius*3*i+radius) radius:radius startAngle:-M_PI_2 endAngle:M_PI_2 clockwise:YES];
+    }
+    [path closePath];
+    
+    [linePath closePath];
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    layer.path = path.CGPath;
+    self.couponView.layer.mask = layer;
+    
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.path = linePath.CGPath;
+    shapeLayer.strokeColor = [UIColor redColor].CGColor;//边线的填充色
+    shapeLayer.fillColor = [UIColor whiteColor].CGColor;//内部填充色
+    self.shapeLayer = shapeLayer;
+    [self.couponView.layer insertSublayer:self.shapeLayer above:self.couponView.layer];
+}
+
+
 
 @end

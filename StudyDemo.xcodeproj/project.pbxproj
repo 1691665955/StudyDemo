@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743C620233079009629E6 /* WaveViewTestVC.m */; };
+		6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743CA202330CB009629E6 /* MZWaveView.m */; };
 		6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC22007333D00A69E70 /* MZNavigationController.m */; };
 		6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC6200737D300A69E70 /* UIImage+MZTool.m */; };
 		6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5A2007493D004D66F8 /* AboutNullVC.m */; };
@@ -49,7 +51,6 @@
 		6A8540E11FFB0EC000913301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540E01FFB0EC000913301 /* AppDelegate.m */; };
 		6A8540E41FFB0EC000913301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540E31FFB0EC000913301 /* ViewController.m */; };
 		6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540E81FFB0EC000913301 /* Assets.xcassets */; };
-		6A8540EC1FFB0EC000913301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540EA1FFB0EC000913301 /* LaunchScreen.storyboard */; };
 		6A8540EF1FFB0EC000913301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540EE1FFB0EC000913301 /* main.m */; };
 		6A8540F71FFB13BD00913301 /* functionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540F61FFB13BD00913301 /* functionList.plist */; };
 		6A8540FF1FFB1F5100913301 /* ScanBarCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540FE1FFB1F5100913301 /* ScanBarCodeVC.m */; };
@@ -66,6 +67,7 @@
 		6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85412D1FFB670700913301 /* ContactsUIVC.m */; };
 		6A85413D1FFB8E5200913301 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85413C1FFB8E5200913301 /* XibView.m */; };
 		6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A85413E1FFB8E5F00913301 /* XibView.xib */; };
+		6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */; };
 		6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */; };
 		6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B1921FFF76A500CBB30F /* ErrorXibView.m */; };
 		6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6B1941FFF76B100CBB30F /* ErrorXibView.xib */; };
@@ -82,11 +84,17 @@
 		6AF7B9FA20034DD600AC2015 /* UIWebView_JSExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF7B9F920034DD600AC2015 /* UIWebView_JSExport.m */; };
 		6AF7B9FC200350DD00AC2015 /* index4.html in Resources */ = {isa = PBXBuildFile; fileRef = 6AF7B9FB200350DD00AC2015 /* index4.html */; };
 		6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF7BA03200356B700AC2015 /* MZWebViewVC.m */; };
+		6AF8D7EB200F3E0E00B4EBAA /* TestRuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8D7EA200F3E0E00B4EBAA /* TestRuntimeModel.m */; };
+		6AF8D7F2200F45EA00B4EBAA /* TestRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8D7F1200F45EA00B4EBAA /* TestRuntimeVC.m */; };
 		F370EA13B9A38CA2939F7730 /* libPods-StudyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1683615C0CA75C38E66F3962 /* libPods-StudyDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1683615C0CA75C38E66F3962 /* libPods-StudyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0743C520233079009629E6 /* WaveViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveViewTestVC.h; sourceTree = "<group>"; };
+		6A0743C620233079009629E6 /* WaveViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveViewTestVC.m; sourceTree = "<group>"; };
+		6A0743C9202330CB009629E6 /* MZWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZWaveView.h; sourceTree = "<group>"; };
+		6A0743CA202330CB009629E6 /* MZWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWaveView.m; sourceTree = "<group>"; };
 		6A518DC12007333D00A69E70 /* MZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
 		6A518DC22007333D00A69E70 /* MZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
 		6A518DC5200737D300A69E70 /* UIImage+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MZTool.h"; sourceTree = "<group>"; };
@@ -190,11 +198,12 @@
 		6A85412A1FFB58CE00913301 /* GetContactMethodListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetContactMethodListVC.m; sourceTree = "<group>"; };
 		6A85412C1FFB670700913301 /* ContactsUIVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsUIVC.h; sourceTree = "<group>"; };
 		6A85412D1FFB670700913301 /* ContactsUIVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsUIVC.m; sourceTree = "<group>"; };
-		6A8541341FFB70FA00913301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6A8541361FFB710100913301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6A85413B1FFB8E5200913301 /* XibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
 		6A85413C1FFB8E5200913301 /* XibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
 		6A85413E1FFB8E5F00913301 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
+		6AC98F4B20E20DA700ABD44F /* SystemFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFuncVC.h; sourceTree = "<group>"; };
+		6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemFuncVC.m; sourceTree = "<group>"; };
+		6AC98F4F20E2177700ABD44F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		6AF6B18E1FFF753D00CBB30F /* XibViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewTestVC.h; sourceTree = "<group>"; };
 		6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewTestVC.m; sourceTree = "<group>"; };
 		6AF6B1911FFF76A500CBB30F /* ErrorXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorXibView.h; sourceTree = "<group>"; };
@@ -221,6 +230,10 @@
 		6AF7B9FB200350DD00AC2015 /* index4.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index4.html; sourceTree = "<group>"; };
 		6AF7BA02200356B700AC2015 /* MZWebViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZWebViewVC.h; sourceTree = "<group>"; };
 		6AF7BA03200356B700AC2015 /* MZWebViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWebViewVC.m; sourceTree = "<group>"; };
+		6AF8D7E9200F3E0E00B4EBAA /* TestRuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeModel.h; sourceTree = "<group>"; };
+		6AF8D7EA200F3E0E00B4EBAA /* TestRuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeModel.m; sourceTree = "<group>"; };
+		6AF8D7F0200F45EA00B4EBAA /* TestRuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeVC.h; sourceTree = "<group>"; };
+		6AF8D7F1200F45EA00B4EBAA /* TestRuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeVC.m; sourceTree = "<group>"; };
 		A31D7C2BD6403CB3E33BA522 /* Pods-StudyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyDemo/Pods-StudyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CCB9E81D947F7ACA5A4BA113 /* Pods-StudyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyDemo/Pods-StudyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,9 +253,29 @@
 		0F0F9493EE6CAF6EB2D0BF98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F4F20E2177700ABD44F /* MessageUI.framework */,
 				1683615C0CA75C38E66F3962 /* libPods-StudyDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0743C420233024009629E6 /* 双波浪UI */ = {
+			isa = PBXGroup;
+			children = (
+				6A0743C82023308A009629E6 /* View */,
+				6A0743C520233079009629E6 /* WaveViewTestVC.h */,
+				6A0743C620233079009629E6 /* WaveViewTestVC.m */,
+			);
+			path = "双波浪UI";
+			sourceTree = "<group>";
+		};
+		6A0743C82023308A009629E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A0743C9202330CB009629E6 /* MZWaveView.h */,
+				6A0743CA202330CB009629E6 /* MZWaveView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6A518DC0200732A900A69E70 /* 自定义NavigationController */ = {
@@ -297,6 +330,7 @@
 		6A587B6420075B3B004D66F8 /* 绘图 */ = {
 			isa = PBXGroup;
 			children = (
+				6A0743C420233024009629E6 /* 双波浪UI */,
 				6A587B9B200C2D05004D66F8 /* 截取图片 */,
 				6A587B92200B7CC5004D66F8 /* 划掉效果的UILabel */,
 				6A587B8320089D03004D66F8 /* view的遮罩效果 */,
@@ -559,7 +593,6 @@
 				6A8540F81FFB19CD00913301 /* common */,
 				6A8540F51FFB133F00913301 /* file */,
 				6A8540E81FFB0EC000913301 /* Assets.xcassets */,
-				6A8540EA1FFB0EC000913301 /* LaunchScreen.storyboard */,
 				6A8540ED1FFB0EC000913301 /* Info.plist */,
 				6A8540EE1FFB0EC000913301 /* main.m */,
 			);
@@ -586,6 +619,8 @@
 		6A8540FA1FFB1EBE00913301 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F4A20E20D5100ABD44F /* 系统功能 */,
+				6AF8D7E8200F3DB800B4EBAA /* 关于runtime */,
 				6A587B5C20075269004D66F8 /* 数据处理 */,
 				6AF7BA012003569100AC2015 /* BaseVC */,
 				6AF6B19B1FFF803400CBB30F /* JS与0C交互 */,
@@ -687,6 +722,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6AC98F4A20E20D5100ABD44F /* 系统功能 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F4B20E20DA700ABD44F /* SystemFuncVC.h */,
+				6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */,
+			);
+			path = "系统功能";
+			sourceTree = "<group>";
+		};
 		6AF6B19B1FFF803400CBB30F /* JS与0C交互 */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +815,25 @@
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
+		6AF8D7E8200F3DB800B4EBAA /* 关于runtime */ = {
+			isa = PBXGroup;
+			children = (
+				6AF8D7EC200F3E1900B4EBAA /* Model */,
+				6AF8D7F0200F45EA00B4EBAA /* TestRuntimeVC.h */,
+				6AF8D7F1200F45EA00B4EBAA /* TestRuntimeVC.m */,
+			);
+			path = "关于runtime";
+			sourceTree = "<group>";
+		};
+		6AF8D7EC200F3E1900B4EBAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AF8D7E9200F3E0E00B4EBAA /* TestRuntimeModel.h */,
+				6AF8D7EA200F3E0E00B4EBAA /* TestRuntimeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8D2FD2FAC9C0F6111B5FC588 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -850,7 +913,6 @@
 				6A587BC7200C886E004D66F8 /* 路飞.jpg in Resources */,
 				6A8541011FFB239F00913301 /* scan.wav in Resources */,
 				6A587BD9200C9D15004D66F8 /* 孙亚龙.jpg in Resources */,
-				6A8540EC1FFB0EC000913301 /* LaunchScreen.storyboard in Resources */,
 				6AF7B9F7200348DD00AC2015 /* index3.html in Resources */,
 				6AF6B19A1FFF7C4E00CBB30F /* XibTestCell.xib in Resources */,
 				6AF7B9EB20032E5E00AC2015 /* index2.html in Resources */,
@@ -928,9 +990,11 @@
 				6A587BA6200C47A1004D66F8 /* TestAttrinuteStringTapVC.m in Sources */,
 				6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */,
 				6A587B6B20075CB2004D66F8 /* CreateImageWithColorVC.m in Sources */,
+				6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */,
 				6A587BB9200C55E5004D66F8 /* UIImageViewFitVC.m in Sources */,
 				6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */,
 				6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */,
+				6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */,
 				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
@@ -946,6 +1010,7 @@
 				6A587B76200764CB004D66F8 /* PolygonView.m in Sources */,
 				6A587B6720075BC6004D66F8 /* DrawFuncVC.m in Sources */,
 				6A8541111FFB34B600913301 /* VerifyImageBarCodeVC.m in Sources */,
+				6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */,
 				6A587BAA200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				6A85413D1FFB8E5200913301 /* XibView.m in Sources */,
 				6A587BFE200D911D004D66F8 /* WaterFlowModel.m in Sources */,
@@ -962,6 +1027,7 @@
 				6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */,
 				6A8540E41FFB0EC000913301 /* ViewController.m in Sources */,
 				6A85412B1FFB58CE00913301 /* GetContactMethodListVC.m in Sources */,
+				6AF8D7F2200F45EA00B4EBAA /* TestRuntimeVC.m in Sources */,
 				6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */,
 				6A8541281FFB567100913301 /* MZContactModel.m in Sources */,
 				6A587B5F200752D3004D66F8 /* DataHandleVC.m in Sources */,
@@ -975,6 +1041,7 @@
 				6A587B95200B7D76004D66F8 /* LineLabelTestVC.m in Sources */,
 				6A587BF5200D8CB9004D66F8 /* WaterFlowTestVC.m in Sources */,
 				6A8540E11FFB0EC000913301 /* AppDelegate.m in Sources */,
+				6AF8D7EB200F3E0E00B4EBAA /* TestRuntimeModel.m in Sources */,
 				6A587BAF200C4D57004D66F8 /* UILabelTextFitVC.m in Sources */,
 				6A587B7920076863004D66F8 /* RectangleView.m in Sources */,
 				6A8541211FFB53F600913301 /* MBProgressHUD+SN.m in Sources */,
@@ -983,18 +1050,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6A8540EA1FFB0EC000913301 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6A8541341FFB70FA00913301 /* Base */,
-				6A8541361FFB710100913301 /* zh-Hans */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6A8540F01FFB0EC000913301 /* Debug */ = {
@@ -1108,6 +1163,7 @@
 			baseConfigurationReference = CCB9E81D947F7ACA5A4BA113 /* Pods-StudyDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JD3VFVV9F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1117,7 +1173,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.masterzeng.StudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1126,6 +1182,7 @@
 			baseConfigurationReference = A31D7C2BD6403CB3E33BA522 /* Pods-StudyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8JD3VFVV9F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1135,7 +1192,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.masterzeng.StudyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

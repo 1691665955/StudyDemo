@@ -64,9 +64,6 @@
     scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, CGRectGetMaxY(imageView3.frame)+20);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 @end
