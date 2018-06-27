@@ -14,4 +14,13 @@
  根据颜色生成图片
  */
 + (UIImage *)getImageWithColor:(UIColor *)color;
+
+/**
+ 根据字符串和二维码图片大小来生成二维码图片
+ 
+ @param string 生成二维码的内容
+ @param size 二维码图片的大小
+ @return 二维码图片
+ */
++ (UIImage *)createBarCodeImageWithString:(NSString *)string size:(CGFloat)size;
 @end

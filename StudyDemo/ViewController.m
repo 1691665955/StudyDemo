@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MZNavigationController.h"
 //Util
 #import "BarCodeFuncVC.h"
 #import "GetContactMethodListVC.h"
@@ -14,12 +15,16 @@
 #import "DataHandleVC.h"
 #import "TestRuntimeVC.h"
 #import "SystemFuncVC.h"
+#import "PhoneNumberInputVC.h"
 
 //UI
 #import "XibViewTestVC.h"
 #import "DrawFuncVC.h"
 #import "TestAttrinuteStringTapVC.h"
 #import "ViewFitFuncVC.h"
+#import "MZTabBarController.h"
+#import "TableViewKeyboardHiddenVC.h"
+#import "OrientationVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong)NSArray *functionList;
@@ -101,6 +106,9 @@
         } else if (indexPath.row == 5) {
             SystemFuncVC *vc = [[SystemFuncVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 6) {
+            PhoneNumberInputVC *vc = [[PhoneNumberInputVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
     } else {
         if (indexPath.row == 0) {
@@ -115,6 +123,21 @@
         } else if (indexPath.row == 3) {
             ViewFitFuncVC *vc = [[ViewFitFuncVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 4) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                MZTabBarController *tabbarController = [[MZTabBarController alloc] init];
+                //系统自带转场动画
+                tabbarController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+                [self presentViewController:tabbarController animated:YES completion:nil];
+            });
+        } else if (indexPath.row == 5) {
+            TableViewKeyboardHiddenVC *vc = [[TableViewKeyboardHiddenVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 6) {
+            OrientationVC *vc = [[OrientationVC alloc] init];
+            MZNavigationController *nvc = [[MZNavigationController alloc] initWithRootViewController:vc];
+            nvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            [self presentViewController:nvc animated:YES completion:nil];
         }
     }
 }
@@ -152,8 +175,4 @@
     footerView.backgroundColor = [UIColor clearColor];
     return footerView;
 }
-
-
-
-
 @end

@@ -68,6 +68,18 @@
 		6A85413D1FFB8E5200913301 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85413C1FFB8E5200913301 /* XibView.m */; };
 		6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A85413E1FFB8E5F00913301 /* XibView.xib */; };
 		6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */; };
+		6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F5320E3266700ABD44F /* ShapeLayerAnimationVC.m */; };
+		6AC98F5820E32FFF00ABD44F /* MZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F5720E32FFF00ABD44F /* MZTabBar.m */; };
+		6AC98F5B20E3301500ABD44F /* MZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F5A20E3301500ABD44F /* MZTabBarController.m */; };
+		6AC98F5E20E3373400ABD44F /* UIView+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F5D20E3373400ABD44F /* UIView+MZTool.m */; };
+		6AC98F6120E3389E00ABD44F /* NSObject+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F6020E3389E00ABD44F /* NSObject+MZTool.m */; };
+		6AC98F6420E3391D00ABD44F /* NSDictionary+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F6320E3391D00ABD44F /* NSDictionary+MZTool.m */; };
+		6AC98F6920E33A5900ABD44F /* PhoneNumberInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F6720E33A5900ABD44F /* PhoneNumberInputVC.m */; };
+		6AC98F6A20E33A5900ABD44F /* PhoneNumberInputVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC98F6820E33A5900ABD44F /* PhoneNumberInputVC.xib */; };
+		6AC98F7120E35FD200ABD44F /* MZTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F7020E35FD200ABD44F /* MZTextField.m */; };
+		6AC98F7720E3645600ABD44F /* TableViewKeyboardHiddenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F7520E3645600ABD44F /* TableViewKeyboardHiddenVC.m */; };
+		6AC98F7820E3645600ABD44F /* TableViewKeyboardHiddenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC98F7620E3645600ABD44F /* TableViewKeyboardHiddenVC.xib */; };
+		6AC98F7C20E36B1E00ABD44F /* OrientationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */; };
 		6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */; };
 		6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B1921FFF76A500CBB30F /* ErrorXibView.m */; };
 		6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6B1941FFF76B100CBB30F /* ErrorXibView.xib */; };
@@ -204,6 +216,28 @@
 		6AC98F4B20E20DA700ABD44F /* SystemFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFuncVC.h; sourceTree = "<group>"; };
 		6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemFuncVC.m; sourceTree = "<group>"; };
 		6AC98F4F20E2177700ABD44F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6AC98F5220E3266700ABD44F /* ShapeLayerAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerAnimationVC.h; sourceTree = "<group>"; };
+		6AC98F5320E3266700ABD44F /* ShapeLayerAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerAnimationVC.m; sourceTree = "<group>"; };
+		6AC98F5620E32FFF00ABD44F /* MZTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTabBar.h; sourceTree = "<group>"; };
+		6AC98F5720E32FFF00ABD44F /* MZTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTabBar.m; sourceTree = "<group>"; };
+		6AC98F5920E3301500ABD44F /* MZTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTabBarController.h; sourceTree = "<group>"; };
+		6AC98F5A20E3301500ABD44F /* MZTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTabBarController.m; sourceTree = "<group>"; };
+		6AC98F5C20E3373400ABD44F /* UIView+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MZTool.h"; sourceTree = "<group>"; };
+		6AC98F5D20E3373400ABD44F /* UIView+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MZTool.m"; sourceTree = "<group>"; };
+		6AC98F5F20E3389E00ABD44F /* NSObject+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MZTool.h"; sourceTree = "<group>"; };
+		6AC98F6020E3389E00ABD44F /* NSObject+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MZTool.m"; sourceTree = "<group>"; };
+		6AC98F6220E3391D00ABD44F /* NSDictionary+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MZTool.h"; sourceTree = "<group>"; };
+		6AC98F6320E3391D00ABD44F /* NSDictionary+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MZTool.m"; sourceTree = "<group>"; };
+		6AC98F6620E33A5900ABD44F /* PhoneNumberInputVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumberInputVC.h; sourceTree = "<group>"; };
+		6AC98F6720E33A5900ABD44F /* PhoneNumberInputVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberInputVC.m; sourceTree = "<group>"; };
+		6AC98F6820E33A5900ABD44F /* PhoneNumberInputVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneNumberInputVC.xib; sourceTree = "<group>"; };
+		6AC98F6F20E35FD200ABD44F /* MZTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTextField.h; sourceTree = "<group>"; };
+		6AC98F7020E35FD200ABD44F /* MZTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTextField.m; sourceTree = "<group>"; };
+		6AC98F7420E3645600ABD44F /* TableViewKeyboardHiddenVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewKeyboardHiddenVC.h; sourceTree = "<group>"; };
+		6AC98F7520E3645600ABD44F /* TableViewKeyboardHiddenVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewKeyboardHiddenVC.m; sourceTree = "<group>"; };
+		6AC98F7620E3645600ABD44F /* TableViewKeyboardHiddenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewKeyboardHiddenVC.xib; sourceTree = "<group>"; };
+		6AC98F7A20E36B1E00ABD44F /* OrientationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationVC.h; sourceTree = "<group>"; };
+		6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationVC.m; sourceTree = "<group>"; };
 		6AF6B18E1FFF753D00CBB30F /* XibViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewTestVC.h; sourceTree = "<group>"; };
 		6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewTestVC.m; sourceTree = "<group>"; };
 		6AF6B1911FFF76A500CBB30F /* ErrorXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorXibView.h; sourceTree = "<group>"; };
@@ -294,6 +328,12 @@
 				6A518DC6200737D300A69E70 /* UIImage+MZTool.m */,
 				6A587B8F200B7992004D66F8 /* UILabel+MZTool.h */,
 				6A587B90200B7992004D66F8 /* UILabel+MZTool.m */,
+				6AC98F5C20E3373400ABD44F /* UIView+MZTool.h */,
+				6AC98F5D20E3373400ABD44F /* UIView+MZTool.m */,
+				6AC98F5F20E3389E00ABD44F /* NSObject+MZTool.h */,
+				6AC98F6020E3389E00ABD44F /* NSObject+MZTool.m */,
+				6AC98F6220E3391D00ABD44F /* NSDictionary+MZTool.h */,
+				6AC98F6320E3391D00ABD44F /* NSDictionary+MZTool.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -330,6 +370,7 @@
 		6A587B6420075B3B004D66F8 /* 绘图 */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F5120E3262900ABD44F /* 利用shapeLayer绘制动画 */,
 				6A0743C420233024009629E6 /* 双波浪UI */,
 				6A587B9B200C2D05004D66F8 /* 截取图片 */,
 				6A587B92200B7CC5004D66F8 /* 划掉效果的UILabel */,
@@ -582,6 +623,7 @@
 		6A8540DE1FFB0EC000913301 /* StudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F6E20E35F7200ABD44F /* Extends */,
 				6A518DC42007375E00A69E70 /* Category */,
 				6A8540FB1FFB1EC500913301 /* UI */,
 				6A8540FA1FFB1EBE00913301 /* Util */,
@@ -619,6 +661,7 @@
 		6A8540FA1FFB1EBE00913301 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F6520E339E500ABD44F /* 11位手机号码334显示 */,
 				6AC98F4A20E20D5100ABD44F /* 系统功能 */,
 				6AF8D7E8200F3DB800B4EBAA /* 关于runtime */,
 				6A587B5C20075269004D66F8 /* 数据处理 */,
@@ -633,12 +676,14 @@
 		6A8540FB1FFB1EC500913301 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F7920E36AFB00ABD44F /* 横竖屏处理 */,
+				6AC98F7320E363E600ABD44F /* 处理UITableView键盘收起 */,
+				6AC98F5520E32FAD00ABD44F /* 自定义异型UITabBarController */,
 				6A587BAB200C4CE5004D66F8 /* 试图的自适应 */,
 				6A587BA1200C473E004D66F8 /* 可点击字符串 */,
 				6A587B6420075B3B004D66F8 /* 绘图 */,
 				6A518DC0200732A900A69E70 /* 自定义NavigationController */,
 				6A85413A1FFB8DDB00913301 /* xib适配问题 */,
-				6A8541081FFB298D00913301 /* Button */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -729,6 +774,73 @@
 				6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */,
 			);
 			path = "系统功能";
+			sourceTree = "<group>";
+		};
+		6AC98F5120E3262900ABD44F /* 利用shapeLayer绘制动画 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F5220E3266700ABD44F /* ShapeLayerAnimationVC.h */,
+				6AC98F5320E3266700ABD44F /* ShapeLayerAnimationVC.m */,
+			);
+			path = "利用shapeLayer绘制动画";
+			sourceTree = "<group>";
+		};
+		6AC98F5520E32FAD00ABD44F /* 自定义异型UITabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F5620E32FFF00ABD44F /* MZTabBar.h */,
+				6AC98F5720E32FFF00ABD44F /* MZTabBar.m */,
+				6AC98F5920E3301500ABD44F /* MZTabBarController.h */,
+				6AC98F5A20E3301500ABD44F /* MZTabBarController.m */,
+			);
+			path = "自定义异型UITabBarController";
+			sourceTree = "<group>";
+		};
+		6AC98F6520E339E500ABD44F /* 11位手机号码334显示 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F6620E33A5900ABD44F /* PhoneNumberInputVC.h */,
+				6AC98F6720E33A5900ABD44F /* PhoneNumberInputVC.m */,
+				6AC98F6820E33A5900ABD44F /* PhoneNumberInputVC.xib */,
+			);
+			path = "11位手机号码334显示";
+			sourceTree = "<group>";
+		};
+		6AC98F6E20E35F7200ABD44F /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F7220E35FDC00ABD44F /* TextField */,
+				6A8541081FFB298D00913301 /* Button */,
+			);
+			path = Extends;
+			sourceTree = "<group>";
+		};
+		6AC98F7220E35FDC00ABD44F /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F6F20E35FD200ABD44F /* MZTextField.h */,
+				6AC98F7020E35FD200ABD44F /* MZTextField.m */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		6AC98F7320E363E600ABD44F /* 处理UITableView键盘收起 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F7420E3645600ABD44F /* TableViewKeyboardHiddenVC.h */,
+				6AC98F7520E3645600ABD44F /* TableViewKeyboardHiddenVC.m */,
+				6AC98F7620E3645600ABD44F /* TableViewKeyboardHiddenVC.xib */,
+			);
+			path = "处理UITableView键盘收起";
+			sourceTree = "<group>";
+		};
+		6AC98F7920E36AFB00ABD44F /* 横竖屏处理 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F7A20E36B1E00ABD44F /* OrientationVC.h */,
+				6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */,
+			);
+			path = "横竖屏处理";
 			sourceTree = "<group>";
 		};
 		6AF6B19B1FFF803400CBB30F /* JS与0C交互 */ = {
@@ -907,6 +1019,7 @@
 				6A8541131FFB359F00913301 /* barcode.png in Resources */,
 				6A587C05200D9EFD004D66F8 /* waterFlow.plist in Resources */,
 				6A587BD7200C989D004D66F8 /* testFit.html in Resources */,
+				6AC98F6A20E33A5900ABD44F /* PhoneNumberInputVC.xib in Resources */,
 				6AF7B9DF2000643200AC2015 /* index1.html in Resources */,
 				6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */,
 				6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */,
@@ -921,6 +1034,7 @@
 				6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */,
 				6A8540F71FFB13BD00913301 /* functionList.plist in Resources */,
 				6AF7B9FC200350DD00AC2015 /* index4.html in Resources */,
+				6AC98F7820E3645600ABD44F /* TableViewKeyboardHiddenVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,19 +1107,24 @@
 				6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */,
 				6A587BB9200C55E5004D66F8 /* UIImageViewFitVC.m in Sources */,
 				6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */,
+				6AC98F5820E32FFF00ABD44F /* MZTabBar.m in Sources */,
 				6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */,
 				6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */,
 				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
+				6AC98F6420E3391D00ABD44F /* NSDictionary+MZTool.m in Sources */,
 				6AF7B9E72003219E00AC2015 /* UIWebView_URL.m in Sources */,
 				6A587BBE200C8116004D66F8 /* TestFitCell.m in Sources */,
+				6AC98F7720E3645600ABD44F /* TableViewKeyboardHiddenVC.m in Sources */,
 				6AF6B1991FFF7C4E00CBB30F /* XibTestCell.m in Sources */,
 				6AF7B9F5200347A100AC2015 /* UIWebView_JSContext.m in Sources */,
 				6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */,
 				6A8540FF1FFB1F5100913301 /* ScanBarCodeVC.m in Sources */,
 				6A587C02200D9846004D66F8 /* WaterFlowTestCell.m in Sources */,
+				6AC98F7120E35FD200ABD44F /* MZTextField.m in Sources */,
 				6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */,
+				6AC98F6920E33A5900ABD44F /* PhoneNumberInputVC.m in Sources */,
 				6A587BC5200C86AF004D66F8 /* TestCellFitVC.m in Sources */,
 				6A587B76200764CB004D66F8 /* PolygonView.m in Sources */,
 				6A587B6720075BC6004D66F8 /* DrawFuncVC.m in Sources */,
@@ -1022,6 +1141,8 @@
 				6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */,
 				6AF7B9FA20034DD600AC2015 /* UIWebView_JSExport.m in Sources */,
 				6A587B7C20076971004D66F8 /* CircleView.m in Sources */,
+				6AC98F5B20E3301500ABD44F /* MZTabBarController.m in Sources */,
+				6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */,
 				6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */,
 				6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */,
 				6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */,
@@ -1034,6 +1155,8 @@
 				6AF6B19E1FFF817400CBB30F /* WKWebView_MessageHandler.m in Sources */,
 				6A587B91200B7992004D66F8 /* UILabel+MZTool.m in Sources */,
 				6A8541071FFB298500913301 /* MZButton.m in Sources */,
+				6AC98F5E20E3373400ABD44F /* UIView+MZTool.m in Sources */,
+				6AC98F7C20E36B1E00ABD44F /* OrientationVC.m in Sources */,
 				6AF7B9EE20033AE400AC2015 /* WKWebView_URL.m in Sources */,
 				6A8540EF1FFB0EC000913301 /* main.m in Sources */,
 				6A8541241FFB547A00913301 /* AddressBookController.m in Sources */,
@@ -1045,6 +1168,7 @@
 				6A587BAF200C4D57004D66F8 /* UILabelTextFitVC.m in Sources */,
 				6A587B7920076863004D66F8 /* RectangleView.m in Sources */,
 				6A8541211FFB53F600913301 /* MBProgressHUD+SN.m in Sources */,
+				6AC98F6120E3389E00ABD44F /* NSObject+MZTool.m in Sources */,
 				6A587B7320076145004D66F8 /* LineView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
