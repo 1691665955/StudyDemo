@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"11位手机号码334显示";
+    self.title = @"11位手机号码344显示";
     self.phoneNumTF.layer.borderColor = RGB(223, 223, 223).CGColor;
     UIView *leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 44)];
     self.phoneNumTF.leftViewMode = UITextFieldViewModeAlways;
