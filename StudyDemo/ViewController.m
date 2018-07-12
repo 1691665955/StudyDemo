@@ -25,6 +25,10 @@
 #import "MZTabBarController.h"
 #import "TableViewKeyboardHiddenVC.h"
 #import "OrientationVC.h"
+#import "CustomTransitionVC.h"
+
+//Test
+#import "MZTestSDWebImageVC.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong)NSArray *functionList;
@@ -110,7 +114,7 @@
             PhoneNumberInputVC *vc = [[PhoneNumberInputVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
-    } else {
+    } else if(indexPath.section == 1){
         if (indexPath.row == 0) {
             XibViewTestVC *vc = [[XibViewTestVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
@@ -138,6 +142,14 @@
             MZNavigationController *nvc = [[MZNavigationController alloc] initWithRootViewController:vc];
             nvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
             [self presentViewController:nvc animated:YES completion:nil];
+        } else if (indexPath.row == 7) {
+            CustomTransitionVC *vc = [[CustomTransitionVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+    } else {
+        if (indexPath.row == 0) {
+            MZTestSDWebImageVC *vc = [[MZTestSDWebImageVC alloc] initWithNibName:@"MZTestSDWebImageVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
         }
     }
 }

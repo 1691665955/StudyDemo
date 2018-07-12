@@ -28,6 +28,15 @@
 			<string>自定义异型UITabBarController</string>
 			<string>处理UITableView键盘收起</string>
 			<string>横竖屏处理</string>
+			<string>自定义转场动画</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Category</key>
+		<string>测试</string>
+		<key>Function</key>
+		<array>
+			<string>测试SDWebImage在UITableView中的重用</string>
 		</array>
 	</dict>
 </array>

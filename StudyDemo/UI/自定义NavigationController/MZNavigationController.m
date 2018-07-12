@@ -7,6 +7,7 @@
 //
 
 #import "MZNavigationController.h"
+#import "UIViewController+MZTool.h"
 
 @interface MZNavigationController ()<UINavigationControllerDelegate>
 @property(nonatomic,strong)UIViewController *viewController;
@@ -48,7 +49,8 @@
         }
     } else {
         //如果是present过来的
-        [self dismissViewControllerAnimated:YES completion:nil];
+//        [self dismissViewControllerAnimated:YES completion:nil];
+        [self dismiss];
     }
 }
 

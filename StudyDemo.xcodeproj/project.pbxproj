@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743C620233079009629E6 /* WaveViewTestVC.m */; };
 		6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743CA202330CB009629E6 /* MZWaveView.m */; };
+		6A26206620F7702D003F984D /* MZTestSDWebImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26206420F7702D003F984D /* MZTestSDWebImageCell.m */; };
+		6A26206720F7702D003F984D /* MZTestSDWebImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26206520F7702D003F984D /* MZTestSDWebImageCell.xib */; };
+		6A26206C20F77196003F984D /* MZTestSDWebImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */; };
+		6A26206D20F77196003F984D /* MZTestSDWebImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */; };
 		6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC22007333D00A69E70 /* MZNavigationController.m */; };
 		6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC6200737D300A69E70 /* UIImage+MZTool.m */; };
 		6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5A2007493D004D66F8 /* AboutNullVC.m */; };
@@ -80,6 +84,9 @@
 		6AC98F7720E3645600ABD44F /* TableViewKeyboardHiddenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F7520E3645600ABD44F /* TableViewKeyboardHiddenVC.m */; };
 		6AC98F7820E3645600ABD44F /* TableViewKeyboardHiddenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC98F7620E3645600ABD44F /* TableViewKeyboardHiddenVC.xib */; };
 		6AC98F7C20E36B1E00ABD44F /* OrientationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */; };
+		6AC98F8520E465C200ABD44F /* CustomTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */; };
+		6AC98F8620E465C200ABD44F /* CustomTransitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */; };
+		6AC98F8920E46B2A00ABD44F /* UIViewController+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8820E46B2A00ABD44F /* UIViewController+MZTool.m */; };
 		6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */; };
 		6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B1921FFF76A500CBB30F /* ErrorXibView.m */; };
 		6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6B1941FFF76B100CBB30F /* ErrorXibView.xib */; };
@@ -107,6 +114,12 @@
 		6A0743C620233079009629E6 /* WaveViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveViewTestVC.m; sourceTree = "<group>"; };
 		6A0743C9202330CB009629E6 /* MZWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZWaveView.h; sourceTree = "<group>"; };
 		6A0743CA202330CB009629E6 /* MZWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWaveView.m; sourceTree = "<group>"; };
+		6A26206320F7702D003F984D /* MZTestSDWebImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTestSDWebImageCell.h; sourceTree = "<group>"; };
+		6A26206420F7702D003F984D /* MZTestSDWebImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTestSDWebImageCell.m; sourceTree = "<group>"; };
+		6A26206520F7702D003F984D /* MZTestSDWebImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTestSDWebImageCell.xib; sourceTree = "<group>"; };
+		6A26206920F77196003F984D /* MZTestSDWebImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTestSDWebImageVC.h; sourceTree = "<group>"; };
+		6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTestSDWebImageVC.m; sourceTree = "<group>"; };
+		6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTestSDWebImageVC.xib; sourceTree = "<group>"; };
 		6A518DC12007333D00A69E70 /* MZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
 		6A518DC22007333D00A69E70 /* MZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
 		6A518DC5200737D300A69E70 /* UIImage+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MZTool.h"; sourceTree = "<group>"; };
@@ -238,6 +251,11 @@
 		6AC98F7620E3645600ABD44F /* TableViewKeyboardHiddenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewKeyboardHiddenVC.xib; sourceTree = "<group>"; };
 		6AC98F7A20E36B1E00ABD44F /* OrientationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrientationVC.h; sourceTree = "<group>"; };
 		6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrientationVC.m; sourceTree = "<group>"; };
+		6AC98F8220E465C200ABD44F /* CustomTransitionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransitionVC.h; sourceTree = "<group>"; };
+		6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionVC.m; sourceTree = "<group>"; };
+		6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTransitionVC.xib; sourceTree = "<group>"; };
+		6AC98F8720E46B2A00ABD44F /* UIViewController+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MZTool.h"; sourceTree = "<group>"; };
+		6AC98F8820E46B2A00ABD44F /* UIViewController+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MZTool.m"; sourceTree = "<group>"; };
 		6AF6B18E1FFF753D00CBB30F /* XibViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewTestVC.h; sourceTree = "<group>"; };
 		6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewTestVC.m; sourceTree = "<group>"; };
 		6AF6B1911FFF76A500CBB30F /* ErrorXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorXibView.h; sourceTree = "<group>"; };
@@ -310,6 +328,27 @@
 				6A0743CA202330CB009629E6 /* MZWaveView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6A26206220F76FF6003F984D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6A26206820F77035003F984D /* 测试SDWebImage在UITableView中的重用 */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		6A26206820F77035003F984D /* 测试SDWebImage在UITableView中的重用 */ = {
+			isa = PBXGroup;
+			children = (
+				6A26206320F7702D003F984D /* MZTestSDWebImageCell.h */,
+				6A26206420F7702D003F984D /* MZTestSDWebImageCell.m */,
+				6A26206520F7702D003F984D /* MZTestSDWebImageCell.xib */,
+				6A26206920F77196003F984D /* MZTestSDWebImageVC.h */,
+				6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */,
+				6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */,
+			);
+			path = "测试SDWebImage在UITableView中的重用";
 			sourceTree = "<group>";
 		};
 		6A518DC0200732A900A69E70 /* 自定义NavigationController */ = {
@@ -627,6 +666,7 @@
 				6A518DC42007375E00A69E70 /* Category */,
 				6A8540FB1FFB1EC500913301 /* UI */,
 				6A8540FA1FFB1EBE00913301 /* Util */,
+				6A26206220F76FF6003F984D /* Test */,
 				6A8540DF1FFB0EC000913301 /* AppDelegate.h */,
 				6A8540E01FFB0EC000913301 /* AppDelegate.m */,
 				6A8540E21FFB0EC000913301 /* ViewController.h */,
@@ -676,6 +716,7 @@
 		6A8540FB1FFB1EC500913301 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6AC98F7D20E4653600ABD44F /* 自定义转场动画 */,
 				6AC98F7920E36AFB00ABD44F /* 横竖屏处理 */,
 				6AC98F7320E363E600ABD44F /* 处理UITableView键盘收起 */,
 				6AC98F5520E32FAD00ABD44F /* 自定义异型UITabBarController */,
@@ -841,6 +882,18 @@
 				6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */,
 			);
 			path = "横竖屏处理";
+			sourceTree = "<group>";
+		};
+		6AC98F7D20E4653600ABD44F /* 自定义转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				6AC98F8220E465C200ABD44F /* CustomTransitionVC.h */,
+				6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */,
+				6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */,
+				6AC98F8720E46B2A00ABD44F /* UIViewController+MZTool.h */,
+				6AC98F8820E46B2A00ABD44F /* UIViewController+MZTool.m */,
+			);
+			path = "自定义转场动画";
 			sourceTree = "<group>";
 		};
 		6AF6B19B1FFF803400CBB30F /* JS与0C交互 */ = {
@@ -1023,7 +1076,9 @@
 				6AF7B9DF2000643200AC2015 /* index1.html in Resources */,
 				6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */,
 				6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */,
+				6A26206D20F77196003F984D /* MZTestSDWebImageVC.xib in Resources */,
 				6A587BC7200C886E004D66F8 /* 路飞.jpg in Resources */,
+				6AC98F8620E465C200ABD44F /* CustomTransitionVC.xib in Resources */,
 				6A8541011FFB239F00913301 /* scan.wav in Resources */,
 				6A587BD9200C9D15004D66F8 /* 孙亚龙.jpg in Resources */,
 				6AF7B9F7200348DD00AC2015 /* index3.html in Resources */,
@@ -1032,6 +1087,7 @@
 				6A587BCB200C8C7A004D66F8 /* 索隆.jpg in Resources */,
 				6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */,
 				6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */,
+				6A26206720F7702D003F984D /* MZTestSDWebImageCell.xib in Resources */,
 				6A8540F71FFB13BD00913301 /* functionList.plist in Resources */,
 				6AF7B9FC200350DD00AC2015 /* index4.html in Resources */,
 				6AC98F7820E3645600ABD44F /* TableViewKeyboardHiddenVC.xib in Resources */,
@@ -1101,6 +1157,7 @@
 			files = (
 				6A587B8720089D7D004D66F8 /* ShapeLayerMaskVC.m in Sources */,
 				6A85410E1FFB2FB600913301 /* CreateBarCodeVC.m in Sources */,
+				6A26206620F7702D003F984D /* MZTestSDWebImageCell.m in Sources */,
 				6A587BA6200C47A1004D66F8 /* TestAttrinuteStringTapVC.m in Sources */,
 				6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */,
 				6A587B6B20075CB2004D66F8 /* CreateImageWithColorVC.m in Sources */,
@@ -1111,6 +1168,7 @@
 				6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */,
 				6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */,
 				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
+				6AC98F8920E46B2A00ABD44F /* UIViewController+MZTool.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
 				6AC98F6420E3391D00ABD44F /* NSDictionary+MZTool.m in Sources */,
@@ -1125,10 +1183,12 @@
 				6AC98F7120E35FD200ABD44F /* MZTextField.m in Sources */,
 				6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */,
 				6AC98F6920E33A5900ABD44F /* PhoneNumberInputVC.m in Sources */,
+				6A26206C20F77196003F984D /* MZTestSDWebImageVC.m in Sources */,
 				6A587BC5200C86AF004D66F8 /* TestCellFitVC.m in Sources */,
 				6A587B76200764CB004D66F8 /* PolygonView.m in Sources */,
 				6A587B6720075BC6004D66F8 /* DrawFuncVC.m in Sources */,
 				6A8541111FFB34B600913301 /* VerifyImageBarCodeVC.m in Sources */,
+				6AC98F8520E465C200ABD44F /* CustomTransitionVC.m in Sources */,
 				6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */,
 				6A587BAA200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				6A85413D1FFB8E5200913301 /* XibView.m in Sources */,
