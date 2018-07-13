@@ -23,4 +23,26 @@
  @return 二维码图片
  */
 + (UIImage *)createBarCodeImageWithString:(NSString *)string size:(CGFloat)size;
+
+/**
+ 根据颜色的渐变色获取图片
+ 
+ @param frame 图片大小
+ @param startColor 起始颜色
+ @param endColor 终止颜色
+ @param startPoint 起始位置
+ @param endPoint 终止位置
+ eg:startPoint为(0,0) endPoint为(1,0)代表渐变色从左到右 startPoint为(0,0) endPoint为(0,1)代表渐变色从上到下
+ */
++ (UIImage *)createImageWithFrame:(CGRect)frame startColor:(UIColor *)startColor endColor:(UIColor *)endColor startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
+
+/**
+ base64字符串转图片
+ */
++ (UIImage *)stringToImage:(NSString *)base64String;
+
+/**
+ 图片转base64字符串
+ */
+- (NSString *)imageToBase64String;
 @end

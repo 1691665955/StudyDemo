@@ -18,4 +18,6 @@
 
 @interface MZTextField : UITextField
 @property (nonatomic, weak)id<MZTextFieldDelegate> mzDelegate;
+//最大输入字符
+@property (nonatomic, assign) NSInteger maxTextLength;
 @end

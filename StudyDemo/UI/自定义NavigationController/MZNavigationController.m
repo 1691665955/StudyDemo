@@ -7,7 +7,7 @@
 //
 
 #import "MZNavigationController.h"
-#import "UIViewController+MZTool.h"
+#import "UIViewController+MZAnimation.h"
 
 @interface MZNavigationController ()<UINavigationControllerDelegate>
 @property(nonatomic,strong)UIViewController *viewController;

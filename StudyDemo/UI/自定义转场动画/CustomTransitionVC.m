@@ -7,7 +7,7 @@
 //
 
 #import "CustomTransitionVC.h"
-#import "UIViewController+MZTool.h"
+#import "UIViewController+MZAnimation.h"
 #import "MZNavigationController.h"
 @interface CustomTransitionVC ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

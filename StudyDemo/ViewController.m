@@ -26,6 +26,7 @@
 #import "TableViewKeyboardHiddenVC.h"
 #import "OrientationVC.h"
 #import "CustomTransitionVC.h"
+#import "SearchControllerListVC.h"
 
 //Test
 #import "MZTestSDWebImageVC.h"
@@ -144,6 +145,10 @@
             [self presentViewController:nvc animated:YES completion:nil];
         } else if (indexPath.row == 7) {
             CustomTransitionVC *vc = [[CustomTransitionVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 8) {
+            //xib推荐使用这种方式初始化
+            SearchControllerListVC *vc = [[SearchControllerListVC alloc] initWithNibName:@"SearchControllerListVC" bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }
     } else {

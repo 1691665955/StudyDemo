@@ -1,5 +1,5 @@
 //
-//  UIViewController+MZTool.h
+//  UIViewController+MZAnimation.h
 //  StudyDemo
 //
 //  Created by 曾龙 on 2018/6/28.
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger,TransitionAnimationDirection) {
     TransitionAnimationDirectionRight,
     TransitionAnimationDirectionTop
 };
-@interface UIViewController (MZTool)
+@interface UIViewController (MZAnimation)
 - (void)presentViewController:(UIViewController *)viewController animationType:(TransitionAnimationType)type animationDirection:(TransitionAnimationDirection)direction duration:(NSTimeInterval)duration;
 - (void)dismiss;
 @end

@@ -65,4 +65,88 @@
     CGImageRelease(bitmapImage);
     return [UIImage imageWithCGImage:scaledImage];
 }
+
+/**
+ 根据颜色的渐变色获取图片
+ 
+ @param frame 图片大小
+ @param startColor 起始颜色
+ @param endColor 终止颜色
+ @param startPoint 起始位置
+ @param endPoint 终止位置
+ eg:startPoint为(0,0) endPoint为(1,0)代表渐变色从左到右 startPoint为(0,0) endPoint为(0,1)代表渐变色从上到下
+ */
++ (UIImage *)createImageWithFrame:(CGRect)frame startColor:(UIColor *)startColor endColor:(UIColor *)endColor startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.startPoint = startPoint;
+    gradient.endPoint = endPoint;
+    gradient.frame = frame;
+    gradient.colors = [NSArray arrayWithObjects:(id)startColor.CGColor, (id)endColor.CGColor, nil];
+    
+    //创建CGContextRef
+    UIGraphicsBeginImageContext(frame.size);
+    CGContextRef contextRef = UIGraphicsGetCurrentContext();
+    
+    //创建CGMutablePathRef
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    //绘制Path
+    CGPathMoveToPoint(path, NULL, 0, 0);
+    CGPathAddLineToPoint(path, NULL, frame.size.width, 0);
+    CGPathAddLineToPoint(path, NULL, frame.size.width, frame.size.height);
+    CGPathAddLineToPoint(path, NULL, 0, frame.size.height);
+    CGPathCloseSubpath(path);
+    [self drawLinearGradient:contextRef path:path startColor:startColor.CGColor endColor:endColor.CGColor startPoint:startPoint endPoint:endPoint];
+    CGPathRelease(path);
+    
+    //从Context中获取图像
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
++ (void)drawLinearGradient:(CGContextRef)context path:(CGPathRef)path startColor:(CGColorRef)startColor endColor:(CGColorRef)endColor startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
+    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGFloat locations[] = { 0.0, 1.0 };
+    
+    NSArray *colors = @[(__bridge id) startColor, (__bridge id) endColor];
+    
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef) colors, locations);
+    
+    
+    CGRect pathRect = CGPathGetBoundingBox(path);
+    
+    //具体方向可根据需求修改
+    startPoint = CGPointMake(pathRect.size.width*startPoint.x, pathRect.size.height*startPoint.y);
+    endPoint = CGPointMake(pathRect.size.width*endPoint.x, pathRect.size.height*endPoint.y);
+    
+    CGContextSaveGState(context);
+    CGContextAddPath(context, path);
+    CGContextClip(context);
+    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, 0);
+    CGContextRestoreGState(context);
+    
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+}
+
+/**
+ base64字符串转图片
+ */
++ (UIImage *)stringToImage:(NSString *)base64String {
+    NSData * imageData =[[NSData alloc] initWithBase64EncodedString:base64String options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    UIImage *image = [UIImage imageWithData:imageData];
+    return image;
+}
+
+/**
+ 图片转base64字符串
+ */
+- (NSString *)imageToBase64String {
+    NSData *imagedata = UIImagePNGRepresentation(self);
+    NSString *base64String = [imagedata base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    return base64String;
+}
 @end

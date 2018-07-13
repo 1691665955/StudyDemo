@@ -1,14 +1,14 @@
 //
-//  UIViewController+MZTool.m
+//  UIViewController+MZAnimation.m
 //  StudyDemo
 //
 //  Created by 曾龙 on 2018/6/28.
 //  Copyright © 2018年 曾龙. All rights reserved.
 //
 
-#import "UIViewController+MZTool.h"
+#import "UIViewController+MZAnimation.h"
 #import <objc/runtime.h>
-@implementation UIViewController (MZTool)
+@implementation UIViewController (MZAnimation)
 - (void)presentViewController:(UIViewController *)viewController animationType:(TransitionAnimationType)type animationDirection:(TransitionAnimationDirection)direction duration:(NSTimeInterval)duration {
     CATransition *animation = [CATransition animation];
     animation.duration = duration ? duration : 1.0f;

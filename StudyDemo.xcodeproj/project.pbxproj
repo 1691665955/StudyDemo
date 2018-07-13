@@ -9,10 +9,26 @@
 /* Begin PBXBuildFile section */
 		6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743C620233079009629E6 /* WaveViewTestVC.m */; };
 		6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743CA202330CB009629E6 /* MZWaveView.m */; };
-		6A26206620F7702D003F984D /* MZTestSDWebImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26206420F7702D003F984D /* MZTestSDWebImageCell.m */; };
-		6A26206720F7702D003F984D /* MZTestSDWebImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26206520F7702D003F984D /* MZTestSDWebImageCell.xib */; };
+		6A12BF4F20F842C8009573C6 /* SearchControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF4D20F842C8009573C6 /* SearchControllerCell.m */; };
+		6A12BF5020F842C8009573C6 /* SearchControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF4E20F842C8009573C6 /* SearchControllerCell.xib */; };
+		6A12BF5420F844B8009573C6 /* SearchControllerListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF5220F844B8009573C6 /* SearchControllerListVC.m */; };
+		6A12BF5520F844B8009573C6 /* SearchControllerListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF5320F844B8009573C6 /* SearchControllerListVC.xib */; };
+		6A12BF5A20F84C36009573C6 /* SearchControllerVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF5820F84C36009573C6 /* SearchControllerVC2.m */; };
+		6A12BF5B20F84C36009573C6 /* SearchControllerVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF5920F84C36009573C6 /* SearchControllerVC2.xib */; };
+		6A12BF5F20F84CC9009573C6 /* SearchResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF5D20F84CC9009573C6 /* SearchResultVC.m */; };
+		6A12BF6020F84CC9009573C6 /* SearchResultVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF5E20F84CC9009573C6 /* SearchResultVC.xib */; };
+		6A12BF6520F856D3009573C6 /* SearchControllerVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF6320F856D3009573C6 /* SearchControllerVC3.m */; };
+		6A12BF6620F856D3009573C6 /* SearchControllerVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF6420F856D3009573C6 /* SearchControllerVC3.xib */; };
+		6A12BF6A20F87476009573C6 /* MZRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF6920F87476009573C6 /* MZRSA.m */; };
+		6A12BF6D20F8760A009573C6 /* NSString+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF6C20F8760A009573C6 /* NSString+MZTool.m */; };
+		6A12BF7020F87735009573C6 /* UIViewController+MZAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF6F20F87735009573C6 /* UIViewController+MZAlert.m */; };
+		6A12BF7920F899CF009573C6 /* NSObject+MZDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7720F899CF009573C6 /* NSObject+MZDate.m */; };
+		6A12BF7D20F89B4D009573C6 /* MZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7C20F89B4D009573C6 /* MZTextView.m */; };
+		6A12BF8020F89C32009573C6 /* UIButton+TDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7F20F89C32009573C6 /* UIButton+TDTool.m */; };
 		6A26206C20F77196003F984D /* MZTestSDWebImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */; };
 		6A26206D20F77196003F984D /* MZTestSDWebImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */; };
+		6A26207320F84033003F984D /* SearchControllerVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26207120F84033003F984D /* SearchControllerVC1.m */; };
+		6A26207420F84033003F984D /* SearchControllerVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26207220F84033003F984D /* SearchControllerVC1.xib */; };
 		6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC22007333D00A69E70 /* MZNavigationController.m */; };
 		6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC6200737D300A69E70 /* UIImage+MZTool.m */; };
 		6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5A2007493D004D66F8 /* AboutNullVC.m */; };
@@ -86,7 +102,7 @@
 		6AC98F7C20E36B1E00ABD44F /* OrientationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F7B20E36B1E00ABD44F /* OrientationVC.m */; };
 		6AC98F8520E465C200ABD44F /* CustomTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */; };
 		6AC98F8620E465C200ABD44F /* CustomTransitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */; };
-		6AC98F8920E46B2A00ABD44F /* UIViewController+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8820E46B2A00ABD44F /* UIViewController+MZTool.m */; };
+		6AC98F8920E46B2A00ABD44F /* UIViewController+MZAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */; };
 		6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */; };
 		6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B1921FFF76A500CBB30F /* ErrorXibView.m */; };
 		6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6B1941FFF76B100CBB30F /* ErrorXibView.xib */; };
@@ -114,12 +130,39 @@
 		6A0743C620233079009629E6 /* WaveViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveViewTestVC.m; sourceTree = "<group>"; };
 		6A0743C9202330CB009629E6 /* MZWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZWaveView.h; sourceTree = "<group>"; };
 		6A0743CA202330CB009629E6 /* MZWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWaveView.m; sourceTree = "<group>"; };
-		6A26206320F7702D003F984D /* MZTestSDWebImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTestSDWebImageCell.h; sourceTree = "<group>"; };
-		6A26206420F7702D003F984D /* MZTestSDWebImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTestSDWebImageCell.m; sourceTree = "<group>"; };
-		6A26206520F7702D003F984D /* MZTestSDWebImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTestSDWebImageCell.xib; sourceTree = "<group>"; };
+		6A12BF4C20F842C8009573C6 /* SearchControllerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchControllerCell.h; sourceTree = "<group>"; };
+		6A12BF4D20F842C8009573C6 /* SearchControllerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerCell.m; sourceTree = "<group>"; };
+		6A12BF4E20F842C8009573C6 /* SearchControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchControllerCell.xib; sourceTree = "<group>"; };
+		6A12BF5120F844B8009573C6 /* SearchControllerListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchControllerListVC.h; sourceTree = "<group>"; };
+		6A12BF5220F844B8009573C6 /* SearchControllerListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerListVC.m; sourceTree = "<group>"; };
+		6A12BF5320F844B8009573C6 /* SearchControllerListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchControllerListVC.xib; sourceTree = "<group>"; };
+		6A12BF5720F84C36009573C6 /* SearchControllerVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchControllerVC2.h; sourceTree = "<group>"; };
+		6A12BF5820F84C36009573C6 /* SearchControllerVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerVC2.m; sourceTree = "<group>"; };
+		6A12BF5920F84C36009573C6 /* SearchControllerVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchControllerVC2.xib; sourceTree = "<group>"; };
+		6A12BF5C20F84CC9009573C6 /* SearchResultVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultVC.h; sourceTree = "<group>"; };
+		6A12BF5D20F84CC9009573C6 /* SearchResultVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultVC.m; sourceTree = "<group>"; };
+		6A12BF5E20F84CC9009573C6 /* SearchResultVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultVC.xib; sourceTree = "<group>"; };
+		6A12BF6220F856D3009573C6 /* SearchControllerVC3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchControllerVC3.h; sourceTree = "<group>"; };
+		6A12BF6320F856D3009573C6 /* SearchControllerVC3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerVC3.m; sourceTree = "<group>"; };
+		6A12BF6420F856D3009573C6 /* SearchControllerVC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchControllerVC3.xib; sourceTree = "<group>"; };
+		6A12BF6820F87476009573C6 /* MZRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZRSA.h; sourceTree = "<group>"; };
+		6A12BF6920F87476009573C6 /* MZRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZRSA.m; sourceTree = "<group>"; };
+		6A12BF6B20F8760A009573C6 /* NSString+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MZTool.h"; sourceTree = "<group>"; };
+		6A12BF6C20F8760A009573C6 /* NSString+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MZTool.m"; sourceTree = "<group>"; };
+		6A12BF6E20F87735009573C6 /* UIViewController+MZAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MZAlert.h"; sourceTree = "<group>"; };
+		6A12BF6F20F87735009573C6 /* UIViewController+MZAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MZAlert.m"; sourceTree = "<group>"; };
+		6A12BF7720F899CF009573C6 /* NSObject+MZDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MZDate.m"; sourceTree = "<group>"; };
+		6A12BF7820F899CF009573C6 /* NSObject+MZDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MZDate.h"; sourceTree = "<group>"; };
+		6A12BF7B20F89B4D009573C6 /* MZTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTextView.h; sourceTree = "<group>"; };
+		6A12BF7C20F89B4D009573C6 /* MZTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTextView.m; sourceTree = "<group>"; };
+		6A12BF7E20F89C32009573C6 /* UIButton+TDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TDTool.h"; sourceTree = "<group>"; };
+		6A12BF7F20F89C32009573C6 /* UIButton+TDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TDTool.m"; sourceTree = "<group>"; };
 		6A26206920F77196003F984D /* MZTestSDWebImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTestSDWebImageVC.h; sourceTree = "<group>"; };
 		6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTestSDWebImageVC.m; sourceTree = "<group>"; };
 		6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTestSDWebImageVC.xib; sourceTree = "<group>"; };
+		6A26207020F84033003F984D /* SearchControllerVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchControllerVC1.h; sourceTree = "<group>"; };
+		6A26207120F84033003F984D /* SearchControllerVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerVC1.m; sourceTree = "<group>"; };
+		6A26207220F84033003F984D /* SearchControllerVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchControllerVC1.xib; sourceTree = "<group>"; };
 		6A518DC12007333D00A69E70 /* MZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
 		6A518DC22007333D00A69E70 /* MZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
 		6A518DC5200737D300A69E70 /* UIImage+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+MZTool.h"; sourceTree = "<group>"; };
@@ -254,8 +297,8 @@
 		6AC98F8220E465C200ABD44F /* CustomTransitionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransitionVC.h; sourceTree = "<group>"; };
 		6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionVC.m; sourceTree = "<group>"; };
 		6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTransitionVC.xib; sourceTree = "<group>"; };
-		6AC98F8720E46B2A00ABD44F /* UIViewController+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MZTool.h"; sourceTree = "<group>"; };
-		6AC98F8820E46B2A00ABD44F /* UIViewController+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MZTool.m"; sourceTree = "<group>"; };
+		6AC98F8720E46B2A00ABD44F /* UIViewController+MZAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MZAnimation.h"; sourceTree = "<group>"; };
+		6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MZAnimation.m"; sourceTree = "<group>"; };
 		6AF6B18E1FFF753D00CBB30F /* XibViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewTestVC.h; sourceTree = "<group>"; };
 		6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewTestVC.m; sourceTree = "<group>"; };
 		6AF6B1911FFF76A500CBB30F /* ErrorXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorXibView.h; sourceTree = "<group>"; };
@@ -330,25 +373,97 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6A12BF5620F84B8A009573C6 /* 方式二 */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BF5720F84C36009573C6 /* SearchControllerVC2.h */,
+				6A12BF5820F84C36009573C6 /* SearchControllerVC2.m */,
+				6A12BF5920F84C36009573C6 /* SearchControllerVC2.xib */,
+				6A12BF5C20F84CC9009573C6 /* SearchResultVC.h */,
+				6A12BF5D20F84CC9009573C6 /* SearchResultVC.m */,
+				6A12BF5E20F84CC9009573C6 /* SearchResultVC.xib */,
+			);
+			path = "方式二";
+			sourceTree = "<group>";
+		};
+		6A12BF6120F856B5009573C6 /* 方式三 */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BF6220F856D3009573C6 /* SearchControllerVC3.h */,
+				6A12BF6320F856D3009573C6 /* SearchControllerVC3.m */,
+				6A12BF6420F856D3009573C6 /* SearchControllerVC3.xib */,
+			);
+			path = "方式三";
+			sourceTree = "<group>";
+		};
+		6A12BF6720F87457009573C6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BF6820F87476009573C6 /* MZRSA.h */,
+				6A12BF6920F87476009573C6 /* MZRSA.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		6A12BF7A20F89B27009573C6 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BF7B20F89B4D009573C6 /* MZTextView.h */,
+				6A12BF7C20F89B4D009573C6 /* MZTextView.m */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
 		6A26206220F76FF6003F984D /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				6A26206820F77035003F984D /* 测试SDWebImage在UITableView中的重用 */,
+				6A26206820F77035003F984D /* 测试 */,
 			);
 			path = Test;
 			sourceTree = "<group>";
 		};
-		6A26206820F77035003F984D /* 测试SDWebImage在UITableView中的重用 */ = {
+		6A26206820F77035003F984D /* 测试 */ = {
 			isa = PBXGroup;
 			children = (
-				6A26206320F7702D003F984D /* MZTestSDWebImageCell.h */,
-				6A26206420F7702D003F984D /* MZTestSDWebImageCell.m */,
-				6A26206520F7702D003F984D /* MZTestSDWebImageCell.xib */,
 				6A26206920F77196003F984D /* MZTestSDWebImageVC.h */,
 				6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */,
 				6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */,
 			);
-			path = "测试SDWebImage在UITableView中的重用";
+			path = "测试";
+			sourceTree = "<group>";
+		};
+		6A26206E20F83FAD003F984D /* UISearchController使用 */ = {
+			isa = PBXGroup;
+			children = (
+				6A26207A20F8405D003F984D /* View */,
+				6A26206F20F83FE4003F984D /* 方式一 */,
+				6A12BF5620F84B8A009573C6 /* 方式二 */,
+				6A12BF6120F856B5009573C6 /* 方式三 */,
+				6A12BF5120F844B8009573C6 /* SearchControllerListVC.h */,
+				6A12BF5220F844B8009573C6 /* SearchControllerListVC.m */,
+				6A12BF5320F844B8009573C6 /* SearchControllerListVC.xib */,
+			);
+			path = "UISearchController使用";
+			sourceTree = "<group>";
+		};
+		6A26206F20F83FE4003F984D /* 方式一 */ = {
+			isa = PBXGroup;
+			children = (
+				6A26207020F84033003F984D /* SearchControllerVC1.h */,
+				6A26207120F84033003F984D /* SearchControllerVC1.m */,
+				6A26207220F84033003F984D /* SearchControllerVC1.xib */,
+			);
+			path = "方式一";
+			sourceTree = "<group>";
+		};
+		6A26207A20F8405D003F984D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BF4C20F842C8009573C6 /* SearchControllerCell.h */,
+				6A12BF4D20F842C8009573C6 /* SearchControllerCell.m */,
+				6A12BF4E20F842C8009573C6 /* SearchControllerCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6A518DC0200732A900A69E70 /* 自定义NavigationController */ = {
@@ -373,6 +488,14 @@
 				6AC98F6020E3389E00ABD44F /* NSObject+MZTool.m */,
 				6AC98F6220E3391D00ABD44F /* NSDictionary+MZTool.h */,
 				6AC98F6320E3391D00ABD44F /* NSDictionary+MZTool.m */,
+				6A12BF6B20F8760A009573C6 /* NSString+MZTool.h */,
+				6A12BF6C20F8760A009573C6 /* NSString+MZTool.m */,
+				6A12BF6E20F87735009573C6 /* UIViewController+MZAlert.h */,
+				6A12BF6F20F87735009573C6 /* UIViewController+MZAlert.m */,
+				6A12BF7820F899CF009573C6 /* NSObject+MZDate.h */,
+				6A12BF7720F899CF009573C6 /* NSObject+MZDate.m */,
+				6A12BF7E20F89C32009573C6 /* UIButton+TDTool.h */,
+				6A12BF7F20F89C32009573C6 /* UIButton+TDTool.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -662,6 +785,7 @@
 		6A8540DE1FFB0EC000913301 /* StudyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6A12BF6720F87457009573C6 /* Tool */,
 				6AC98F6E20E35F7200ABD44F /* Extends */,
 				6A518DC42007375E00A69E70 /* Category */,
 				6A8540FB1FFB1EC500913301 /* UI */,
@@ -716,6 +840,7 @@
 		6A8540FB1FFB1EC500913301 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6A26206E20F83FAD003F984D /* UISearchController使用 */,
 				6AC98F7D20E4653600ABD44F /* 自定义转场动画 */,
 				6AC98F7920E36AFB00ABD44F /* 横竖屏处理 */,
 				6AC98F7320E363E600ABD44F /* 处理UITableView键盘收起 */,
@@ -850,6 +975,7 @@
 		6AC98F6E20E35F7200ABD44F /* Extends */ = {
 			isa = PBXGroup;
 			children = (
+				6A12BF7A20F89B27009573C6 /* TextView */,
 				6AC98F7220E35FDC00ABD44F /* TextField */,
 				6A8541081FFB298D00913301 /* Button */,
 			);
@@ -890,8 +1016,8 @@
 				6AC98F8220E465C200ABD44F /* CustomTransitionVC.h */,
 				6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */,
 				6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */,
-				6AC98F8720E46B2A00ABD44F /* UIViewController+MZTool.h */,
-				6AC98F8820E46B2A00ABD44F /* UIViewController+MZTool.m */,
+				6AC98F8720E46B2A00ABD44F /* UIViewController+MZAnimation.h */,
+				6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */,
 			);
 			path = "自定义转场动画";
 			sourceTree = "<group>";
@@ -1070,24 +1196,29 @@
 			files = (
 				6A587BA0200C2E34004D66F8 /* 艾斯.jpg in Resources */,
 				6A8541131FFB359F00913301 /* barcode.png in Resources */,
+				6A26207420F84033003F984D /* SearchControllerVC1.xib in Resources */,
 				6A587C05200D9EFD004D66F8 /* waterFlow.plist in Resources */,
 				6A587BD7200C989D004D66F8 /* testFit.html in Resources */,
 				6AC98F6A20E33A5900ABD44F /* PhoneNumberInputVC.xib in Resources */,
+				6A12BF6620F856D3009573C6 /* SearchControllerVC3.xib in Resources */,
 				6AF7B9DF2000643200AC2015 /* index1.html in Resources */,
 				6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */,
 				6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */,
 				6A26206D20F77196003F984D /* MZTestSDWebImageVC.xib in Resources */,
+				6A12BF6020F84CC9009573C6 /* SearchResultVC.xib in Resources */,
 				6A587BC7200C886E004D66F8 /* 路飞.jpg in Resources */,
 				6AC98F8620E465C200ABD44F /* CustomTransitionVC.xib in Resources */,
 				6A8541011FFB239F00913301 /* scan.wav in Resources */,
+				6A12BF5B20F84C36009573C6 /* SearchControllerVC2.xib in Resources */,
 				6A587BD9200C9D15004D66F8 /* 孙亚龙.jpg in Resources */,
 				6AF7B9F7200348DD00AC2015 /* index3.html in Resources */,
 				6AF6B19A1FFF7C4E00CBB30F /* XibTestCell.xib in Resources */,
 				6AF7B9EB20032E5E00AC2015 /* index2.html in Resources */,
 				6A587BCB200C8C7A004D66F8 /* 索隆.jpg in Resources */,
+				6A12BF5520F844B8009573C6 /* SearchControllerListVC.xib in Resources */,
 				6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */,
+				6A12BF5020F842C8009573C6 /* SearchControllerCell.xib in Resources */,
 				6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */,
-				6A26206720F7702D003F984D /* MZTestSDWebImageCell.xib in Resources */,
 				6A8540F71FFB13BD00913301 /* functionList.plist in Resources */,
 				6AF7B9FC200350DD00AC2015 /* index4.html in Resources */,
 				6AC98F7820E3645600ABD44F /* TableViewKeyboardHiddenVC.xib in Resources */,
@@ -1157,7 +1288,6 @@
 			files = (
 				6A587B8720089D7D004D66F8 /* ShapeLayerMaskVC.m in Sources */,
 				6A85410E1FFB2FB600913301 /* CreateBarCodeVC.m in Sources */,
-				6A26206620F7702D003F984D /* MZTestSDWebImageCell.m in Sources */,
 				6A587BA6200C47A1004D66F8 /* TestAttrinuteStringTapVC.m in Sources */,
 				6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */,
 				6A587B6B20075CB2004D66F8 /* CreateImageWithColorVC.m in Sources */,
@@ -1168,13 +1298,15 @@
 				6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */,
 				6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */,
 				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
-				6AC98F8920E46B2A00ABD44F /* UIViewController+MZTool.m in Sources */,
+				6AC98F8920E46B2A00ABD44F /* UIViewController+MZAnimation.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
 				6AC98F6420E3391D00ABD44F /* NSDictionary+MZTool.m in Sources */,
 				6AF7B9E72003219E00AC2015 /* UIWebView_URL.m in Sources */,
 				6A587BBE200C8116004D66F8 /* TestFitCell.m in Sources */,
 				6AC98F7720E3645600ABD44F /* TableViewKeyboardHiddenVC.m in Sources */,
+				6A12BF5A20F84C36009573C6 /* SearchControllerVC2.m in Sources */,
+				6A26207320F84033003F984D /* SearchControllerVC1.m in Sources */,
 				6AF6B1991FFF7C4E00CBB30F /* XibTestCell.m in Sources */,
 				6AF7B9F5200347A100AC2015 /* UIWebView_JSContext.m in Sources */,
 				6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */,
@@ -1183,6 +1315,7 @@
 				6AC98F7120E35FD200ABD44F /* MZTextField.m in Sources */,
 				6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */,
 				6AC98F6920E33A5900ABD44F /* PhoneNumberInputVC.m in Sources */,
+				6A12BF8020F89C32009573C6 /* UIButton+TDTool.m in Sources */,
 				6A26206C20F77196003F984D /* MZTestSDWebImageVC.m in Sources */,
 				6A587BC5200C86AF004D66F8 /* TestCellFitVC.m in Sources */,
 				6A587B76200764CB004D66F8 /* PolygonView.m in Sources */,
@@ -1190,7 +1323,11 @@
 				6A8541111FFB34B600913301 /* VerifyImageBarCodeVC.m in Sources */,
 				6AC98F8520E465C200ABD44F /* CustomTransitionVC.m in Sources */,
 				6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */,
+				6A12BF6D20F8760A009573C6 /* NSString+MZTool.m in Sources */,
+				6A12BF4F20F842C8009573C6 /* SearchControllerCell.m in Sources */,
 				6A587BAA200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m in Sources */,
+				6A12BF6520F856D3009573C6 /* SearchControllerVC3.m in Sources */,
+				6A12BF7920F899CF009573C6 /* NSObject+MZDate.m in Sources */,
 				6A85413D1FFB8E5200913301 /* XibView.m in Sources */,
 				6A587BFE200D911D004D66F8 /* WaterFlowModel.m in Sources */,
 				6A587BFB200D8D50004D66F8 /* MZWaterFlowLayout.m in Sources */,
@@ -1205,7 +1342,10 @@
 				6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */,
 				6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */,
 				6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */,
+				6A12BF7D20F89B4D009573C6 /* MZTextView.m in Sources */,
 				6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */,
+				6A12BF6A20F87476009573C6 /* MZRSA.m in Sources */,
+				6A12BF5420F844B8009573C6 /* SearchControllerListVC.m in Sources */,
 				6A8540E41FFB0EC000913301 /* ViewController.m in Sources */,
 				6A85412B1FFB58CE00913301 /* GetContactMethodListVC.m in Sources */,
 				6AF8D7F2200F45EA00B4EBAA /* TestRuntimeVC.m in Sources */,
@@ -1224,7 +1364,9 @@
 				6A587B95200B7D76004D66F8 /* LineLabelTestVC.m in Sources */,
 				6A587BF5200D8CB9004D66F8 /* WaterFlowTestVC.m in Sources */,
 				6A8540E11FFB0EC000913301 /* AppDelegate.m in Sources */,
+				6A12BF5F20F84CC9009573C6 /* SearchResultVC.m in Sources */,
 				6AF8D7EB200F3E0E00B4EBAA /* TestRuntimeModel.m in Sources */,
+				6A12BF7020F87735009573C6 /* UIViewController+MZAlert.m in Sources */,
 				6A587BAF200C4D57004D66F8 /* UILabelTextFitVC.m in Sources */,
 				6A587B7920076863004D66F8 /* RectangleView.m in Sources */,
 				6A8541211FFB53F600913301 /* MBProgressHUD+SN.m in Sources */,
