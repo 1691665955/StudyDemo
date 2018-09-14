@@ -28,7 +28,7 @@
     if ([rootVC presentedViewController]) {
         // 视图是被presented出来的
         
-        rootVC = [rootVC presentedViewController];
+        return [self getCurrentVCFrom:[rootVC presentedViewController]];
     }
     
     if ([rootVC isKindOfClass:[UITabBarController class]]) {

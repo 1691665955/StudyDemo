@@ -11,7 +11,7 @@
 @implementation UIViewController (MZAnimation)
 - (void)presentViewController:(UIViewController *)viewController animationType:(TransitionAnimationType)type animationDirection:(TransitionAnimationDirection)direction duration:(NSTimeInterval)duration {
     CATransition *animation = [CATransition animation];
-    animation.duration = duration ? duration : 1.0f;
+    animation.duration = duration ? duration : 0.3f;
     NSString *animationType = kCATransitionFade;
     NSString *animationSubType = kCATransitionFromLeft;
     switch (type) {

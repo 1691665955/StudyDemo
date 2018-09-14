@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol MZNavigationControllerDelegate<NSObject>
+@optional
+- (void)navigationBackHandle;
+- (BOOL)navigationHiddenBackBtn;
+@end
 
 @interface MZNavigationController : UINavigationController
-
+@property (nonatomic, weak) id<MZNavigationControllerDelegate> mzDelegate;
 @end

@@ -27,6 +27,7 @@
 #import "OrientationVC.h"
 #import "CustomTransitionVC.h"
 #import "SearchControllerListVC.h"
+#import "TestPayVC.h"
 
 //Test
 #import "MZTestSDWebImageVC.h"
@@ -149,6 +150,9 @@
         } else if (indexPath.row == 8) {
             //xib推荐使用这种方式初始化
             SearchControllerListVC *vc = [[SearchControllerListVC alloc] initWithNibName:@"SearchControllerListVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 9) {
+            TestPayVC *vc = [[TestPayVC alloc] initWithNibName:@"TestPayVC" bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }
     } else {

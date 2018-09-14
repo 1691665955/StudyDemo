@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743C620233079009629E6 /* WaveViewTestVC.m */; };
 		6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0743CA202330CB009629E6 /* MZWaveView.m */; };
+		6A09B18B2102E065006C818D /* HKTransitionPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B1872102E064006C818D /* HKTransitionPush.m */; };
+		6A09B18C2102E065006C818D /* HKTransitionPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B1882102E064006C818D /* HKTransitionPop.m */; };
 		6A12BF4F20F842C8009573C6 /* SearchControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF4D20F842C8009573C6 /* SearchControllerCell.m */; };
 		6A12BF5020F842C8009573C6 /* SearchControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF4E20F842C8009573C6 /* SearchControllerCell.xib */; };
 		6A12BF5420F844B8009573C6 /* SearchControllerListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF5220F844B8009573C6 /* SearchControllerListVC.m */; };
@@ -24,7 +26,12 @@
 		6A12BF7020F87735009573C6 /* UIViewController+MZAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF6F20F87735009573C6 /* UIViewController+MZAlert.m */; };
 		6A12BF7920F899CF009573C6 /* NSObject+MZDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7720F899CF009573C6 /* NSObject+MZDate.m */; };
 		6A12BF7D20F89B4D009573C6 /* MZTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7C20F89B4D009573C6 /* MZTextView.m */; };
-		6A12BF8020F89C32009573C6 /* UIButton+TDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7F20F89C32009573C6 /* UIButton+TDTool.m */; };
+		6A12BF8020F89C32009573C6 /* UIButton+MZTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF7F20F89C32009573C6 /* UIButton+MZTool.m */; };
+		6A12BF8420FB2612009573C6 /* MZShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF8320FB2612009573C6 /* MZShadowController.m */; };
+		6A12BF8820FB27DE009573C6 /* MZPayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF8620FB27DE009573C6 /* MZPayVC.m */; };
+		6A12BF8920FB27DE009573C6 /* MZPayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF8720FB27DE009573C6 /* MZPayVC.xib */; };
+		6A12BF8D20FB2BDC009573C6 /* TestPayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF8B20FB2BDC009573C6 /* TestPayVC.m */; };
+		6A12BF8E20FB2BDC009573C6 /* TestPayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF8C20FB2BDC009573C6 /* TestPayVC.xib */; };
 		6A26206C20F77196003F984D /* MZTestSDWebImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */; };
 		6A26206D20F77196003F984D /* MZTestSDWebImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */; };
 		6A26207320F84033003F984D /* SearchControllerVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A26207120F84033003F984D /* SearchControllerVC1.m */; };
@@ -75,7 +82,6 @@
 		6A8540F71FFB13BD00913301 /* functionList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A8540F61FFB13BD00913301 /* functionList.plist */; };
 		6A8540FF1FFB1F5100913301 /* ScanBarCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8540FE1FFB1F5100913301 /* ScanBarCodeVC.m */; };
 		6A8541011FFB239F00913301 /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A8541001FFB239F00913301 /* scan.wav */; };
-		6A8541071FFB298500913301 /* MZButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8541061FFB298500913301 /* MZButton.m */; };
 		6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85410A1FFB2D2500913301 /* BarCodeFuncVC.m */; };
 		6A85410E1FFB2FB600913301 /* CreateBarCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85410D1FFB2FB600913301 /* CreateBarCodeVC.m */; };
 		6A8541111FFB34B600913301 /* VerifyImageBarCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8541101FFB34B600913301 /* VerifyImageBarCodeVC.m */; };
@@ -87,6 +93,9 @@
 		6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85412D1FFB670700913301 /* ContactsUIVC.m */; };
 		6A85413D1FFB8E5200913301 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85413C1FFB8E5200913301 /* XibView.m */; };
 		6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A85413E1FFB8E5F00913301 /* XibView.xib */; };
+		6AA03CF021251CF500A68B12 /* UIButton+MZTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA03CEF21251CF500A68B12 /* UIButton+MZTouch.m */; };
+		6AB35C462133A223007CC480 /* MZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB35C442133A223007CC480 /* MZTableView.m */; };
+		6AB35C4E2133AAE7007CC480 /* MZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB35C4D2133AAE7007CC480 /* MZBannerView.m */; };
 		6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */; };
 		6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F5320E3266700ABD44F /* ShapeLayerAnimationVC.m */; };
 		6AC98F5820E32FFF00ABD44F /* MZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F5720E32FFF00ABD44F /* MZTabBar.m */; };
@@ -103,6 +112,8 @@
 		6AC98F8520E465C200ABD44F /* CustomTransitionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8320E465C200ABD44F /* CustomTransitionVC.m */; };
 		6AC98F8620E465C200ABD44F /* CustomTransitionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */; };
 		6AC98F8920E46B2A00ABD44F /* UIViewController+MZAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */; };
+		6ADF9BB3214B9FE200ABFE71 /* MZMobileField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF9BB2214B9FE200ABFE71 /* MZMobileField.m */; };
+		6ADF9BB7214BA5F700ABFE71 /* MZMarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF9BB6214BA5F700ABFE71 /* MZMarqueeLabel.m */; };
 		6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */; };
 		6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B1921FFF76A500CBB30F /* ErrorXibView.m */; };
 		6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6B1941FFF76B100CBB30F /* ErrorXibView.xib */; };
@@ -130,6 +141,10 @@
 		6A0743C620233079009629E6 /* WaveViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveViewTestVC.m; sourceTree = "<group>"; };
 		6A0743C9202330CB009629E6 /* MZWaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZWaveView.h; sourceTree = "<group>"; };
 		6A0743CA202330CB009629E6 /* MZWaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZWaveView.m; sourceTree = "<group>"; };
+		6A09B1872102E064006C818D /* HKTransitionPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTransitionPush.m; sourceTree = "<group>"; };
+		6A09B1882102E064006C818D /* HKTransitionPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTransitionPop.m; sourceTree = "<group>"; };
+		6A09B1892102E064006C818D /* HKTransitionPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTransitionPush.h; sourceTree = "<group>"; };
+		6A09B18A2102E064006C818D /* HKTransitionPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTransitionPop.h; sourceTree = "<group>"; };
 		6A12BF4C20F842C8009573C6 /* SearchControllerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchControllerCell.h; sourceTree = "<group>"; };
 		6A12BF4D20F842C8009573C6 /* SearchControllerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchControllerCell.m; sourceTree = "<group>"; };
 		6A12BF4E20F842C8009573C6 /* SearchControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchControllerCell.xib; sourceTree = "<group>"; };
@@ -155,8 +170,16 @@
 		6A12BF7820F899CF009573C6 /* NSObject+MZDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MZDate.h"; sourceTree = "<group>"; };
 		6A12BF7B20F89B4D009573C6 /* MZTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTextView.h; sourceTree = "<group>"; };
 		6A12BF7C20F89B4D009573C6 /* MZTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTextView.m; sourceTree = "<group>"; };
-		6A12BF7E20F89C32009573C6 /* UIButton+TDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TDTool.h"; sourceTree = "<group>"; };
-		6A12BF7F20F89C32009573C6 /* UIButton+TDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TDTool.m"; sourceTree = "<group>"; };
+		6A12BF7E20F89C32009573C6 /* UIButton+MZTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MZTool.h"; sourceTree = "<group>"; };
+		6A12BF7F20F89C32009573C6 /* UIButton+MZTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MZTool.m"; sourceTree = "<group>"; };
+		6A12BF8220FB2612009573C6 /* MZShadowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZShadowController.h; sourceTree = "<group>"; };
+		6A12BF8320FB2612009573C6 /* MZShadowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZShadowController.m; sourceTree = "<group>"; };
+		6A12BF8520FB27DE009573C6 /* MZPayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZPayVC.h; sourceTree = "<group>"; };
+		6A12BF8620FB27DE009573C6 /* MZPayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZPayVC.m; sourceTree = "<group>"; };
+		6A12BF8720FB27DE009573C6 /* MZPayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZPayVC.xib; sourceTree = "<group>"; };
+		6A12BF8A20FB2BDC009573C6 /* TestPayVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPayVC.h; sourceTree = "<group>"; };
+		6A12BF8B20FB2BDC009573C6 /* TestPayVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPayVC.m; sourceTree = "<group>"; };
+		6A12BF8C20FB2BDC009573C6 /* TestPayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestPayVC.xib; sourceTree = "<group>"; };
 		6A26206920F77196003F984D /* MZTestSDWebImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTestSDWebImageVC.h; sourceTree = "<group>"; };
 		6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTestSDWebImageVC.m; sourceTree = "<group>"; };
 		6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTestSDWebImageVC.xib; sourceTree = "<group>"; };
@@ -247,8 +270,6 @@
 		6A8540FD1FFB1F5100913301 /* ScanBarCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanBarCodeVC.h; sourceTree = "<group>"; };
 		6A8540FE1FFB1F5100913301 /* ScanBarCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanBarCodeVC.m; sourceTree = "<group>"; };
 		6A8541001FFB239F00913301 /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
-		6A8541051FFB298500913301 /* MZButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZButton.h; sourceTree = "<group>"; };
-		6A8541061FFB298500913301 /* MZButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZButton.m; sourceTree = "<group>"; };
 		6A8541091FFB2D2500913301 /* BarCodeFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarCodeFuncVC.h; sourceTree = "<group>"; };
 		6A85410A1FFB2D2500913301 /* BarCodeFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarCodeFuncVC.m; sourceTree = "<group>"; };
 		6A85410C1FFB2FB600913301 /* CreateBarCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateBarCodeVC.h; sourceTree = "<group>"; };
@@ -269,6 +290,12 @@
 		6A85413B1FFB8E5200913301 /* XibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
 		6A85413C1FFB8E5200913301 /* XibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
 		6A85413E1FFB8E5F00913301 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
+		6AA03CEE21251CF500A68B12 /* UIButton+MZTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MZTouch.h"; sourceTree = "<group>"; };
+		6AA03CEF21251CF500A68B12 /* UIButton+MZTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MZTouch.m"; sourceTree = "<group>"; };
+		6AB35C422133A223007CC480 /* MZTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTableView.h; sourceTree = "<group>"; };
+		6AB35C442133A223007CC480 /* MZTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZTableView.m; sourceTree = "<group>"; };
+		6AB35C4C2133AAE7007CC480 /* MZBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZBannerView.h; sourceTree = "<group>"; };
+		6AB35C4D2133AAE7007CC480 /* MZBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZBannerView.m; sourceTree = "<group>"; };
 		6AC98F4B20E20DA700ABD44F /* SystemFuncVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemFuncVC.h; sourceTree = "<group>"; };
 		6AC98F4C20E20DA700ABD44F /* SystemFuncVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemFuncVC.m; sourceTree = "<group>"; };
 		6AC98F4F20E2177700ABD44F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -299,6 +326,10 @@
 		6AC98F8420E465C200ABD44F /* CustomTransitionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTransitionVC.xib; sourceTree = "<group>"; };
 		6AC98F8720E46B2A00ABD44F /* UIViewController+MZAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MZAnimation.h"; sourceTree = "<group>"; };
 		6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MZAnimation.m"; sourceTree = "<group>"; };
+		6ADF9BB1214B9FE200ABFE71 /* MZMobileField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZMobileField.h; sourceTree = "<group>"; };
+		6ADF9BB2214B9FE200ABFE71 /* MZMobileField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZMobileField.m; sourceTree = "<group>"; };
+		6ADF9BB5214BA5F700ABFE71 /* MZMarqueeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZMarqueeLabel.h; sourceTree = "<group>"; };
+		6ADF9BB6214BA5F700ABFE71 /* MZMarqueeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZMarqueeLabel.m; sourceTree = "<group>"; };
 		6AF6B18E1FFF753D00CBB30F /* XibViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewTestVC.h; sourceTree = "<group>"; };
 		6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewTestVC.m; sourceTree = "<group>"; };
 		6AF6B1911FFF76A500CBB30F /* ErrorXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorXibView.h; sourceTree = "<group>"; };
@@ -357,20 +388,21 @@
 		6A0743C420233024009629E6 /* 双波浪UI */ = {
 			isa = PBXGroup;
 			children = (
-				6A0743C82023308A009629E6 /* View */,
 				6A0743C520233079009629E6 /* WaveViewTestVC.h */,
 				6A0743C620233079009629E6 /* WaveViewTestVC.m */,
 			);
 			path = "双波浪UI";
 			sourceTree = "<group>";
 		};
-		6A0743C82023308A009629E6 /* View */ = {
+		6A09B1862102E064006C818D /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				6A0743C9202330CB009629E6 /* MZWaveView.h */,
-				6A0743CA202330CB009629E6 /* MZWaveView.m */,
+				6A09B1892102E064006C818D /* HKTransitionPush.h */,
+				6A09B1872102E064006C818D /* HKTransitionPush.m */,
+				6A09B18A2102E064006C818D /* HKTransitionPop.h */,
+				6A09B1882102E064006C818D /* HKTransitionPop.m */,
 			);
-			path = View;
+			path = Transition;
 			sourceTree = "<group>";
 		};
 		6A12BF5620F84B8A009573C6 /* 方式二 */ = {
@@ -405,13 +437,28 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		6A12BF7A20F89B27009573C6 /* TextView */ = {
+		6A12BF7A20F89B27009573C6 /* MZTextView */ = {
 			isa = PBXGroup;
 			children = (
 				6A12BF7B20F89B4D009573C6 /* MZTextView.h */,
 				6A12BF7C20F89B4D009573C6 /* MZTextView.m */,
 			);
-			path = TextView;
+			path = MZTextView;
+			sourceTree = "<group>";
+		};
+		6A12BF8120FB255C009573C6 /* 自定义支付选择控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				6A12BF8220FB2612009573C6 /* MZShadowController.h */,
+				6A12BF8320FB2612009573C6 /* MZShadowController.m */,
+				6A12BF8520FB27DE009573C6 /* MZPayVC.h */,
+				6A12BF8620FB27DE009573C6 /* MZPayVC.m */,
+				6A12BF8720FB27DE009573C6 /* MZPayVC.xib */,
+				6A12BF8A20FB2BDC009573C6 /* TestPayVC.h */,
+				6A12BF8B20FB2BDC009573C6 /* TestPayVC.m */,
+				6A12BF8C20FB2BDC009573C6 /* TestPayVC.xib */,
+			);
+			path = "自定义支付选择控制器";
 			sourceTree = "<group>";
 		};
 		6A26206220F76FF6003F984D /* Test */ = {
@@ -428,6 +475,7 @@
 				6A26206920F77196003F984D /* MZTestSDWebImageVC.h */,
 				6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */,
 				6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */,
+				6A09B1862102E064006C818D /* Transition */,
 			);
 			path = "测试";
 			sourceTree = "<group>";
@@ -494,8 +542,10 @@
 				6A12BF6F20F87735009573C6 /* UIViewController+MZAlert.m */,
 				6A12BF7820F899CF009573C6 /* NSObject+MZDate.h */,
 				6A12BF7720F899CF009573C6 /* NSObject+MZDate.m */,
-				6A12BF7E20F89C32009573C6 /* UIButton+TDTool.h */,
-				6A12BF7F20F89C32009573C6 /* UIButton+TDTool.m */,
+				6A12BF7E20F89C32009573C6 /* UIButton+MZTool.h */,
+				6A12BF7F20F89C32009573C6 /* UIButton+MZTool.m */,
+				6AA03CEE21251CF500A68B12 /* UIButton+MZTouch.h */,
+				6AA03CEF21251CF500A68B12 /* UIButton+MZTouch.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -594,20 +644,10 @@
 		6A587B8420089D24004D66F8 /* view的遮罩效果 */ = {
 			isa = PBXGroup;
 			children = (
-				6A587B882008A6AB004D66F8 /* 圆形进度条 */,
 				6A587B8520089D7D004D66F8 /* ShapeLayerMaskVC.h */,
 				6A587B8620089D7D004D66F8 /* ShapeLayerMaskVC.m */,
 			);
 			path = "view的遮罩效果";
-			sourceTree = "<group>";
-		};
-		6A587B882008A6AB004D66F8 /* 圆形进度条 */ = {
-			isa = PBXGroup;
-			children = (
-				6A587B892008A74A004D66F8 /* MZCircleProgress.h */,
-				6A587B8A2008A74A004D66F8 /* MZCircleProgress.m */,
-			);
-			path = "圆形进度条";
 			sourceTree = "<group>";
 		};
 		6A587B92200B7CC5004D66F8 /* 划掉效果的UILabel */ = {
@@ -840,6 +880,7 @@
 		6A8540FB1FFB1EC500913301 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6A12BF8120FB255C009573C6 /* 自定义支付选择控制器 */,
 				6A26206E20F83FAD003F984D /* UISearchController使用 */,
 				6AC98F7D20E4653600ABD44F /* 自定义转场动画 */,
 				6AC98F7920E36AFB00ABD44F /* 横竖屏处理 */,
@@ -864,15 +905,6 @@
 				6A85410A1FFB2D2500913301 /* BarCodeFuncVC.m */,
 			);
 			path = "二维码生成与获取";
-			sourceTree = "<group>";
-		};
-		6A8541081FFB298D00913301 /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				6A8541051FFB298500913301 /* MZButton.h */,
-				6A8541061FFB298500913301 /* MZButton.m */,
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 		6A8541171FFB41DB00913301 /* ThirdParty */ = {
@@ -933,6 +965,42 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6AB35C402133A223007CC480 /* MZTableView */ = {
+			isa = PBXGroup;
+			children = (
+				6AB35C422133A223007CC480 /* MZTableView.h */,
+				6AB35C442133A223007CC480 /* MZTableView.m */,
+			);
+			path = MZTableView;
+			sourceTree = "<group>";
+		};
+		6AB35C492133A83A007CC480 /* MZWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				6A0743C9202330CB009629E6 /* MZWaveView.h */,
+				6A0743CA202330CB009629E6 /* MZWaveView.m */,
+			);
+			path = MZWaveView;
+			sourceTree = "<group>";
+		};
+		6AB35C4A2133A8B6007CC480 /* MZCircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				6A587B892008A74A004D66F8 /* MZCircleProgress.h */,
+				6A587B8A2008A74A004D66F8 /* MZCircleProgress.m */,
+			);
+			path = MZCircleProgress;
+			sourceTree = "<group>";
+		};
+		6AB35C4B2133A991007CC480 /* MZBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				6AB35C4C2133AAE7007CC480 /* MZBannerView.h */,
+				6AB35C4D2133AAE7007CC480 /* MZBannerView.m */,
+			);
+			path = MZBannerView;
+			sourceTree = "<group>";
+		};
 		6AC98F4A20E20D5100ABD44F /* 系统功能 */ = {
 			isa = PBXGroup;
 			children = (
@@ -975,20 +1043,25 @@
 		6AC98F6E20E35F7200ABD44F /* Extends */ = {
 			isa = PBXGroup;
 			children = (
-				6A12BF7A20F89B27009573C6 /* TextView */,
-				6AC98F7220E35FDC00ABD44F /* TextField */,
-				6A8541081FFB298D00913301 /* Button */,
+				6ADF9BB4214BA58100ABFE71 /* MZMarqueeLabel */,
+				6ADF9BB0214B918D00ABFE71 /* MZMobileField */,
+				6AB35C4B2133A991007CC480 /* MZBannerView */,
+				6AB35C4A2133A8B6007CC480 /* MZCircleProgress */,
+				6AB35C492133A83A007CC480 /* MZWaveView */,
+				6AB35C402133A223007CC480 /* MZTableView */,
+				6A12BF7A20F89B27009573C6 /* MZTextView */,
+				6AC98F7220E35FDC00ABD44F /* MZTextField */,
 			);
 			path = Extends;
 			sourceTree = "<group>";
 		};
-		6AC98F7220E35FDC00ABD44F /* TextField */ = {
+		6AC98F7220E35FDC00ABD44F /* MZTextField */ = {
 			isa = PBXGroup;
 			children = (
 				6AC98F6F20E35FD200ABD44F /* MZTextField.h */,
 				6AC98F7020E35FD200ABD44F /* MZTextField.m */,
 			);
-			path = TextField;
+			path = MZTextField;
 			sourceTree = "<group>";
 		};
 		6AC98F7320E363E600ABD44F /* 处理UITableView键盘收起 */ = {
@@ -1020,6 +1093,24 @@
 				6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */,
 			);
 			path = "自定义转场动画";
+			sourceTree = "<group>";
+		};
+		6ADF9BB0214B918D00ABFE71 /* MZMobileField */ = {
+			isa = PBXGroup;
+			children = (
+				6ADF9BB1214B9FE200ABFE71 /* MZMobileField.h */,
+				6ADF9BB2214B9FE200ABFE71 /* MZMobileField.m */,
+			);
+			path = MZMobileField;
+			sourceTree = "<group>";
+		};
+		6ADF9BB4214BA58100ABFE71 /* MZMarqueeLabel */ = {
+			isa = PBXGroup;
+			children = (
+				6ADF9BB5214BA5F700ABFE71 /* MZMarqueeLabel.h */,
+				6ADF9BB6214BA5F700ABFE71 /* MZMarqueeLabel.m */,
+			);
+			path = MZMarqueeLabel;
 			sourceTree = "<group>";
 		};
 		6AF6B19B1FFF803400CBB30F /* JS与0C交互 */ = {
@@ -1201,6 +1292,7 @@
 				6A587BD7200C989D004D66F8 /* testFit.html in Resources */,
 				6AC98F6A20E33A5900ABD44F /* PhoneNumberInputVC.xib in Resources */,
 				6A12BF6620F856D3009573C6 /* SearchControllerVC3.xib in Resources */,
+				6A12BF8E20FB2BDC009573C6 /* TestPayVC.xib in Resources */,
 				6AF7B9DF2000643200AC2015 /* index1.html in Resources */,
 				6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */,
 				6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */,
@@ -1222,6 +1314,7 @@
 				6A8540F71FFB13BD00913301 /* functionList.plist in Resources */,
 				6AF7B9FC200350DD00AC2015 /* index4.html in Resources */,
 				6AC98F7820E3645600ABD44F /* TableViewKeyboardHiddenVC.xib in Resources */,
+				6A12BF8920FB27DE009573C6 /* MZPayVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1292,19 +1385,23 @@
 				6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */,
 				6A587B6B20075CB2004D66F8 /* CreateImageWithColorVC.m in Sources */,
 				6A0743C720233079009629E6 /* WaveViewTestVC.m in Sources */,
+				6AB35C462133A223007CC480 /* MZTableView.m in Sources */,
 				6A587BB9200C55E5004D66F8 /* UIImageViewFitVC.m in Sources */,
 				6A518DC7200737D300A69E70 /* UIImage+MZTool.m in Sources */,
 				6AC98F5820E32FFF00ABD44F /* MZTabBar.m in Sources */,
 				6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */,
 				6AC98F4D20E20DA700ABD44F /* SystemFuncVC.m in Sources */,
+				6A09B18C2102E065006C818D /* HKTransitionPop.m in Sources */,
 				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
 				6AC98F8920E46B2A00ABD44F /* UIViewController+MZAnimation.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
+				6A12BF8820FB27DE009573C6 /* MZPayVC.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
 				6AC98F6420E3391D00ABD44F /* NSDictionary+MZTool.m in Sources */,
 				6AF7B9E72003219E00AC2015 /* UIWebView_URL.m in Sources */,
 				6A587BBE200C8116004D66F8 /* TestFitCell.m in Sources */,
 				6AC98F7720E3645600ABD44F /* TableViewKeyboardHiddenVC.m in Sources */,
+				6A12BF8420FB2612009573C6 /* MZShadowController.m in Sources */,
 				6A12BF5A20F84C36009573C6 /* SearchControllerVC2.m in Sources */,
 				6A26207320F84033003F984D /* SearchControllerVC1.m in Sources */,
 				6AF6B1991FFF7C4E00CBB30F /* XibTestCell.m in Sources */,
@@ -1315,7 +1412,7 @@
 				6AC98F7120E35FD200ABD44F /* MZTextField.m in Sources */,
 				6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */,
 				6AC98F6920E33A5900ABD44F /* PhoneNumberInputVC.m in Sources */,
-				6A12BF8020F89C32009573C6 /* UIButton+TDTool.m in Sources */,
+				6A12BF8020F89C32009573C6 /* UIButton+MZTool.m in Sources */,
 				6A26206C20F77196003F984D /* MZTestSDWebImageVC.m in Sources */,
 				6A587BC5200C86AF004D66F8 /* TestCellFitVC.m in Sources */,
 				6A587B76200764CB004D66F8 /* PolygonView.m in Sources */,
@@ -1329,6 +1426,7 @@
 				6A12BF6520F856D3009573C6 /* SearchControllerVC3.m in Sources */,
 				6A12BF7920F899CF009573C6 /* NSObject+MZDate.m in Sources */,
 				6A85413D1FFB8E5200913301 /* XibView.m in Sources */,
+				6ADF9BB3214B9FE200ABFE71 /* MZMobileField.m in Sources */,
 				6A587BFE200D911D004D66F8 /* WaterFlowModel.m in Sources */,
 				6A587BFB200D8D50004D66F8 /* MZWaterFlowLayout.m in Sources */,
 				6A587B6F20075F8F004D66F8 /* BezierPathVC.m in Sources */,
@@ -1337,24 +1435,27 @@
 				6A587BC2200C82CD004D66F8 /* TestFitModel.m in Sources */,
 				6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */,
 				6AF7B9FA20034DD600AC2015 /* UIWebView_JSExport.m in Sources */,
+				6A12BF8D20FB2BDC009573C6 /* TestPayVC.m in Sources */,
+				6AB35C4E2133AAE7007CC480 /* MZBannerView.m in Sources */,
 				6A587B7C20076971004D66F8 /* CircleView.m in Sources */,
 				6AC98F5B20E3301500ABD44F /* MZTabBarController.m in Sources */,
 				6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */,
 				6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */,
 				6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */,
+				6A09B18B2102E065006C818D /* HKTransitionPush.m in Sources */,
 				6A12BF7D20F89B4D009573C6 /* MZTextView.m in Sources */,
 				6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */,
 				6A12BF6A20F87476009573C6 /* MZRSA.m in Sources */,
 				6A12BF5420F844B8009573C6 /* SearchControllerListVC.m in Sources */,
 				6A8540E41FFB0EC000913301 /* ViewController.m in Sources */,
 				6A85412B1FFB58CE00913301 /* GetContactMethodListVC.m in Sources */,
+				6AA03CF021251CF500A68B12 /* UIButton+MZTouch.m in Sources */,
 				6AF8D7F2200F45EA00B4EBAA /* TestRuntimeVC.m in Sources */,
 				6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */,
 				6A8541281FFB567100913301 /* MZContactModel.m in Sources */,
 				6A587B5F200752D3004D66F8 /* DataHandleVC.m in Sources */,
 				6AF6B19E1FFF817400CBB30F /* WKWebView_MessageHandler.m in Sources */,
 				6A587B91200B7992004D66F8 /* UILabel+MZTool.m in Sources */,
-				6A8541071FFB298500913301 /* MZButton.m in Sources */,
 				6AC98F5E20E3373400ABD44F /* UIView+MZTool.m in Sources */,
 				6AC98F7C20E36B1E00ABD44F /* OrientationVC.m in Sources */,
 				6AF7B9EE20033AE400AC2015 /* WKWebView_URL.m in Sources */,
@@ -1372,6 +1473,7 @@
 				6A8541211FFB53F600913301 /* MBProgressHUD+SN.m in Sources */,
 				6AC98F6120E3389E00ABD44F /* NSObject+MZTool.m in Sources */,
 				6A587B7320076145004D66F8 /* LineView.m in Sources */,
+				6ADF9BB7214BA5F700ABFE71 /* MZMarqueeLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

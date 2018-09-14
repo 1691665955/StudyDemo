@@ -40,7 +40,7 @@
 }
 
 - (UIImage *)clipsImage1:(UIView *)view {
-    UIGraphicsBeginImageContext(view.bounds.size);
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 2);
     CGContextRef context = UIGraphicsGetCurrentContext();
     [view.layer renderInContext:context];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
@@ -49,9 +49,9 @@
 }
 
 - (UIImage *)clipsImage2:(UIView *)view {
-    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, 0);
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    //设备截图的背景颜色，如果view底色是白色，那么在微信分享时，微信看到的图片底色会是黑色
+    //设置截图的背景颜色，如果view底色是白色，那么在微信分享时，微信看到的图片底色会是黑色
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextFillRect(context, view.bounds);
     [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
@@ -77,7 +77,7 @@
 
 //重新生成指定大小图片
 - (UIImage *)resizeImage:(UIImage *)image toSize:(CGSize)size {
-    UIGraphicsBeginImageContext(size);
+    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextTranslateCTM(context, 0.0, size.height);
     CGContextScaleCTM(context, 1.0, -1.0);
@@ -110,6 +110,10 @@
     UIImageView *imageView3 = [[UIImageView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2+10, CGRectGetMaxY(self.imageView.frame)+20+25, (SCREEN_WIDTH-60)/2, (SCREEN_WIDTH-60)*3/8.0-25)];
     imageView3.image = [self clipsImage3:imageView2.image frame:CGRectMake(0, 25, SCREEN_WIDTH, (SCREEN_WIDTH-60)*3/8.0-25)];
     [self.view addSubview:imageView3];
+    
+    UIImageView *imageView4 = [[UIImageView alloc] initWithFrame:CGRectMake(40, CGRectGetMaxY(imageView3.frame)+30, 200, 150)];
+    imageView4.image = [self resizeImage:self.imageView.image toSize:CGSizeMake(200, 150)];
+    [self.view addSubview:imageView4];
 }
 
 

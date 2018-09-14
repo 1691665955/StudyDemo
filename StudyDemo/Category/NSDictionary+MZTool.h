@@ -56,8 +56,4 @@
  @return 关键字存在时返回实际的值，不存在时返回0.00
  */
 - (double)doubleForKey:(NSString *)key;
-
-- (NSString *)RMBForKey:(NSString *)key;
-- (NSString *)RMBCodeForKey:(NSString *)key;
-- (NSString *)dateForKey:(NSString *)key;
 @end

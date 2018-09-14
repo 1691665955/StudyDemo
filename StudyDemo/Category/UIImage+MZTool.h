@@ -45,4 +45,27 @@
  图片转base64字符串
  */
 - (NSString *)imageToBase64String;
+
+/**
+ 截取view成图片
+
+ @param view 被截取的view
+ */
++ (UIImage *)clipsImage:(UIView *)view;
+
+/**
+ 对图片进行剪切，获取指定范围的图片
+ 
+ @param image 被截取的图片
+ @param frame 截取的范围
+ */
++ (UIImage *)clipsImage:(UIImage *)image frame:(CGRect)frame;
+
+/**
+ 重新生成指定大小图片
+ 
+ @param image 原图片
+ @param size 生成图片的大小
+ */
++ (UIImage *)resizeImage:(UIImage *)image toSize:(CGSize)size;
 @end

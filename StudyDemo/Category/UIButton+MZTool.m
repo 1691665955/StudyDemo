@@ -1,14 +1,14 @@
 //
-//  UIButton+TDTool.m
+//  UIButton+MZTool.m
 //  StudyDemo
 //
 //  Created by 曾龙 on 2018/7/13.
 //  Copyright © 2018年 曾龙. All rights reserved.
 //
 
-#import "UIButton+TDTool.h"
+#import "UIButton+MZTool.h"
 #import <objc/runtime.h>
-@implementation UIButton (TDTool)
+@implementation UIButton (MZTool)
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state {
     if (state == UIControlStateNormal) {
         [self setBackgroundColor:backgroundColor];
@@ -31,8 +31,6 @@
     NSString *propertyName = @"UIControlStateNormal";
     if (state == UIControlStateNormal) {
         propertyName = @"UIControlStateNormal";
-    } else if (state == UIControlStateHighlighted) {
-        propertyName = @"UIControlStateHighlighted";
     } else if (state == UIControlStateSelected) {
         propertyName = @"UIControlStateSelected";
     }

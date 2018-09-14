@@ -8,22 +8,158 @@
 
 #import <Foundation/Foundation.h>
 
-//这是个公钥示例
-#define PUBLIC_KEY @"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5H9T8TD7KT2YbcZpsVHgNeo0hfAJdJhwJsYyqKriwi2fJHXK4MU7Ad71RNEBD7T17eujHSqSoejuTwKznCDTdoWXUS2BSSYp/wDXFyT3/Tq3zYE565HWd4NhOkPXBuAK8+RDvGFDpET59yygWWOp0K9SU8McZUyZlKaKe35fo4QIDAQAB\n-----END PUBLIC KEY-----"
-
 @interface MZRSA : NSObject
-// return base64 encoded string
+
+/**
+ RSA字符串公钥加密
+
+ @param str 待加密字符串
+ @param pubKey 公钥字符串
+ @return 加密后字符串
+ */
 + (NSString *)encryptString:(NSString *)str publicKey:(NSString *)pubKey;
-// return raw data
+
+/**
+ RSAdata公钥加密
+
+ @param data 待加密data
+ @param pubKey 公钥字符串
+ @return 加密后data
+ */
 + (NSData *)encryptData:(NSData *)data publicKey:(NSString *)pubKey;
-// return base64 encoded string
+
+/**
+ RSA字符串私钥加密
+ 
+ @param str 待加密字符串
+ @param privKey 公钥字符串
+ @return 加密后字符串
+ */
 + (NSString *)encryptString:(NSString *)str privateKey:(NSString *)privKey;
-// return raw data
+
+/**
+ RSAdata私钥加密
+ 
+ @param data 待加密data
+ @param privKey 公钥字符串
+ @return 加密后data
+ */
 + (NSData *)encryptData:(NSData *)data privateKey:(NSString *)privKey;
 
-// decrypt base64 encoded string, convert result to string(not base64 encoded)
+
+/**
+ RSA字符串公钥解密
+ 
+ @param str 待解密字符串
+ @param pubKey 公钥字符串
+ @return 解密后字符串
+ */
 + (NSString *)decryptString:(NSString *)str publicKey:(NSString *)pubKey;
+
+/**
+ RSAdata公钥解密
+ 
+ @param data 待解密data
+ @param pubKey 公钥字符串
+ @return 解密后data
+ */
 + (NSData *)decryptData:(NSData *)data publicKey:(NSString *)pubKey;
+
+/**
+ RSA字符串私钥解密
+ 
+ @param str 待解密字符串
+ @param privKey 公钥字符串
+ @return 解密后字符串
+ */
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey;
+
+/**
+ RSAdata私钥解密
+ 
+ @param data 待解密data
+ @param privKey 公钥字符串
+ @return 解密后data
+ */
 + (NSData *)decryptData:(NSData *)data privateKey:(NSString *)privKey;
+
+
+
+
+/**
+ RSA字符串公钥加密
+ 
+ @param str 待加密字符串
+ @param der 公钥文件名称
+ @return 加密后字符串
+ */
++ (NSString *)encryptString:(NSString *)str certificateName:(NSString *)der;
+
+/**
+ RSAdata公钥加密
+ 
+ @param data 待加密data
+ @param der 公钥文件名称
+ @return 加密后data
+ */
++ (NSData *)encryptData:(NSData *)data certificateName:(NSString *)der;
+
+/**
+ RSA字符串私钥加密
+ 
+ @param str 待加密字符串
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 加密后字符串
+ */
++ (NSString *)encryptString:(NSString *)str certificateName:(NSString *)p12 pwd:(NSString *)pwd;
+
+/**
+ RSAdata私钥加密
+ 
+ @param data 待加密data
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 加密后data
+ */
++ (NSData *)encryptData:(NSData *)data certificateName:(NSString *)p12 pwd:(NSString *)pwd;
+
+
+/**
+ RSA字符串公钥解密
+ 
+ @param str 待解密字符串
+ @param der 公钥文件名称
+ @return 解密后字符串
+ */
++ (NSString *)decryptString:(NSString *)str certificateName:(NSString *)der;
+
+/**
+ RSAdata公钥解密
+ 
+ @param data 待解密data
+ @param der 公钥文件名称
+ @return 解密后data
+ */
++ (NSData *)decryptData:(NSData *)data certificateName:(NSString *)der;
+
+/**
+ RSA字符串私钥解密
+ 
+ @param str 待解密字符串
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 解密后字符串
+ */
++ (NSString *)decryptString:(NSString *)str certificateName:(NSString *)p12 pwd:(NSString *)pwd;
+
+/**
+ RSAdata私钥解密
+ 
+ @param data 待解密data
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 解密后data
+ */
++ (NSData *)decryptData:(NSData *)data certificateName:(NSString *)p12 pwd:(NSString *)pwd;
 @end

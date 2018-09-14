@@ -69,6 +69,7 @@
     if (attributedMessage) {
         [alert setValue:attributedMessage forKey:@"attributedMessage"];
     }
+    
     if (confirmTitle) {
         UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:confirmTitle style:confirmStyle handler:^(UIAlertAction * _Nonnull action) {
             if (confirm) {
@@ -77,6 +78,7 @@
         }];
         [alert addAction:confirmAction];
     }
+    
     if (cancelTitle) {
         UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:cancelStyle handler:^(UIAlertAction * _Nonnull action) {
             if (cancel) {
@@ -120,7 +122,7 @@
         [alert addAction:confirmAction];
     }
     if (cancelTitle) {
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             if (cancel) {
                 cancel();
             }

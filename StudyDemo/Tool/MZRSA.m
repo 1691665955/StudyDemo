@@ -405,4 +405,244 @@ static NSData *base64_decode(NSString *str){
 
 /* END: Encryption & Decryption with RSA public key */
 
+/**
+ 获取公钥
+ 
+ @param der public_key.der
+ @return 公钥
+ */
++ (SecKeyRef)publicKeyWithCertificate:(NSString *)der {
+    NSString *keyPath = [[NSBundle mainBundle] pathForResource:der ofType:nil];
+    NSData *derData = [NSData dataWithContentsOfFile:keyPath];
+    if (!derData) {
+        return nil;
+    }
+    SecCertificateRef cert = SecCertificateCreateWithData(NULL, (CFDataRef)derData);
+    SecKeyRef key = nil;
+    SecTrustRef trust = nil;
+    SecPolicyRef policy = nil;
+    if (cert != NULL) {
+        policy = SecPolicyCreateBasicX509();
+        if (policy) {
+            if (SecTrustCreateWithCertificates((CFTypeRef)cert, policy, &trust) == noErr) {
+                SecTrustResultType result;
+                if (SecTrustEvaluate(trust, &result) == noErr) {
+                    key = SecTrustCopyPublicKey(trust);
+                }
+            }
+        }
+    }
+    if (policy) {
+        CFRelease(policy);
+    }
+    if (trust) {
+        CFRelease(trust);
+    }
+    if (cert) {
+        CFRelease(cert);
+    }
+    return key;
+}
+
+/**
+ 获取私钥
+ 
+ @param p12 private_key.p12
+ @return 私钥
+ */
++ (SecKeyRef)privateKeyWithCertificate:(NSString *)p12 certificatePWD:(NSString *)pwd {
+    if (!p12) {
+        return nil;
+    }
+    NSString *keyPath = [[NSBundle mainBundle] pathForResource:p12 ofType:nil];
+    NSData *p12Data = [NSData dataWithContentsOfFile:keyPath];
+    if (!p12Data) {
+        return nil;
+    }
+    if (!pwd) {
+        pwd = @"";
+    }
+    SecKeyRef key = NULL;
+    NSMutableDictionary * options = [[NSMutableDictionary alloc] init];
+    [options setObject:pwd forKey:(__bridge id)kSecImportExportPassphrase];
+    CFArrayRef items = CFArrayCreate(NULL, 0, 0, NULL);
+    OSStatus securityError = SecPKCS12Import((__bridge CFDataRef) p12Data, (__bridge CFDictionaryRef)options, &items);
+    if (securityError == noErr && CFArrayGetCount(items) > 0) {
+        CFDictionaryRef identityDict = CFArrayGetValueAtIndex(items, 0);
+        SecIdentityRef identityApp = (SecIdentityRef)CFDictionaryGetValue(identityDict, kSecImportItemIdentity);
+        securityError = SecIdentityCopyPrivateKey(identityApp, &key);
+        if (securityError != noErr) {
+            key = NULL;
+        }
+    }
+    if (items) {
+        CFRelease(items);
+    }
+    return key;
+}
+
+/**
+ RSA字符串公钥加密
+ 
+ @param str 待加密字符串
+ @param der 公钥文件名称
+ @return 加密后字符串
+ */
++ (NSString *)encryptString:(NSString *)str certificateName:(NSString *)der {
+    if (!der || !str) {
+        return nil;
+    }
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    SecKeyRef keyRef = [self publicKeyWithCertificate:der];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *encryptData = [MZRSA encryptData:data withKeyRef:keyRef isSign:NO];
+    NSString *ret = base64_encode_data(encryptData);
+    return ret;
+}
+
+/**
+ RSAdata公钥加密
+ 
+ @param data 待加密data
+ @param der 公钥文件名称
+ @return 加密后data
+ */
++ (NSData *)encryptData:(NSData *)data certificateName:(NSString *)der {
+    if (!der || !data) {
+        return nil;
+    }
+    SecKeyRef keyRef = [self publicKeyWithCertificate:der];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *encryptData = [MZRSA encryptData:data withKeyRef:keyRef isSign:NO];
+    return encryptData;
+}
+
+/**
+ RSA字符串私钥加密
+ 
+ @param str 待加密字符串
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 加密后字符串
+ */
++ (NSString *)encryptString:(NSString *)str certificateName:(NSString *)p12 pwd:(NSString *)pwd {
+    if (!p12 || !str) {
+        return nil;
+    }
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    SecKeyRef keyRef = [self privateKeyWithCertificate:p12 certificatePWD:p12];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *encryptData = [MZRSA encryptData:data withKeyRef:keyRef isSign:YES];
+    NSString *ret = base64_encode_data(encryptData);
+    return ret;
+}
+
+/**
+ RSAdata私钥加密
+ 
+ @param data 待加密data
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 加密后data
+ */
++ (NSData *)encryptData:(NSData *)data certificateName:(NSString *)p12 pwd:(NSString *)pwd {
+    if (!p12 || !data) {
+        return nil;
+    }
+    SecKeyRef keyRef = [self privateKeyWithCertificate:p12 certificatePWD:p12];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *encryptData = [MZRSA encryptData:data withKeyRef:keyRef isSign:YES];
+    return encryptData;
+}
+
+
+/**
+ RSA字符串公钥解密
+ 
+ @param str 待解密字符串
+ @param der 公钥文件名称
+ @return 解密后字符串
+ */
++ (NSString *)decryptString:(NSString *)str certificateName:(NSString *)der {
+    if (!der || !str) {
+        return nil;
+    }
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    SecKeyRef keyRef = [self publicKeyWithCertificate:der];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *decryptData = [MZRSA decryptData:data withKeyRef:keyRef];
+    NSString *ret = base64_encode_data(decryptData);
+    return ret;
+}
+
+/**
+ RSAdata公钥解密
+ 
+ @param data 待解密data
+ @param der 公钥文件名称
+ @return 解密后data
+ */
++ (NSData *)decryptData:(NSData *)data certificateName:(NSString *)der {
+    if (!der || !data) {
+        return nil;
+    }
+    SecKeyRef keyRef = [self publicKeyWithCertificate:der];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *decryptData = [MZRSA decryptData:data withKeyRef:keyRef];
+    return decryptData;
+}
+
+/**
+ RSA字符串私钥解密
+ 
+ @param str 待解密字符串
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 解密后字符串
+ */
++ (NSString *)decryptString:(NSString *)str certificateName:(NSString *)p12 pwd:(NSString *)pwd {
+    if (!p12 || !str) {
+        return nil;
+    }
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    SecKeyRef keyRef = [self privateKeyWithCertificate:p12 certificatePWD:p12];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *decryptData = [MZRSA decryptData:data withKeyRef:keyRef];
+    NSString *ret = base64_encode_data(decryptData);
+    return ret;
+}
+
+/**
+ RSAdata私钥解密
+ 
+ @param data 待解密data
+ @param p12 私钥文件名称
+ @param pwd 私钥密码
+ @return 解密后data
+ */
++ (NSData *)decryptData:(NSData *)data certificateName:(NSString *)p12 pwd:(NSString *)pwd {
+    if (!p12 || !data) {
+        return nil;
+    }
+    SecKeyRef keyRef = [self privateKeyWithCertificate:p12 certificatePWD:p12];
+    if (!keyRef) {
+        return nil;
+    }
+    NSData *decryptData = [MZRSA decryptData:data withKeyRef:keyRef];
+    return decryptData;
+}
 @end

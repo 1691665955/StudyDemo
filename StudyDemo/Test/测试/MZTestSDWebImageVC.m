@@ -7,7 +7,8 @@
 //
 
 #import "MZTestSDWebImageVC.h"
-#import "MZTextField.h"
+#import "MZMarqueeLabel.h"
+
 @interface MZTestSDWebImageVC ()
 
 @end
@@ -18,15 +19,10 @@
     [super viewDidLoad];
     self.title = @"测试";
     
-    MZTextField *textField = [[MZTextField alloc] initWithFrame:CGRectMake(30, 100, SCREEN_WIDTH-60, 50)];
-    textField.backgroundColor = RGB(223, 223, 223);
-    textField.maxTextLength = 15;
-    textField.font = [UIFont systemFontOfSize:12];
-    [self.view addSubview:textField];
-}
-
-- (void)btnClicked:(UIButton *)sender {
-    sender.selected = !sender.selected;
+    MZMarqueeLabel *marqueeLabel = [[MZMarqueeLabel alloc] initWithFrame:CGRectMake(20, 100, SCREEN_WIDTH-40, 40)];
+    marqueeLabel.backgroundColor = [UIColor lightGrayColor];
+    [marqueeLabel setupText:@"简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法" font:[UIFont systemFontOfSize:16] textColor:[UIColor whiteColor] textAlignment:NSTextAlignmentLeft direction:MZMarqueeDirectionLeftToRight whiteSpace:@"        "];
+    [self.view addSubview:marqueeLabel];
 }
 
 @end

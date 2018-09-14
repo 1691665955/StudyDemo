@@ -1,5 +1,5 @@
 //
-//  UIButton+TDTool.h
+//  UIButton+MZTool.h
 //  StudyDemo
 //
 //  Created by 曾龙 on 2018/7/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (TDTool)
+@interface UIButton (MZTool)
 
 /**
  设置不同状态下的背景颜色

@@ -149,4 +149,55 @@
     NSString *base64String = [imagedata base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     return base64String;
 }
+
+/**
+ 截取view成图片
+ */
++ (UIImage *)clipsImage:(UIView *)view {
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [view.layer renderInContext:context];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+/**
+ 对图片进行剪切，获取指定范围的图片
+
+ @param image 被截取的图片
+ @param frame 截取的范围
+ */
++ (UIImage *)clipsImage:(UIImage *)image frame:(CGRect)frame {
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat x = frame.origin.x*scale;
+    CGFloat y = frame.origin.y*scale;
+    CGFloat w = frame.size.width*scale;
+    CGFloat h = frame.size.height*scale;
+    CGRect newFrame = CGRectMake(x, y, w, h);
+    
+    CGImageRef sourceImageRef = [image CGImage];
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, newFrame);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
+    return newImage;
+}
+
+
+/**
+ 重新生成指定大小图片
+
+ @param image 原图片
+ @param size 生成图片的大小
+ */
++ (UIImage *)resizeImage:(UIImage *)image toSize:(CGSize)size {
+    UIGraphicsBeginImageContextWithOptions(size, NO, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, 0.0, size.height);
+    CGContextScaleCTM(context, 1.0, -1.0);
+    CGContextDrawImage(context, CGRectMake(0, 0, size.width, size.height), image.CGImage);
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 @end
