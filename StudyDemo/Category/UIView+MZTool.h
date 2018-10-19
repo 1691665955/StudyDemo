@@ -18,4 +18,12 @@
  @param endPoint 终止位置
  */
 - (void)setupGradientColorWithStartColor:(UIColor *)startColor endColor:(UIColor *)endColor startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
+
+/**
+ 给view添加点击事件
+
+ @param target 点击事件响应者
+ @param selector 响应事件
+ */
+- (void)addTapGestureRecognizerWithTarget:(id)target selector:(SEL)selector;
 @end

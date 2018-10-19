@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MZImagesVC">
+            <connections>
+                <outlet property="imageView1" destination="ggu-YM-u3S" id="TFa-U4-qkt"/>
+                <outlet property="imageView2" destination="ecA-Y7-8FL" id="ctN-AD-rCU"/>
+                <outlet property="imageView3" destination="t4J-cI-EC6" id="1Uc-YP-ci0"/>
+                <outlet property="imageView4" destination="HU3-qr-utG" id="fMI-Wv-jP3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="imageViewArray" destination="ggu-YM-u3S" id="fR3-Fc-sWs"/>
+                <outletCollection property="imageViewArray" destination="ecA-Y7-8FL" id="SEu-aA-gY5"/>
+                <outletCollection property="imageViewArray" destination="t4J-cI-EC6" id="9j0-Bc-4bd"/>
+                <outletCollection property="imageViewArray" destination="HU3-qr-utG" id="oeM-4c-wAn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" tag="100" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111" translatesAutoresizingMaskIntoConstraints="NO" id="ggu-YM-u3S">
+                    <rect key="frame" x="30" y="50" width="142.5" height="142.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ggu-YM-u3S" secondAttribute="height" multiplier="1:1" id="hxq-MQ-Ug9"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="23D-f0-jVY" appends="YES" id="kBR-LL-BYh"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" tag="101" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="222" translatesAutoresizingMaskIntoConstraints="NO" id="ecA-Y7-8FL">
+                    <rect key="frame" x="202.5" y="50" width="142.5" height="142.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ecA-Y7-8FL" secondAttribute="height" multiplier="1:1" id="Ut0-XU-JTB"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="e5K-pm-3V1" appends="YES" id="lmm-xh-zgJ"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" tag="102" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="333" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-cI-EC6">
+                    <rect key="frame" x="77.5" y="222.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="t4J-cI-EC6" secondAttribute="height" multiplier="1:1" id="Phh-yn-oP4"/>
+                        <constraint firstAttribute="width" constant="100" id="nf2-1n-CxD"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="YzG-rT-j4d" appends="YES" id="kg1-8i-gSV"/>
+                    </connections>
+                </imageView>
+                <imageView clipsSubviews="YES" tag="103" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="555" translatesAutoresizingMaskIntoConstraints="NO" id="HU3-qr-utG">
+                    <rect key="frame" x="197.5" y="222.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="5Md-JI-aaN"/>
+                        <constraint firstAttribute="width" secondItem="HU3-qr-utG" secondAttribute="height" multiplier="1:1" id="sXY-kQ-hJp"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="eY0-Gi-zGM" appends="YES" id="4le-1V-7N1"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ecA-Y7-8FL" secondAttribute="trailing" constant="30" id="2I8-SH-PKY"/>
+                <constraint firstItem="HU3-qr-utG" firstAttribute="leading" secondItem="t4J-cI-EC6" secondAttribute="trailing" constant="20" id="2XL-uG-YEz"/>
+                <constraint firstItem="HU3-qr-utG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="60" id="5s4-aR-nyQ"/>
+                <constraint firstItem="t4J-cI-EC6" firstAttribute="top" secondItem="ggu-YM-u3S" secondAttribute="bottom" constant="30" id="8pG-Cx-2Ca"/>
+                <constraint firstItem="ggu-YM-u3S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="AjK-QH-Fld"/>
+                <constraint firstItem="ecA-Y7-8FL" firstAttribute="width" secondItem="ggu-YM-u3S" secondAttribute="width" id="MzO-QC-89H"/>
+                <constraint firstItem="HU3-qr-utG" firstAttribute="top" secondItem="ecA-Y7-8FL" secondAttribute="bottom" constant="30" id="Sp9-T6-oga"/>
+                <constraint firstItem="ggu-YM-u3S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="cX2-Ov-bNt"/>
+                <constraint firstItem="ecA-Y7-8FL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="ljs-W8-Swh"/>
+                <constraint firstItem="ecA-Y7-8FL" firstAttribute="leading" secondItem="ggu-YM-u3S" secondAttribute="trailing" constant="30" id="nYu-zi-ZcS"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+        <tapGestureRecognizer id="23D-f0-jVY">
+            <connections>
+                <action selector="imageSelected:" destination="-1" id="Gbb-Vz-fdH"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="e5K-pm-3V1">
+            <connections>
+                <action selector="imageSelected:" destination="-1" id="jwf-AJ-fka"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="YzG-rT-j4d">
+            <connections>
+                <action selector="imageSelected:" destination="-1" id="Vja-qk-R9E"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="eY0-Gi-zGM">
+            <connections>
+                <action selector="imageSelected:" destination="-1" id="DAW-e1-1Lx"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="111" width="960" height="540"/>
+        <image name="222" width="960" height="540"/>
+        <image name="333" width="250" height="156"/>
+        <image name="555" width="611" height="3144"/>
+    </resources>
+</document>

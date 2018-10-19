@@ -28,6 +28,7 @@
 #import "CustomTransitionVC.h"
 #import "SearchControllerListVC.h"
 #import "TestPayVC.h"
+#import "MZTransitioningVC.h"
 
 //Test
 #import "MZTestSDWebImageVC.h"
@@ -153,6 +154,9 @@
             [self.navigationController pushViewController:vc animated:YES];
         } else if (indexPath.row == 9) {
             TestPayVC *vc = [[TestPayVC alloc] initWithNibName:@"TestPayVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 10) {
+            MZTransitioningVC*vc = [[MZTransitioningVC alloc] initWithNibName:@"MZTransitioningVC" bundle:nil];
             [self.navigationController pushViewController:vc animated:YES];
         }
     } else {

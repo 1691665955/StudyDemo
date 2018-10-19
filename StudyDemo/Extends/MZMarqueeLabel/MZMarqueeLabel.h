@@ -12,6 +12,13 @@ typedef NS_ENUM(NSUInteger,MZMarqueeDirection) {
     MZMarqueeDirectionRightToLeft,
     MZMarqueeDirectionLeftToRight
 };
+
+typedef NS_ENUM(NSUInteger,MZMarqueeSpeed) {
+    MZMarqueeSpeedDefault = 4,
+    MZMarqueeSpeedSlow = 3,
+    MZMarqueeSpeedMiddle = 4,
+    MZMarqueeSpeedFast = 5
+};
 @interface MZMarqueeLabel : UIView
-- (void)setupText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment direction:(MZMarqueeDirection)direction whiteSpace:(NSString *)whiteSpace;
+- (void)setupText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment direction:(MZMarqueeDirection)direction whiteSpace:(NSString *)whiteSpace speed:(MZMarqueeSpeed)speed;
 @end

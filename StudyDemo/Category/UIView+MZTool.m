@@ -23,4 +23,13 @@
     gradient.colors = [NSArray arrayWithObjects:(id)startColor.CGColor, (id)endColor.CGColor, nil];
     [self.layer insertSublayer:gradient atIndex:0];
 }
+
+/**
+ 给view添加点击事件
+ */
+- (void)addTapGestureRecognizerWithTarget:(id)target selector:(SEL)selector {
+    self.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:selector];
+    [self addGestureRecognizer:tap];
+}
 @end

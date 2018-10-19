@@ -7,9 +7,10 @@
 //
 
 #import "MZTestSDWebImageVC.h"
-#import "MZMarqueeLabel.h"
+#import "MZImageBrowsingVC.h"
+#import "MZImageBrowsingTestCell.h"
 
-@interface MZTestSDWebImageVC ()
+@interface MZTestSDWebImageVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
@@ -19,10 +20,38 @@
     [super viewDidLoad];
     self.title = @"测试";
     
-    MZMarqueeLabel *marqueeLabel = [[MZMarqueeLabel alloc] initWithFrame:CGRectMake(20, 100, SCREEN_WIDTH-40, 40)];
-    marqueeLabel.backgroundColor = [UIColor lightGrayColor];
-    [marqueeLabel setupText:@"简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法简单方法" font:[UIFont systemFontOfSize:16] textColor:[UIColor whiteColor] textAlignment:NSTextAlignmentLeft direction:MZMarqueeDirectionLeftToRight whiteSpace:@"        "];
-    [self.view addSubview:marqueeLabel];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navi_Height) style:UITableViewStylePlain];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [tableView registerNib:[UINib nibWithNibName:@"MZImageBrowsingTestCell" bundle:nil] forCellReuseIdentifier:@"MZImageBrowsingTestCell"];
+    [self.view addSubview:tableView];
+}
+
+#pragma mark -UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    MZImageBrowsingTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MZImageBrowsingTestCell"];
+    [cell loadImageViews];
+    WeakSelf(self);
+    cell.previewImage = ^(NSArray<UIImageView *> *imageViewArray, NSInteger currentIndex) {
+        StrongSelf(self);
+        MZImageBrowsingVC *vc = [[MZImageBrowsingVC alloc] initWithImageViewArray:imageViewArray currentIndex:currentIndex];
+        [self presentViewController:vc animated:YES completion:nil];
+    };
+    return cell;
+}
+
+#pragma mark -UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 110;
 }
 
 @end

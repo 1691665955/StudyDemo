@@ -34,7 +34,7 @@
     self.clipsToBounds = YES;
 }
 
-- (void)setupText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment direction:(MZMarqueeDirection)direction whiteSpace:(NSString *)whiteSpace {
+- (void)setupText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment direction:(MZMarqueeDirection)direction whiteSpace:(NSString *)whiteSpace speed:(MZMarqueeSpeed)speed {
     if (self.firstLB) {
         [self.firstLB removeFromSuperview];
         [self.lastLB removeFromSuperview];
@@ -42,7 +42,7 @@
     
     self.firstLB = [[UILabel alloc] init];
     self.firstLB.backgroundColor = [UIColor clearColor];
-    self.firstLB.text = [NSString stringWithFormat:@"%@",text];
+    self.firstLB.text = [NSString stringWithFormat:@"%@%@",text,whiteSpace?whiteSpace:@"    "];
     self.firstLB.font = font;
     self.firstLB.textColor = textColor;
     self.firstLB.textAlignment = textAlignment;
@@ -50,7 +50,7 @@
     
     self.lastLB = [[UILabel alloc] init];
     self.lastLB.backgroundColor = [UIColor clearColor];
-    self.lastLB.text = [NSString stringWithFormat:@"%@%@%@",whiteSpace,text,whiteSpace];
+    self.lastLB.text = [NSString stringWithFormat:@"%@%@",text,whiteSpace?whiteSpace:@"    "];
     self.lastLB.font = font;
     self.lastLB.textColor = textColor;
     self.lastLB.textAlignment = textAlignment;
@@ -67,7 +67,7 @@
             self.firstLB.frame = CGRectMake(0, 0, size1.width, self.frame.size.height);
             self.lastLB.frame = CGRectMake(size1.width, 0, size2.width, self.frame.size.height);
         }
-        [self updateLabelFrameWithDirection:direction duration:text.length/5];
+        [self updateLabelFrameWithDirection:direction duration:text.length/speed];
     } else {
         self.firstLB.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
         self.lastLB.frame = CGRectMake(self.frame.size.width, 0, self.frame.size.width, self.frame.size.height);
@@ -92,10 +92,10 @@
     } completion:^(BOOL finished) {
         if (finished) {
             if (direction == MZMarqueeDirectionLeftToRight) {
-                if (CGRectGetMaxX(self.firstLB.frame) >= self.frame.size.width) {
-                    self.firstLB.frame = CGRectMake(self.frame.size.width-self.firstLB.frame.size.width-self.lastLB.frame.size.width, 0, self.firstLB.frame.size.width, self.firstLB.frame.size.height);
-                } else if (CGRectGetMaxX(self.lastLB.frame) >= self.frame.size.width) {
-                    self.lastLB.frame = CGRectMake(self.frame.size.width-self.firstLB.frame.size.width-self.lastLB.frame.size.width, 0, self.lastLB.frame.size.width, self.lastLB.frame.size.height);
+                if (CGRectGetMinX(self.firstLB.frame) >= self.frame.size.width) {
+                    self.firstLB.frame = CGRectMake(CGRectGetMinX(self.lastLB.frame)-self.firstLB.frame.size.width, 0, self.firstLB.frame.size.width, self.firstLB.frame.size.height);
+                } else if (CGRectGetMinX(self.lastLB.frame) >= self.frame.size.width) {
+                    self.lastLB.frame = CGRectMake(CGRectGetMinX(self.firstLB.frame)-self.lastLB.frame.size.width, 0, self.lastLB.frame.size.width, self.lastLB.frame.size.height);
                 }
                 [self updateLabelFrameWithDirection:direction duration:duration];
             } else {

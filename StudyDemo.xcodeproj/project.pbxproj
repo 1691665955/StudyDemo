@@ -93,6 +93,12 @@
 		6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85412D1FFB670700913301 /* ContactsUIVC.m */; };
 		6A85413D1FFB8E5200913301 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85413C1FFB8E5200913301 /* XibView.m */; };
 		6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A85413E1FFB8E5F00913301 /* XibView.xib */; };
+		6A8F4BDD21747BBA00C6ED6A /* MZTransitioningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F4BDB21747BBA00C6ED6A /* MZTransitioningVC.m */; };
+		6A8F4BDE21747BBA00C6ED6A /* MZTransitioningVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8F4BDC21747BBA00C6ED6A /* MZTransitioningVC.xib */; };
+		6A8F4BE221747CAF00C6ED6A /* MZImagesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F4BE021747CAF00C6ED6A /* MZImagesVC.m */; };
+		6A8F4BE321747CAF00C6ED6A /* MZImagesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8F4BE121747CAF00C6ED6A /* MZImagesVC.xib */; };
+		6A8F4BEE2175B72500C6ED6A /* MZImageBrowsingTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F4BEC2175B72500C6ED6A /* MZImageBrowsingTestCell.m */; };
+		6A8F4BEF2175B72500C6ED6A /* MZImageBrowsingTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8F4BED2175B72500C6ED6A /* MZImageBrowsingTestCell.xib */; };
 		6AA03CF021251CF500A68B12 /* UIButton+MZTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AA03CEF21251CF500A68B12 /* UIButton+MZTouch.m */; };
 		6AB35C462133A223007CC480 /* MZTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB35C442133A223007CC480 /* MZTableView.m */; };
 		6AB35C4E2133AAE7007CC480 /* MZBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB35C4D2133AAE7007CC480 /* MZBannerView.m */; };
@@ -114,6 +120,8 @@
 		6AC98F8920E46B2A00ABD44F /* UIViewController+MZAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC98F8820E46B2A00ABD44F /* UIViewController+MZAnimation.m */; };
 		6ADF9BB3214B9FE200ABFE71 /* MZMobileField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF9BB2214B9FE200ABFE71 /* MZMobileField.m */; };
 		6ADF9BB7214BA5F700ABFE71 /* MZMarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF9BB6214BA5F700ABFE71 /* MZMarqueeLabel.m */; };
+		6AF23BE621796BED008C7DD0 /* MZImageBrowsingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF23BE321796BED008C7DD0 /* MZImageBrowsingVC.m */; };
+		6AF23BE721796BED008C7DD0 /* MZPresentAnimationTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF23BE421796BED008C7DD0 /* MZPresentAnimationTransitioning.m */; };
 		6AF6B1901FFF753D00CBB30F /* XibViewTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */; };
 		6AF6B1931FFF76A500CBB30F /* ErrorXibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF6B1921FFF76A500CBB30F /* ErrorXibView.m */; };
 		6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6B1941FFF76B100CBB30F /* ErrorXibView.xib */; };
@@ -290,6 +298,15 @@
 		6A85413B1FFB8E5200913301 /* XibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
 		6A85413C1FFB8E5200913301 /* XibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
 		6A85413E1FFB8E5F00913301 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
+		6A8F4BDA21747BBA00C6ED6A /* MZTransitioningVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTransitioningVC.h; sourceTree = "<group>"; };
+		6A8F4BDB21747BBA00C6ED6A /* MZTransitioningVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTransitioningVC.m; sourceTree = "<group>"; };
+		6A8F4BDC21747BBA00C6ED6A /* MZTransitioningVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTransitioningVC.xib; sourceTree = "<group>"; };
+		6A8F4BDF21747CAF00C6ED6A /* MZImagesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZImagesVC.h; sourceTree = "<group>"; };
+		6A8F4BE021747CAF00C6ED6A /* MZImagesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZImagesVC.m; sourceTree = "<group>"; };
+		6A8F4BE121747CAF00C6ED6A /* MZImagesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZImagesVC.xib; sourceTree = "<group>"; };
+		6A8F4BEB2175B72500C6ED6A /* MZImageBrowsingTestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZImageBrowsingTestCell.h; sourceTree = "<group>"; };
+		6A8F4BEC2175B72500C6ED6A /* MZImageBrowsingTestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZImageBrowsingTestCell.m; sourceTree = "<group>"; };
+		6A8F4BED2175B72500C6ED6A /* MZImageBrowsingTestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZImageBrowsingTestCell.xib; sourceTree = "<group>"; };
 		6AA03CEE21251CF500A68B12 /* UIButton+MZTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MZTouch.h"; sourceTree = "<group>"; };
 		6AA03CEF21251CF500A68B12 /* UIButton+MZTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MZTouch.m"; sourceTree = "<group>"; };
 		6AB35C422133A223007CC480 /* MZTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZTableView.h; sourceTree = "<group>"; };
@@ -330,6 +347,10 @@
 		6ADF9BB2214B9FE200ABFE71 /* MZMobileField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZMobileField.m; sourceTree = "<group>"; };
 		6ADF9BB5214BA5F700ABFE71 /* MZMarqueeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZMarqueeLabel.h; sourceTree = "<group>"; };
 		6ADF9BB6214BA5F700ABFE71 /* MZMarqueeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZMarqueeLabel.m; sourceTree = "<group>"; };
+		6AF23BE221796BED008C7DD0 /* MZPresentAnimationTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZPresentAnimationTransitioning.h; sourceTree = "<group>"; };
+		6AF23BE321796BED008C7DD0 /* MZImageBrowsingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZImageBrowsingVC.m; sourceTree = "<group>"; };
+		6AF23BE421796BED008C7DD0 /* MZPresentAnimationTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZPresentAnimationTransitioning.m; sourceTree = "<group>"; };
+		6AF23BE521796BED008C7DD0 /* MZImageBrowsingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZImageBrowsingVC.h; sourceTree = "<group>"; };
 		6AF6B18E1FFF753D00CBB30F /* XibViewTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewTestVC.h; sourceTree = "<group>"; };
 		6AF6B18F1FFF753D00CBB30F /* XibViewTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewTestVC.m; sourceTree = "<group>"; };
 		6AF6B1911FFF76A500CBB30F /* ErrorXibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorXibView.h; sourceTree = "<group>"; };
@@ -472,6 +493,7 @@
 		6A26206820F77035003F984D /* 测试 */ = {
 			isa = PBXGroup;
 			children = (
+				6A8F4BEA2175B70400C6ED6A /* View */,
 				6A26206920F77196003F984D /* MZTestSDWebImageVC.h */,
 				6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */,
 				6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */,
@@ -880,6 +902,7 @@
 		6A8540FB1FFB1EC500913301 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6A8F4BD6217479DC00C6ED6A /* 自定义转场过渡动画 */,
 				6A12BF8120FB255C009573C6 /* 自定义支付选择控制器 */,
 				6A26206E20F83FAD003F984D /* UISearchController使用 */,
 				6AC98F7D20E4653600ABD44F /* 自定义转场动画 */,
@@ -965,6 +988,27 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6A8F4BD6217479DC00C6ED6A /* 自定义转场过渡动画 */ = {
+			isa = PBXGroup;
+			children = (
+				6AF23BBC21771ED0008C7DD0 /* 图片浏览器 */,
+				6A8F4BDA21747BBA00C6ED6A /* MZTransitioningVC.h */,
+				6A8F4BDB21747BBA00C6ED6A /* MZTransitioningVC.m */,
+				6A8F4BDC21747BBA00C6ED6A /* MZTransitioningVC.xib */,
+			);
+			path = "自定义转场过渡动画";
+			sourceTree = "<group>";
+		};
+		6A8F4BEA2175B70400C6ED6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A8F4BEB2175B72500C6ED6A /* MZImageBrowsingTestCell.h */,
+				6A8F4BEC2175B72500C6ED6A /* MZImageBrowsingTestCell.m */,
+				6A8F4BED2175B72500C6ED6A /* MZImageBrowsingTestCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6AB35C402133A223007CC480 /* MZTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1043,6 +1087,7 @@
 		6AC98F6E20E35F7200ABD44F /* Extends */ = {
 			isa = PBXGroup;
 			children = (
+				6AF23BE121796BED008C7DD0 /* MZImageBrowsing */,
 				6ADF9BB4214BA58100ABFE71 /* MZMarqueeLabel */,
 				6ADF9BB0214B918D00ABFE71 /* MZMobileField */,
 				6AB35C4B2133A991007CC480 /* MZBannerView */,
@@ -1111,6 +1156,27 @@
 				6ADF9BB6214BA5F700ABFE71 /* MZMarqueeLabel.m */,
 			);
 			path = MZMarqueeLabel;
+			sourceTree = "<group>";
+		};
+		6AF23BBC21771ED0008C7DD0 /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				6A8F4BDF21747CAF00C6ED6A /* MZImagesVC.h */,
+				6A8F4BE021747CAF00C6ED6A /* MZImagesVC.m */,
+				6A8F4BE121747CAF00C6ED6A /* MZImagesVC.xib */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
+		6AF23BE121796BED008C7DD0 /* MZImageBrowsing */ = {
+			isa = PBXGroup;
+			children = (
+				6AF23BE221796BED008C7DD0 /* MZPresentAnimationTransitioning.h */,
+				6AF23BE321796BED008C7DD0 /* MZImageBrowsingVC.m */,
+				6AF23BE421796BED008C7DD0 /* MZPresentAnimationTransitioning.m */,
+				6AF23BE521796BED008C7DD0 /* MZImageBrowsingVC.h */,
+			);
+			path = MZImageBrowsing;
 			sourceTree = "<group>";
 		};
 		6AF6B19B1FFF803400CBB30F /* JS与0C交互 */ = {
@@ -1293,6 +1359,7 @@
 				6AC98F6A20E33A5900ABD44F /* PhoneNumberInputVC.xib in Resources */,
 				6A12BF6620F856D3009573C6 /* SearchControllerVC3.xib in Resources */,
 				6A12BF8E20FB2BDC009573C6 /* TestPayVC.xib in Resources */,
+				6A8F4BDE21747BBA00C6ED6A /* MZTransitioningVC.xib in Resources */,
 				6AF7B9DF2000643200AC2015 /* index1.html in Resources */,
 				6AF6B1951FFF76B100CBB30F /* ErrorXibView.xib in Resources */,
 				6A587C03200D9846004D66F8 /* WaterFlowTestCell.xib in Resources */,
@@ -1305,9 +1372,11 @@
 				6A587BD9200C9D15004D66F8 /* 孙亚龙.jpg in Resources */,
 				6AF7B9F7200348DD00AC2015 /* index3.html in Resources */,
 				6AF6B19A1FFF7C4E00CBB30F /* XibTestCell.xib in Resources */,
+				6A8F4BE321747CAF00C6ED6A /* MZImagesVC.xib in Resources */,
 				6AF7B9EB20032E5E00AC2015 /* index2.html in Resources */,
 				6A587BCB200C8C7A004D66F8 /* 索隆.jpg in Resources */,
 				6A12BF5520F844B8009573C6 /* SearchControllerListVC.xib in Resources */,
+				6A8F4BEF2175B72500C6ED6A /* MZImageBrowsingTestCell.xib in Resources */,
 				6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */,
 				6A12BF5020F842C8009573C6 /* SearchControllerCell.xib in Resources */,
 				6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */,
@@ -1422,6 +1491,7 @@
 				6A0743CB202330CB009629E6 /* MZWaveView.m in Sources */,
 				6A12BF6D20F8760A009573C6 /* NSString+MZTool.m in Sources */,
 				6A12BF4F20F842C8009573C6 /* SearchControllerCell.m in Sources */,
+				6A8F4BE221747CAF00C6ED6A /* MZImagesVC.m in Sources */,
 				6A587BAA200C4BD7004D66F8 /* UILabel+YBAttributeTextTapAction.m in Sources */,
 				6A12BF6520F856D3009573C6 /* SearchControllerVC3.m in Sources */,
 				6A12BF7920F899CF009573C6 /* NSObject+MZDate.m in Sources */,
@@ -1431,6 +1501,7 @@
 				6A587BFB200D8D50004D66F8 /* MZWaterFlowLayout.m in Sources */,
 				6A587B6F20075F8F004D66F8 /* BezierPathVC.m in Sources */,
 				6A587B9E200C2D3F004D66F8 /* ClipsImageVC.m in Sources */,
+				6A8F4BDD21747BBA00C6ED6A /* MZTransitioningVC.m in Sources */,
 				6A587BCF200C8D8B004D66F8 /* WebViewFitVC.m in Sources */,
 				6A587BC2200C82CD004D66F8 /* TestFitModel.m in Sources */,
 				6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */,
@@ -1441,12 +1512,14 @@
 				6AC98F5B20E3301500ABD44F /* MZTabBarController.m in Sources */,
 				6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */,
 				6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */,
+				6A8F4BEE2175B72500C6ED6A /* MZImageBrowsingTestCell.m in Sources */,
 				6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */,
 				6A09B18B2102E065006C818D /* HKTransitionPush.m in Sources */,
 				6A12BF7D20F89B4D009573C6 /* MZTextView.m in Sources */,
 				6A587B8220076D14004D66F8 /* cornerRadiusView.m in Sources */,
 				6A12BF6A20F87476009573C6 /* MZRSA.m in Sources */,
 				6A12BF5420F844B8009573C6 /* SearchControllerListVC.m in Sources */,
+				6AF23BE721796BED008C7DD0 /* MZPresentAnimationTransitioning.m in Sources */,
 				6A8540E41FFB0EC000913301 /* ViewController.m in Sources */,
 				6A85412B1FFB58CE00913301 /* GetContactMethodListVC.m in Sources */,
 				6AA03CF021251CF500A68B12 /* UIButton+MZTouch.m in Sources */,
@@ -1467,6 +1540,7 @@
 				6A8540E11FFB0EC000913301 /* AppDelegate.m in Sources */,
 				6A12BF5F20F84CC9009573C6 /* SearchResultVC.m in Sources */,
 				6AF8D7EB200F3E0E00B4EBAA /* TestRuntimeModel.m in Sources */,
+				6AF23BE621796BED008C7DD0 /* MZImageBrowsingVC.m in Sources */,
 				6A12BF7020F87735009573C6 /* UIViewController+MZAlert.m in Sources */,
 				6A587BAF200C4D57004D66F8 /* UILabelTextFitVC.m in Sources */,
 				6A587B7920076863004D66F8 /* RectangleView.m in Sources */,

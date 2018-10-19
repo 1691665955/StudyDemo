@@ -23,8 +23,11 @@
 }
 
 - (void)setOriginText:(NSString *)originText {
-    _originText = originText;
     self.text = [self parseString:originText];
+}
+
+- (NSString *)originText {
+    return [self noneSpaseString:self.text];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
