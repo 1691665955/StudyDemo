@@ -9,8 +9,8 @@
 #import "MZImageBrowsingVC.h"
 #import "MZPresentAnimationTransitioning.h"
 
-#define SCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH_1     [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT_1    [UIScreen mainScreen].bounds.size.height
 
 @interface MZImageBrowsingVC ()<UIViewControllerTransitioningDelegate,UIScrollViewDelegate>
 @property (copy, nonatomic) NSArray *imageViewArray;
@@ -58,14 +58,14 @@
     }
     
     for (int i = 0; i < self.imageViewArray.count; i++) {
-        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH+20)*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-        scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT);
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH_1+20)*i, 0, SCREEN_WIDTH_1, SCREEN_HEIGHT_1)];
+        scrollView.contentSize = CGSizeMake(SCREEN_WIDTH_1, SCREEN_HEIGHT_1);
         [self.imageScrollView addSubview:scrollView];
         if (@available(iOS 11.0, *)) {
             scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
         
-        UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        UIView *containerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_1, SCREEN_HEIGHT_1)];
         containerView.userInteractionEnabled = YES;
         [scrollView addSubview:containerView];
         
@@ -73,15 +73,15 @@
         [containerView addGestureRecognizer:tap];
         
         UIImageView *tempImageView = self.imageViewArray[i];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*tempImageView.image.size.height/tempImageView.image.size.width)];
-        if (CGRectGetHeight(imageView.frame) <= SCREEN_HEIGHT) {
-            imageView.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
-            scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT);
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_1, SCREEN_WIDTH_1*tempImageView.image.size.height/tempImageView.image.size.width)];
+        if (CGRectGetHeight(imageView.frame) <= SCREEN_HEIGHT_1) {
+            imageView.center = CGPointMake(SCREEN_WIDTH_1/2, SCREEN_HEIGHT_1/2);
+            scrollView.contentSize = CGSizeMake(SCREEN_WIDTH_1, SCREEN_HEIGHT_1);
         } else {
             CGRect frame = containerView.frame;
             frame.size.height = CGRectGetHeight(imageView.frame);
             containerView.frame = frame;
-             scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, CGRectGetHeight(imageView.frame));
+             scrollView.contentSize = CGSizeMake(SCREEN_WIDTH_1, CGRectGetHeight(imageView.frame));
         }
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         imageView.clipsToBounds = YES;
@@ -90,12 +90,12 @@
         
         if (i == self.currentIndex) {
             self.showImageView.image = tempImageView.image;
-            [self.showImageView setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*tempImageView.image.size.height/tempImageView.image.size.width)];
+            [self.showImageView setFrame:CGRectMake(0, 0, SCREEN_WIDTH_1, SCREEN_WIDTH_1*tempImageView.image.size.height/tempImageView.image.size.width)];
             self.showImageView.center = self.view.center;
         }
     }
     
-    [self.imageScrollView setContentOffset:CGPointMake((20+SCREEN_WIDTH)*self.currentIndex, 0)];
+    [self.imageScrollView setContentOffset:CGPointMake((20+SCREEN_WIDTH_1)*self.currentIndex, 0)];
 }
 
 - (void)back {
@@ -110,12 +110,12 @@
     if (_imageScrollView) {
         return _imageScrollView;
     }
-    _imageScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH+20, SCREEN_HEIGHT)];
+    _imageScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH_1+20, SCREEN_HEIGHT_1)];
     _imageScrollView.delegate = self;
     _imageScrollView.delaysContentTouches = YES;
     _imageScrollView.canCancelContentTouches = NO;
     _imageScrollView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:1];
-    _imageScrollView.contentSize = CGSizeMake((20 + SCREEN_WIDTH) * self.imageViewArray.count, SCREEN_HEIGHT);
+    _imageScrollView.contentSize = CGSizeMake((20 + SCREEN_WIDTH_1) * self.imageViewArray.count, SCREEN_HEIGHT_1);
     _imageScrollView.pagingEnabled = YES;
     _imageScrollView.directionalLockEnabled = YES;
     return _imageScrollView;
@@ -132,11 +132,11 @@
 
 #pragma mark -UIScrollViewDelegate
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    self.currentIndex = scrollView.contentOffset.x/(SCREEN_WIDTH + 20);
+    self.currentIndex = scrollView.contentOffset.x/(SCREEN_WIDTH_1 + 20);
     UIImageView *tempImageView = self.imageViewArray[self.currentIndex];
     self.currentImageView = tempImageView;
     self.showImageView.image = tempImageView.image;
-    [self.showImageView setFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH * tempImageView.image.size.height / tempImageView.image.size.width)];
+    [self.showImageView setFrame:CGRectMake(0, 0, SCREEN_WIDTH_1, SCREEN_WIDTH_1 * tempImageView.image.size.height / tempImageView.image.size.width)];
     self.showImageView.center = self.view.center;
 }
 

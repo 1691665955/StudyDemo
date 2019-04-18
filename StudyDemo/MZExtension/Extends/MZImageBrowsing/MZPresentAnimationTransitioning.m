@@ -9,6 +9,8 @@
 #import "MZPresentAnimationTransitioning.h"
 #import "MZImageBrowsingVC.h"
 
+#define SCREEN_WIDTH_2     [UIScreen mainScreen].bounds.size.width
+
 @interface MZPresentAnimationTransitioning()
 @property (nonatomic, assign) MZPresentAnimationTransitioningType type;
 @end
@@ -63,7 +65,7 @@
     fromVC.view.hidden = YES;
     toVC.view.hidden = YES;
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-        tempImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH*toVC.currentImageView.image.size.height/toVC.currentImageView.image.size.width);
+        tempImageView.frame = CGRectMake(0, 0, SCREEN_WIDTH_2, SCREEN_WIDTH_2*toVC.currentImageView.image.size.height/toVC.currentImageView.image.size.width);
         tempImageView.center = toVC.view.center;
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];

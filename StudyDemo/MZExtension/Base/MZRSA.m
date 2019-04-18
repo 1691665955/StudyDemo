@@ -492,7 +492,7 @@ static NSData *base64_decode(NSString *str){
     if (!der || !str) {
         return nil;
     }
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
     SecKeyRef keyRef = [self publicKeyWithCertificate:der];
     if (!keyRef) {
         return nil;
@@ -533,7 +533,7 @@ static NSData *base64_decode(NSString *str){
     if (!p12 || !str) {
         return nil;
     }
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
     SecKeyRef keyRef = [self privateKeyWithCertificate:p12 certificatePWD:p12];
     if (!keyRef) {
         return nil;
@@ -575,14 +575,13 @@ static NSData *base64_decode(NSString *str){
     if (!der || !str) {
         return nil;
     }
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:0];
     SecKeyRef keyRef = [self publicKeyWithCertificate:der];
     if (!keyRef) {
         return nil;
     }
     NSData *decryptData = [MZRSA decryptData:data withKeyRef:keyRef];
-    NSString *ret = base64_encode_data(decryptData);
-    return ret;
+    return [[NSString alloc] initWithData:decryptData encoding:NSUTF8StringEncoding];
 }
 
 /**
@@ -616,14 +615,13 @@ static NSData *base64_decode(NSString *str){
     if (!p12 || !str) {
         return nil;
     }
-    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:str options:0];
     SecKeyRef keyRef = [self privateKeyWithCertificate:p12 certificatePWD:p12];
     if (!keyRef) {
         return nil;
     }
     NSData *decryptData = [MZRSA decryptData:data withKeyRef:keyRef];
-    NSString *ret = base64_encode_data(decryptData);
-    return ret;
+    return [[NSString alloc] initWithData:decryptData encoding:NSUTF8StringEncoding];
 }
 
 /**

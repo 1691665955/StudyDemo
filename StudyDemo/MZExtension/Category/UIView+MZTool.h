@@ -26,4 +26,11 @@
  @param selector 响应事件
  */
 - (void)addTapGestureRecognizerWithTarget:(id)target selector:(SEL)selector;
+
+/**
+ 根据一个VC上的view得到该VC
+ 
+ @return VC
+ */
+- (UIViewController *)getVC;
 @end

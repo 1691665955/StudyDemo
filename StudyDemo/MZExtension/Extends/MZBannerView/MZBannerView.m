@@ -7,6 +7,7 @@
 //
 
 #import "MZBannerView.h"
+#import "UIImageView+WebCache.h"
 
 #define DefaultTimeInterval 4
 
@@ -30,7 +31,7 @@
         self.scrollView.showsHorizontalScrollIndicator = NO;
         self.scrollView.pagingEnabled = YES;
         self.scrollView.delegate = self;
-        self.scrollView.backgroundColor = [UIColor lightGrayColor];
+        self.scrollView.bounces = YES;
         [self addSubview:self.scrollView];
         
         self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake((frame.size.width-100)/2, frame.size.height-25, 100,15)];
@@ -64,16 +65,13 @@
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.scrollView.frame.size.height);
         self.scrollView.contentOffset = CGPointMake(0, 0);
         if (self.placeholder) {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
             imageView.image = self.placeholder;
             [self.scrollView addSubview:imageView];
         }
     } else {
-        self.scrollView.scrollEnabled = YES;
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageUrls.count+2), self.scrollView.frame.size.height);
-        self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
         for (int i = 0; i < imageUrls.count+2; i++) {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width*i, 0, self.frame.size.width, self.frame.size.height)];
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width*i, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
             imageView.userInteractionEnabled = YES;
             imageView.contentMode = UIViewContentModeScaleAspectFill;
             imageView.clipsToBounds = YES;
@@ -90,13 +88,15 @@
             } else {
                 [imageView sd_setImageWithURL:[NSURL URLWithString:url]];
             }
-            imageView.tag = 99+i;
+            imageView.tag = 999+i;
             [self.scrollView addSubview:imageView];
             
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageView:)];
             [imageView addGestureRecognizer:tap];
         }
-        
+        self.scrollView.scrollEnabled = YES;
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageUrls.count+2), self.scrollView.frame.size.height);
+        self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
     }
     self.pageControl.numberOfPages = imageUrls.count;
     self.pageControl.currentPage = 0;
@@ -113,16 +113,13 @@
         self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.scrollView.frame.size.height);
         self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
         if (self.placeholder) {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
             imageView.image = self.placeholder;
             [self.scrollView addSubview:imageView];
         }
     } else {
-        self.scrollView.scrollEnabled = YES;
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageNames.count+2), self.scrollView.frame.size.height);
-        self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
         for (int i = 0; i < imageNames.count+2; i++) {
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width*i, 0, self.frame.size.width, self.frame.size.height)];
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width*i, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
             imageView.userInteractionEnabled = YES;
             imageView.contentMode = UIViewContentModeScaleAspectFill;
             imageView.clipsToBounds = YES;
@@ -135,13 +132,15 @@
                 imageName = imageNames[i-1];
             }
             imageView.image = [UIImage imageNamed:imageName];
-            imageView.tag = 99+i;
+            imageView.tag = 999+i;
             [self.scrollView addSubview:imageView];
             
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageView:)];
             [imageView addGestureRecognizer:tap];
         }
-        
+        self.scrollView.scrollEnabled = YES;
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageNames.count+2), self.scrollView.frame.size.height);
+        self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
     }
     self.pageControl.numberOfPages = imageNames.count;
     self.pageControl.currentPage = 0;
@@ -180,13 +179,13 @@
 
 - (void)tapImageView:(UITapGestureRecognizer *)tap {
     NSInteger index = tap.view.tag;
-    if (index == 99) {
-        index = 99+self.scrollView.subviews.count;
-    } else if (index == 100+self.scrollView.subviews.count) {
-        index = 100;
+    if (index == 999) {
+        index = 999+self.scrollView.subviews.count;
+    } else if (index == 1000+self.scrollView.subviews.count) {
+        index = 1000;
     }
     if (self.delegate && [self.delegate respondsToSelector:@selector(bannerView:didSelectedIndex:data:)]) {
-        [self.delegate bannerView:self didSelectedIndex:index-100 data:self.dataArray?self.dataArray[index-100]:nil];
+        [self.delegate bannerView:self didSelectedIndex:index-1000 data:self.dataArray?self.dataArray[index-1000]:nil];
     }
 }
 
@@ -202,6 +201,7 @@
         _interval = DefaultTimeInterval;
     }
     _timer = [NSTimer scheduledTimerWithTimeInterval:self.interval target:self selector:@selector(timeFun) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)setInterval:(NSTimeInterval)interval {
@@ -212,8 +212,14 @@
 - (void)timeFun {
     CGPoint point = self.scrollView.contentOffset;
     point.x += self.scrollView.frame.size.width;
-    [self.scrollView setContentOffset:point animated:YES];
-    NSLog(@"%lf",point.x);
+//    [self.scrollView setContentOffset:point animated:YES];
+    
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        self.scrollView.contentOffset = point;
+    } completion:^(BOOL finished) {
+        [self scrollViewDidEndDecelerating:self.scrollView];
+    }];
 }
 
 #pragma mark -UIScrollViewDelegate
@@ -227,23 +233,32 @@
     if ([_timer isValid]) {
         [_timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:self.interval]];
     }
+    
+    if ([_timer isValid] && [[_timer fireDate] timeIntervalSinceDate:[NSDate date]] < 1000000000) {
+        CGPoint offset = scrollView.contentOffset;
+        if (offset.x <= 0) {
+            scrollView.contentOffset = CGPointMake(scrollView.contentSize.width-2*self.scrollView.frame.size.width, 0);
+        } else if(offset.x+1 >= scrollView.contentSize.width-self.scrollView.frame.size.width) {
+            scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
+        }
+    }
+    
+    NSInteger page = (NSInteger)((scrollView.contentOffset.x+1)/self.scrollView.frame.size.width);
+    self.pageControl.currentPage = page-1;
+    scrollView.contentOffset = CGPointMake((self.pageControl.currentPage+1)*self.scrollView.frame.size.width, 0);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGPoint offset = scrollView.contentOffset;
-    if (offset.x <= 0) {
-        scrollView.contentOffset = CGPointMake(scrollView.contentSize.width-2*scrollView.frame.size.width, 0);
-    } else if(offset.x >= scrollView.contentSize.width-scrollView.frame.size.width) {
-        scrollView.contentOffset = CGPointMake(scrollView.frame.size.width, 0);
+    if ([_timer isValid] && [[_timer fireDate] timeIntervalSinceDate:[NSDate date]] > 1000000000) {
+        CGPoint offset = scrollView.contentOffset;
+        if (offset.x <= 0) {
+            scrollView.contentOffset = CGPointMake(scrollView.contentSize.width-2*self.scrollView.frame.size.width, 0);
+        } else if(offset.x+1 >= scrollView.contentSize.width-self.scrollView.frame.size.width) {
+            scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
+        }
     }
     NSInteger page = (NSInteger)(scrollView.contentOffset.x/scrollView.frame.size.width);
-    if (page == 0) {
-        self.pageControl.currentPage = scrollView.subviews.count-1;
-    } else if (page == scrollView.subviews.count+2) {
-        self.pageControl.currentPage = 0;
-    } else {
-        self.pageControl.currentPage = page-1;
-    }
+    self.pageControl.currentPage = page-1;
 }
 
 @end

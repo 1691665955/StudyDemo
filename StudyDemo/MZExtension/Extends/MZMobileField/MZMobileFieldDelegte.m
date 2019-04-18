@@ -1,53 +1,14 @@
 //
-//  MZMobileField.m
-//  StudyDemo
+//  MZMobileFieldDelegte.m
+//  bodyGuards
 //
-//  Created by 曾龙 on 2018/9/14.
-//  Copyright © 2018年 曾龙. All rights reserved.
+//  Created by 曾龙 on 2018/12/18.
+//  Copyright © 2018年 trudian. All rights reserved.
 //
 
-#import "MZMobileField.h"
+#import "MZMobileFieldDelegte.h"
 
-@interface MZMobileField()<UITextFieldDelegate>
-
-@end
-
-@implementation MZMobileField
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;
-    }
-    return self;
-}
-
-- (void)setOriginText:(NSString *)originText {
-    self.text = [self parseString:originText];
-}
-
-- (NSString *)originText {
-    return [self noneSpaseString:self.text];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.delegate = self;
-        self.keyboardType = UIKeyboardTypeNumberPad;
-    }
-    return self;
-}
-
+@implementation MZMobileFieldDelegte
 #pragma mark -UITextFieldDelegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     NSString* text = textField.text;

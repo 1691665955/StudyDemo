@@ -7,51 +7,43 @@
 //
 
 #import "MZTestSDWebImageVC.h"
-#import "MZImageBrowsingVC.h"
-#import "MZImageBrowsingTestCell.h"
+#import "MZDrawBoardView.h"
 
-@interface MZTestSDWebImageVC ()<UITableViewDelegate,UITableViewDataSource>
-
+@interface MZTestSDWebImageVC ()
+@property (nonatomic, strong) MZDrawBoardView *boardView;
+@property (nonatomic, strong) UIImageView *saveView;
 @end
 
 @implementation MZTestSDWebImageVC
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"测试";
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-Navi_Height) style:UITableViewStylePlain];
-    tableView.delegate = self;
-    tableView.dataSource = self;
-    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [tableView registerNib:[UINib nibWithNibName:@"MZImageBrowsingTestCell" bundle:nil] forCellReuseIdentifier:@"MZImageBrowsingTestCell"];
-    [self.view addSubview:tableView];
+    UIBarButtonItem *rightItem1 = [[UIBarButtonItem alloc] initWithTitle:@"清除" style:UIBarButtonItemStyleDone target:self action:@selector(clear)];
+    UIBarButtonItem *rightItem2 = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
+    self.navigationItem.rightBarButtonItems = @[rightItem1,rightItem2];
+    
+    MZDrawBoardView *view = [[MZDrawBoardView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 300)];
+    view.layer.borderColor = RGB(223, 223, 223).CGColor;
+    view.layer.borderWidth = 0.5;
+    view.lineWidth = 2;
+    view.fillColor = RGB(90, 160, 245);
+    [self.view addSubview:view];
+    self.boardView = view;
+    
+    UIImageView *saveView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 320, SCREEN_WIDTH, 300)];
+    saveView.layer.borderColor = RGB(223, 223, 223).CGColor;
+    saveView.layer.borderWidth = 0.5;
+    [self.view addSubview:saveView];
+    self.saveView = saveView;
 }
 
-#pragma mark -UITableViewDataSource
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (void)clear {
+    [self.boardView clear];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MZImageBrowsingTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MZImageBrowsingTestCell"];
-    [cell loadImageViews];
-    WeakSelf(self);
-    cell.previewImage = ^(NSArray<UIImageView *> *imageViewArray, NSInteger currentIndex) {
-        StrongSelf(self);
-        MZImageBrowsingVC *vc = [[MZImageBrowsingVC alloc] initWithImageViewArray:imageViewArray currentIndex:currentIndex];
-        [self presentViewController:vc animated:YES completion:nil];
-    };
-    return cell;
-}
-
-#pragma mark -UITableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 110;
+- (void)save {
+    self.saveView.image = [self.boardView getImage];
 }
 
 @end

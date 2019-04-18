@@ -32,4 +32,19 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:target action:selector];
     [self addGestureRecognizer:tap];
 }
+
+/**
+ 根据一个VC上的view得到该VC
+ 
+ @return VC
+ */
+- (UIViewController *)getVC {
+    UIResponder *responder = self;
+    while ((responder = [responder nextResponder])) {
+        if ([responder isKindOfClass:[UIViewController class]]) {
+            return (UIViewController *)responder;
+        }
+    }
+    return nil;
+}
 @end

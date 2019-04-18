@@ -12,6 +12,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        self.font = [UIFont systemFontOfSize:12];
         self.placeholder = @"";
         self.placeholderColor = [UIColor colorWithRed:187/255.0 green:187/255.0 blue:187/255.0 alpha:1];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange:) name:UITextViewTextDidChangeNotification object:self];
@@ -63,11 +64,11 @@
     if (self.maxTextLength > 0) {
         CGRect frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
         CGSize maxSize = CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX);
-        CGRect rect1 = [[NSString stringWithFormat:@"%ld/%ld",self.text.length,self.maxTextLength] boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:self.placeholderColor} context:nil];
+        CGRect rect1 = [[NSString stringWithFormat:@"%ld/%ld",self.text.length,self.maxTextLength] boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.font,NSForegroundColorAttributeName:self.placeholderColor} context:nil];
         frame.origin.y = frame.size.height-3-rect1.size.height;
         frame.origin.x = frame.size.width-5-rect1.size.width;
         frame.size = rect1.size;
-        [[NSString stringWithFormat:@"%ld/%ld",self.text.length,self.maxTextLength] drawInRect:frame withAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:self.placeholderColor}];
+        [[NSString stringWithFormat:@"%ld/%ld",self.text.length,self.maxTextLength] drawInRect:frame withAttributes:@{NSFontAttributeName:self.font,NSForegroundColorAttributeName:self.placeholderColor}];
     }
     
     //如果有文字，就直接返回，不需要画占位符文字

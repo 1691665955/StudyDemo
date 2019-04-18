@@ -14,6 +14,7 @@
 #import "ClipsImageVC.h"
 #import "WaveViewTestVC.h"
 #import "ShapeLayerAnimationVC.h"
+#import "DrawBoardVC.h"
 @interface DrawFuncVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -48,11 +49,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 7;
+    return 8;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSArray *titles = @[@"根据颜色生成图片",@"贝塞尔曲线绘制",@"view的遮罩效果",@"划掉效果的UILabel",@"截取图片",@"双波浪UI",@"利用shapeLayer绘制动画"];
+    NSArray *titles = @[@"根据颜色生成图片",@"贝塞尔曲线绘制",@"view的遮罩效果",@"划掉效果的UILabel",@"截取图片",@"双波浪UI",@"利用shapeLayer绘制动画",@"画板"];
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     cell.textLabel.text = titles[indexPath.row];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -82,6 +83,9 @@
         [self.navigationController pushViewController:vc animated:YES];
     } else if (indexPath.row == 6) {
         ShapeLayerAnimationVC *vc = [[ShapeLayerAnimationVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if (indexPath.row == 7) {
+        DrawBoardVC *vc = [[DrawBoardVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
