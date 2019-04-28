@@ -122,7 +122,7 @@
     
     //用于开关灯操作的button
     
-    _openButton=[[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-40)/2,SCREEN_HEIGHT-100,40, 40)];
+    _openButton=[[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH-40)/2,SCREEN_HEIGHT-100-Navi_Height,40, 40)];
     [_openButton setImage:[UIImage imageNamed:@"scan_light_up"] forState:UIControlStateNormal];
     [_openButton setImage:[UIImage imageNamed:@"scan_light_down"] forState:UIControlStateSelected];
     [_openButton addTarget:self action:@selector(openLight)forControlEvents:UIControlEventTouchUpInside];

@@ -68,4 +68,11 @@
  @param size 生成图片的大小
  */
 + (UIImage *)resizeImage:(UIImage *)image toSize:(CGSize)size;
+
+/**
+ 生成圆形图片
+
+ @param image 原图片
+ */
++ (UIImage *)cutCircleImage:(UIImage *)image;
 @end

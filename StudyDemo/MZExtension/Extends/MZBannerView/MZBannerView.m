@@ -24,23 +24,50 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.autoScroll = YES;
-        
-        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-        self.scrollView.showsVerticalScrollIndicator = NO;
-        self.scrollView.showsHorizontalScrollIndicator = NO;
-        self.scrollView.pagingEnabled = YES;
-        self.scrollView.delegate = self;
-        self.scrollView.bounces = YES;
-        [self addSubview:self.scrollView];
-        
-        self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake((frame.size.width-100)/2, frame.size.height-25, 100,15)];
-        self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
-        self.pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:90/255.0 green:160/255.0 blue:245/255.0 alpha:1];
-        self.pageControl.hidesForSinglePage = YES;
-        [self addSubview:self.pageControl];
+        [self setup];
     }
     return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    self.autoScroll = YES;
+    
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.pagingEnabled = YES;
+    self.scrollView.delegate = self;
+    self.scrollView.bounces = YES;
+    self.scrollView.contentSize = CGSizeMake(0, 0);
+    [self addSubview:self.scrollView];
+    
+    self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake((self.frame.size.width-100)/2, self.frame.size.height-25, 100,15)];
+    self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+    self.pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:90/255.0 green:160/255.0 blue:245/255.0 alpha:1];
+    self.pageControl.hidesForSinglePage = YES;
+    [self addSubview:self.pageControl];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.scrollView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    self.pageControl.frame = CGRectMake((self.frame.size.width-100)/2, self.frame.size.height-25, 100,15);
+    self.scrollView.contentSize = CGSizeMake(self.frame.size.width*self.scrollView.subviews.count, 0);
+    for (int i = 0; i < self.scrollView.subviews.count; i++) {
+        UIView *view = [self.scrollView viewWithTag:999+i];
+        view.frame = CGRectMake(self.frame.size.width*i, 0, self.frame.size.width, self.frame.size.height);
+    }
+    if (self.scrollView.subviews.count >= 3) {
+        self.scrollView.contentOffset = CGPointMake(self.frame.size.width, 0);
+    }
 }
 
 - (void)setDelegate:(id<MZBannerViewDelegate>)delegate {
@@ -62,7 +89,7 @@
     }
     if (imageUrls.count == 0) {
         self.scrollView.scrollEnabled = NO;
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.scrollView.frame.size.height);
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, 0);
         self.scrollView.contentOffset = CGPointMake(0, 0);
         if (self.placeholder) {
             UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
@@ -95,7 +122,7 @@
             [imageView addGestureRecognizer:tap];
         }
         self.scrollView.scrollEnabled = YES;
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageUrls.count+2), self.scrollView.frame.size.height);
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageUrls.count+2), 0);
         self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
     }
     self.pageControl.numberOfPages = imageUrls.count;
@@ -110,8 +137,8 @@
     }
     if (imageNames.count == 0) {
         self.scrollView.scrollEnabled = NO;
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, self.scrollView.frame.size.height);
-        self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width, 0);
+        self.scrollView.contentOffset = CGPointMake(0, 0);
         if (self.placeholder) {
             UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
             imageView.image = self.placeholder;
@@ -139,7 +166,7 @@
             [imageView addGestureRecognizer:tap];
         }
         self.scrollView.scrollEnabled = YES;
-        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageNames.count+2), self.scrollView.frame.size.height);
+        self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width*(imageNames.count+2), 0);
         self.scrollView.contentOffset = CGPointMake(self.scrollView.frame.size.width, 0);
     }
     self.pageControl.numberOfPages = imageNames.count;

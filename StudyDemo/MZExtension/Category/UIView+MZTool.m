@@ -47,4 +47,27 @@
     }
     return nil;
 }
+
+/**
+ 设置试图圆角
+ 
+ @param radius 圆角大小
+ */
+- (void)setRadius:(CGFloat)radius {
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = YES;
+}
+
+/**
+ 设置部分圆角(目前仅源码方式可以用,xib或sb设置无效)
+ 
+ @param corners 圆角方向
+ @param radii 圆角大小
+ */
+- (void)setRoundedCorners:(UIRectCorner)corners radii:(CGSize)radii {
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:radii];
+    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    [layer setPath:path.CGPath];
+    self.layer.mask = layer;
+}
 @end

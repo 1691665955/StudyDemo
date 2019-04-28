@@ -16,6 +16,7 @@
 #import "TestRuntimeVC.h"
 #import "SystemFuncVC.h"
 #import "PhoneNumberInputVC.h"
+#import "CustomFontVC.h"
 
 //UI
 #import "XibViewTestVC.h"
@@ -115,6 +116,9 @@
             [self.navigationController pushViewController:vc animated:YES];
         } else if (indexPath.row == 6) {
             PhoneNumberInputVC *vc = [[PhoneNumberInputVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        } else if (indexPath.row == 7) {
+            CustomFontVC *vc = [[CustomFontVC alloc] init];
             [self.navigationController pushViewController:vc animated:YES];
         }
     } else if(indexPath.section == 1){

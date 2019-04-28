@@ -39,6 +39,29 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self configWaveProperties];
+        [self createWaves];
+        [self setupDisplayLink];
+    }
+    return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    waveWidth = self.frame.size.width;
+    waveHeight = self.frame.size.height;
+    
+    waveA = waveHeight/2;
+    waveW = 2*M_PI/waveWidth*_wavePI;
+    
+    offSetF = 0;
+    offSetS = offSetF + _waveOffset;
+    currentK = waveHeight/2;
+}
+
 //给参数赋初值
 - (void)configWaveProperties {
     _frontColor = [UIColor blackColor];
@@ -46,6 +69,7 @@
     _frontSpeed = 0.01;
     _insideSpeed = 0.01*1.2;
     _waveOffset = M_PI;
+    _wavePI = 1.5;
     _directionType = WaveDirectionTypeBackWard;
 }
 
@@ -55,7 +79,7 @@
     waveHeight = self.frame.size.height;
     
     waveA = waveHeight/2;
-    waveW = (M_PI*2)/waveWidth/1.5;
+    waveW = 2*M_PI/waveWidth*_wavePI;
     
     offSetF = 0;
     offSetS = offSetF + _waveOffset;

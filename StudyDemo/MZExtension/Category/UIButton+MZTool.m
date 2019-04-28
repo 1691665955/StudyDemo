@@ -8,6 +8,9 @@
 
 #import "UIButton+MZTool.h"
 #import <objc/runtime.h>
+
+typedef void(^UIButtonBlock)(UIButton *sender);
+
 @implementation UIButton (MZTool)
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state {
     if (state == UIControlStateNormal) {
@@ -38,6 +41,21 @@
     if (color) {
         self.backgroundColor = color;
     }
+}
+
+/**
+ 添加点击事件
+ 
+ @param clickedBlock 点击事件回调
+ */
+- (void)setClickedBlock:(void(^)(UIButton *sender))clickedBlock {
+    [self setExtraPropertyWithPropertyName:@"clickedBlock" perportyValue:clickedBlock];
+    [self addTarget:self action:@selector(mzClicked:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)mzClicked:(UIButton *)sender {
+    UIButtonBlock block = [self getExtraPropertyWithPropertyName:@"clickedBlock"];
+    block(sender);
 }
 
 /**

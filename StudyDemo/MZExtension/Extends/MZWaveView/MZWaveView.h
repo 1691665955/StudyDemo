@@ -14,10 +14,11 @@ typedef NS_ENUM(NSInteger,WaveDirectionType) {
 };
 
 @interface MZWaveView : UIView
-@property (nonatomic ,strong)UIColor *frontColor;    //外层波形颜色，默认黑色
-@property (nonatomic ,strong)UIColor *insideColor;   //内层波形颜色，默认灰色
-@property (nonatomic ,assign)CGFloat frontSpeed;     //外层波形移动速度
-@property (nonatomic ,assign)CGFloat insideSpeed;    //内层波形移动速度
-@property (nonatomic ,assign)CGFloat waveOffset;     //两层波形相位差,默认M_PI
-@property (nonatomic ,assign)WaveDirectionType directionType; //移动方向，默认从右往左
+@property (nonatomic ,strong) UIColor *frontColor;    //外层波形颜色，默认黑色
+@property (nonatomic ,strong) UIColor *insideColor;   //内层波形颜色，默认灰色
+@property (nonatomic ,assign) CGFloat frontSpeed;     //外层波形移动速度
+@property (nonatomic ,assign) CGFloat insideSpeed;    //内层波形移动速度
+@property (nonatomic ,assign) CGFloat waveOffset;     //两层波形相位差,默认M_PI
+@property (nonatomic, assign) CGFloat wavePI;         //波浪全屏显示多少个PI
+@property (nonatomic ,assign) WaveDirectionType directionType; //移动方向，默认从右往左
 @end

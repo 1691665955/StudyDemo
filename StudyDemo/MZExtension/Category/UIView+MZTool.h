@@ -33,4 +33,19 @@
  @return VC
  */
 - (UIViewController *)getVC;
+
+/**
+ 设置试图圆角
+
+ @param radius 圆角大小
+ */
+- (void)setRadius:(CGFloat)radius;
+
+/**
+ 设置部分圆角(目前仅源码方式可以用,xib或sb设置无效)
+
+ @param corners 圆角方向
+ @param radii 圆角大小
+ */
+- (void)setRoundedCorners:(UIRectCorner)corners radii:(CGSize)radii;
 @end

@@ -7,11 +7,15 @@
 //
 
 #import "MZTestSDWebImageVC.h"
-#import "MZDrawBoardView.h"
+#import "MZWaveView.h"
+#import "NSObject+MZTool.h"
+#import "UIView+MZTool.h"
+#import "UIImage+MZTool.h"
 
 @interface MZTestSDWebImageVC ()
-@property (nonatomic, strong) MZDrawBoardView *boardView;
-@property (nonatomic, strong) UIImageView *saveView;
+@property (weak, nonatomic) IBOutlet MZWaveView *waveView;
+
+
 @end
 
 @implementation MZTestSDWebImageVC
@@ -19,31 +23,27 @@
     [super viewDidLoad];
     self.title = @"测试";
     
-    UIBarButtonItem *rightItem1 = [[UIBarButtonItem alloc] initWithTitle:@"清除" style:UIBarButtonItemStyleDone target:self action:@selector(clear)];
-    UIBarButtonItem *rightItem2 = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStyleDone target:self action:@selector(save)];
-    self.navigationItem.rightBarButtonItems = @[rightItem1,rightItem2];
+    self.waveView.frontColor = RGB(229, 89, 89);
+    self.waveView.insideColor = RGB(90, 160, 245);
+    self.waveView.frontSpeed = 0.01;
+    self.waveView.insideSpeed = 0.017;
+    self.waveView.waveOffset = M_PI_4;
+    self.waveView.wavePI = 0.7;
+    self.waveView.directionType = WaveDirectionTypeForward;
     
-    MZDrawBoardView *view = [[MZDrawBoardView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 300)];
-    view.layer.borderColor = RGB(223, 223, 223).CGColor;
-    view.layer.borderWidth = 0.5;
-    view.lineWidth = 2;
-    view.fillColor = RGB(90, 160, 245);
-    [self.view addSubview:view];
-    self.boardView = view;
+    NSLog(@"WiFi_name========%@",[NSObject SSID]);
+    NSLog(@"Version==========%@",[NSObject getAppVersion]);
+    NSLog(@"Build============%@",[NSObject getAppBuild]);
+    NSLog(@"AppName==========%@",[NSObject getAppName]);
+    NSLog(@"AppBundleID======%@",[NSObject getAppBundleIdentifier]);
     
-    UIImageView *saveView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 320, SCREEN_WIDTH, 300)];
-    saveView.layer.borderColor = RGB(223, 223, 223).CGColor;
-    saveView.layer.borderWidth = 0.5;
-    [self.view addSubview:saveView];
-    self.saveView = saveView;
-}
-
-- (void)clear {
-    [self.boardView clear];
-}
-
-- (void)save {
-    self.saveView.image = [self.boardView getImage];
+    UIImageView *iconView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-100)/2, 200, 100, 100)];
+    iconView.image = [UIImage cutCircleImage:[NSObject getAppIcon]];
+    [self.view addSubview:iconView];
+    
+    
+    [self.waveView setRoundedCorners:UIRectCornerBottomRight radii:CGSizeMake(10, 10)];
 }
 
 @end
+

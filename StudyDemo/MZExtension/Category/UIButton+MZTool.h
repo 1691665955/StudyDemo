@@ -17,4 +17,11 @@
  @param state 目前状态只能设置UIControlStateNormal和UIControlStateSelected
  */
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
+
+/**
+ 添加点击事件
+
+ @param clickedBlock 点击事件回调
+ */
+- (void)setClickedBlock:(void(^)(UIButton *sender))clickedBlock;
 @end

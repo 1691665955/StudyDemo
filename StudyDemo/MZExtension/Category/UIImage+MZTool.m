@@ -200,4 +200,18 @@
     return newImage;
 }
 
+/**
+ 生成圆形图片
+ 
+ @param image 原图片
+ */
++ (UIImage *)cutCircleImage:(UIImage *)image {
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0);
+    [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, image.size.width, image.size.height) cornerRadius:image.size.width/2] addClip];
+    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
 @end

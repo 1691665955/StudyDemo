@@ -31,6 +31,12 @@
 		6A26207420F84033003F984D /* SearchControllerVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A26207220F84033003F984D /* SearchControllerVC1.xib */; };
 		6A31B34E226819F700766A97 /* MZDrawBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B34D226819F700766A97 /* MZDrawBoardView.m */; };
 		6A31B35122681EC300766A97 /* DrawBoardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B35022681EC300766A97 /* DrawBoardVC.m */; };
+		6A31B356226870D100766A97 /* CustomFontVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B355226870D100766A97 /* CustomFontVC.m */; };
+		6A31B3582268714200766A97 /* let.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A31B3572268714200766A97 /* let.ttf */; };
+		6A31B35B2268779700766A97 /* UIView+MZFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B35A2268779700766A97 /* UIView+MZFrame.m */; };
+		6A31B386226D987300766A97 /* MZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B385226D987300766A97 /* MZTableViewCell.m */; };
+		6A31B389226DAD0800766A97 /* NSDictionary+MZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B388226DAD0800766A97 /* NSDictionary+MZLog.m */; };
+		6A31B38F226DAEFA00766A97 /* NSArray+MZLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31B38E226DAEFA00766A97 /* NSArray+MZLog.m */; };
 		6A518DC32007333D00A69E70 /* MZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A518DC22007333D00A69E70 /* MZNavigationController.m */; };
 		6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5A2007493D004D66F8 /* AboutNullVC.m */; };
 		6A587B5F200752D3004D66F8 /* DataHandleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A587B5E200752D3004D66F8 /* DataHandleVC.m */; };
@@ -193,6 +199,17 @@
 		6A31B34D226819F700766A97 /* MZDrawBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZDrawBoardView.m; sourceTree = "<group>"; };
 		6A31B34F22681EC300766A97 /* DrawBoardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawBoardVC.h; sourceTree = "<group>"; };
 		6A31B35022681EC300766A97 /* DrawBoardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawBoardVC.m; sourceTree = "<group>"; };
+		6A31B354226870D100766A97 /* CustomFontVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFontVC.h; sourceTree = "<group>"; };
+		6A31B355226870D100766A97 /* CustomFontVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFontVC.m; sourceTree = "<group>"; };
+		6A31B3572268714200766A97 /* let.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = let.ttf; sourceTree = "<group>"; };
+		6A31B3592268779700766A97 /* UIView+MZFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MZFrame.h"; sourceTree = "<group>"; };
+		6A31B35A2268779700766A97 /* UIView+MZFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MZFrame.m"; sourceTree = "<group>"; };
+		6A31B384226D987300766A97 /* MZTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTableViewCell.h; sourceTree = "<group>"; };
+		6A31B385226D987300766A97 /* MZTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTableViewCell.m; sourceTree = "<group>"; };
+		6A31B387226DAD0800766A97 /* NSDictionary+MZLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MZLog.h"; sourceTree = "<group>"; };
+		6A31B388226DAD0800766A97 /* NSDictionary+MZLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MZLog.m"; sourceTree = "<group>"; };
+		6A31B38D226DAEFA00766A97 /* NSArray+MZLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+MZLog.h"; sourceTree = "<group>"; };
+		6A31B38E226DAEFA00766A97 /* NSArray+MZLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MZLog.m"; sourceTree = "<group>"; };
 		6A518DC12007333D00A69E70 /* MZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZNavigationController.h; sourceTree = "<group>"; };
 		6A518DC22007333D00A69E70 /* MZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZNavigationController.m; sourceTree = "<group>"; };
 		6A587B592007493D004D66F8 /* AboutNullVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutNullVC.h; sourceTree = "<group>"; };
@@ -501,6 +518,8 @@
 				6A26206920F77196003F984D /* MZTestSDWebImageVC.h */,
 				6A26206A20F77196003F984D /* MZTestSDWebImageVC.m */,
 				6A26206B20F77196003F984D /* MZTestSDWebImageVC.xib */,
+				6A31B384226D987300766A97 /* MZTableViewCell.h */,
+				6A31B385226D987300766A97 /* MZTableViewCell.m */,
 				6A09B1862102E064006C818D /* Transition */,
 			);
 			path = "测试";
@@ -556,6 +575,16 @@
 				6A31B34D226819F700766A97 /* MZDrawBoardView.m */,
 			);
 			path = MZDrawBoardView;
+			sourceTree = "<group>";
+		};
+		6A31B3532268707300766A97 /* 导入自定义字体 */ = {
+			isa = PBXGroup;
+			children = (
+				6A31B3572268714200766A97 /* let.ttf */,
+				6A31B354226870D100766A97 /* CustomFontVC.h */,
+				6A31B355226870D100766A97 /* CustomFontVC.m */,
+			);
+			path = "导入自定义字体";
 			sourceTree = "<group>";
 		};
 		6A518DC0200732A900A69E70 /* 自定义NavigationController */ = {
@@ -944,6 +973,8 @@
 				6A727959225F16890034622D /* UIButton+MZTool.m */,
 				6A727964225F16890034622D /* UIView+MZTool.h */,
 				6A72795A225F16890034622D /* UIView+MZTool.m */,
+				6A31B3592268779700766A97 /* UIView+MZFrame.h */,
+				6A31B35A2268779700766A97 /* UIView+MZFrame.m */,
 				6A72795B225F16890034622D /* UIViewController+MZAlert.h */,
 				6A72796A225F16890034622D /* UIViewController+MZAlert.m */,
 				6A72795C225F16890034622D /* NSDictionary+MZTool.h */,
@@ -962,6 +993,10 @@
 				6A72795F225F16890034622D /* NSObject+MZTool.m */,
 				6A72798A225F17D10034622D /* UIColor+MZTool.h */,
 				6A72798B225F17D10034622D /* UIColor+MZTool.m */,
+				6A31B387226DAD0800766A97 /* NSDictionary+MZLog.h */,
+				6A31B388226DAD0800766A97 /* NSDictionary+MZLog.m */,
+				6A31B38D226DAEFA00766A97 /* NSArray+MZLog.h */,
+				6A31B38E226DAEFA00766A97 /* NSArray+MZLog.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1050,6 +1085,7 @@
 		6A8540FA1FFB1EBE00913301 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6A31B3532268707300766A97 /* 导入自定义字体 */,
 				6AC98F6520E339E500ABD44F /* 11位手机号码344显示 */,
 				6AC98F4A20E20D5100ABD44F /* 系统功能 */,
 				6AF8D7E8200F3DB800B4EBAA /* 关于runtime */,
@@ -1440,6 +1476,7 @@
 				6A12BF5520F844B8009573C6 /* SearchControllerListVC.xib in Resources */,
 				6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */,
 				6A12BF5020F842C8009573C6 /* SearchControllerCell.xib in Resources */,
+				6A31B3582268714200766A97 /* let.ttf in Resources */,
 				6A8540E91FFB0EC000913301 /* Assets.xcassets in Resources */,
 				6A8540F71FFB13BD00913301 /* functionList.plist in Resources */,
 				6AF7B9FC200350DD00AC2015 /* index4.html in Resources */,
@@ -1536,6 +1573,7 @@
 				6A8540FF1FFB1F5100913301 /* ScanBarCodeVC.m in Sources */,
 				6A587C02200D9846004D66F8 /* WaterFlowTestCell.m in Sources */,
 				6A727993225F1F1F0034622D /* MZAlertController.m in Sources */,
+				6A31B389226DAD0800766A97 /* NSDictionary+MZLog.m in Sources */,
 				6A727975225F16890034622D /* MZTextView.m in Sources */,
 				6A587B63200753E3004D66F8 /* FloatNumberDealWithRoundVC.m in Sources */,
 				6AC98F6920E33A5900ABD44F /* PhoneNumberInputVC.m in Sources */,
@@ -1556,6 +1594,7 @@
 				6A727996225F20BA0034622D /* MZPresentationController.m in Sources */,
 				6A587BFE200D911D004D66F8 /* WaterFlowModel.m in Sources */,
 				6A587BFB200D8D50004D66F8 /* MZWaterFlowLayout.m in Sources */,
+				6A31B356226870D100766A97 /* CustomFontVC.m in Sources */,
 				6A587B6F20075F8F004D66F8 /* BezierPathVC.m in Sources */,
 				6A587B9E200C2D3F004D66F8 /* ClipsImageVC.m in Sources */,
 				6A727974225F16890034622D /* MZCircleProgress.m in Sources */,
@@ -1573,6 +1612,7 @@
 				6A727976225F16890034622D /* MZImageBrowsingVC.m in Sources */,
 				6AC98F5B20E3301500ABD44F /* MZTabBarController.m in Sources */,
 				6AC98F5420E3266700ABD44F /* ShapeLayerAnimationVC.m in Sources */,
+				6A31B38F226DAEFA00766A97 /* NSArray+MZLog.m in Sources */,
 				6A85410B1FFB2D2500913301 /* BarCodeFuncVC.m in Sources */,
 				6A7279A2225F2AF30034622D /* MZActionSheetController.m in Sources */,
 				6A587B7F20076AFB004D66F8 /* ArcView.m in Sources */,
@@ -1584,6 +1624,7 @@
 				6A85412B1FFB58CE00913301 /* GetContactMethodListVC.m in Sources */,
 				6AF8D7F2200F45EA00B4EBAA /* TestRuntimeVC.m in Sources */,
 				6A587B5B2007493D004D66F8 /* AboutNullVC.m in Sources */,
+				6A31B35B2268779700766A97 /* UIView+MZFrame.m in Sources */,
 				6A8541281FFB567100913301 /* MZContactModel.m in Sources */,
 				6A587B5F200752D3004D66F8 /* DataHandleVC.m in Sources */,
 				6AF6B19E1FFF817400CBB30F /* WKWebView_MessageHandler.m in Sources */,
@@ -1602,6 +1643,7 @@
 				6A8541211FFB53F600913301 /* MBProgressHUD+SN.m in Sources */,
 				6A727985225F16890034622D /* UIViewController+MZAlert.m in Sources */,
 				6A587B7320076145004D66F8 /* LineView.m in Sources */,
+				6A31B386226D987300766A97 /* MZTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

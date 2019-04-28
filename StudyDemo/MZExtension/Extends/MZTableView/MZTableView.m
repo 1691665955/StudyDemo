@@ -23,12 +23,34 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.contentView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
-        self.contentView.bounces = NO;
-        self.contentView.delegate = self;
-        [self addSubview:self.contentView];
+        [self setup];
     }
     return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    self.contentView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+    self.contentView.bounces = NO;
+    self.contentView.delegate = self;
+    [self addSubview:self.contentView];
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    self.contentView.frame = self.bounds;
+    for (UIView *cell in self.contentView.subviews) {
+        CGRect frame = cell.frame;
+        frame.size.height = self.bounds.size.height;
+        cell.frame = frame;
+    }
 }
 
 - (NSMutableDictionary *)registerDictionary {
@@ -146,7 +168,7 @@
             }
         }
     }
-    self.contentView.contentSize = CGSizeMake(width, self.frame.size.height);
+    self.contentView.contentSize = CGSizeMake(width, 0);
     NSLog(@"cell对象个数:%ld",self.visibleCellArray.count+self.unVisibleCellArray.count);
 }
 
