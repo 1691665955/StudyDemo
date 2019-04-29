@@ -206,9 +206,24 @@
  @param image 原图片
  */
 + (UIImage *)cutCircleImage:(UIImage *)image {
+    return [self cutPartCircleImage:image corners:UIRectCornerAllCorners radii:CGSizeMake(image.size.width/2, image.size.height/2)];
+}
+
+/**
+ 生成部分圆角图片
+
+ @param image 原图片
+ @param corners 圆角方向
+ @param radii 圆角大小
+ */
++ (UIImage *)cutPartCircleImage:(UIImage *)image corners:(UIRectCorner)corners radii:(CGSize)radii {
     UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0);
-    [[UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, image.size.width, image.size.height) cornerRadius:image.size.width/2] addClip];
+    CGContextRef ref = UIGraphicsGetCurrentContext();
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, image.size.width, image.size.height) byRoundingCorners:corners cornerRadii:radii];
+    CGContextAddPath(ref, path.CGPath);
+    CGContextClip(ref);
     [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    CGContextDrawPath(ref, kCGPathStroke);
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;

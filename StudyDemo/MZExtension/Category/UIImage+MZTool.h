@@ -75,4 +75,13 @@
  @param image 原图片
  */
 + (UIImage *)cutCircleImage:(UIImage *)image;
+
+/**
+ 生成部分圆角图片
+ 
+ @param image 原图片
+ @param corners 圆角方向
+ @param radii 圆角大小
+ */
++ (UIImage *)cutPartCircleImage:(UIImage *)image corners:(UIRectCorner)corners radii:(CGSize)radii;
 @end

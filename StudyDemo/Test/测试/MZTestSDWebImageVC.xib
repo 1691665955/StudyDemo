@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MZTestSDWebImageVC">
             <connections>
+                <outlet property="testView" destination="mxT-EA-pgg" id="jC5-Jp-iZL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="waveView" destination="q5f-BD-FMk" id="kGc-jj-fQ8"/>
             </connections>
@@ -21,10 +22,18 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5f-BD-FMk" customClass="MZWaveView">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="d5s-Jj-2da"/>
+                        <constraint firstAttribute="height" constant="50" id="d5s-Jj-2da"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxT-EA-pgg">
+                    <rect key="frame" x="147.5" y="547" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.019607843140000001" green="0.72156862749999995" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="HL8-hf-86W"/>
+                        <constraint firstAttribute="width" constant="80" id="rAT-u8-z4f"/>
                     </constraints>
                 </view>
             </subviews>
@@ -32,7 +41,9 @@
             <constraints>
                 <constraint firstItem="q5f-BD-FMk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Rv-9h-DCz"/>
                 <constraint firstAttribute="trailing" secondItem="q5f-BD-FMk" secondAttribute="trailing" id="Fq6-TO-exR"/>
+                <constraint firstItem="mxT-EA-pgg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TgA-ZM-bEk"/>
                 <constraint firstItem="q5f-BD-FMk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="e9v-Yp-Vem"/>
+                <constraint firstAttribute="bottom" secondItem="mxT-EA-pgg" secondAttribute="bottom" constant="40" id="gQM-Ct-aKx"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="146.5"/>
         </view>

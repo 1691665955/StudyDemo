@@ -15,6 +15,7 @@
 @interface MZTestSDWebImageVC ()
 @property (weak, nonatomic) IBOutlet MZWaveView *waveView;
 
+@property (weak, nonatomic) IBOutlet UIView *testView;
 
 @end
 
@@ -22,13 +23,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"测试";
+    self.view.backgroundColor = RGB(229, 89, 89);
+    
     
     self.waveView.frontColor = RGB(229, 89, 89);
     self.waveView.insideColor = RGB(90, 160, 245);
-    self.waveView.frontSpeed = 0.01;
-    self.waveView.insideSpeed = 0.017;
-    self.waveView.waveOffset = M_PI_4;
-    self.waveView.wavePI = 0.7;
+    self.waveView.backgroundColor = RGB(80, 190, 230);
+    self.waveView.frontHeight = 10;
+    self.waveView.insideHeight = 17;
     self.waveView.directionType = WaveDirectionTypeForward;
     
     NSLog(@"WiFi_name========%@",[NSObject SSID]);
@@ -38,11 +40,10 @@
     NSLog(@"AppBundleID======%@",[NSObject getAppBundleIdentifier]);
     
     UIImageView *iconView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-100)/2, 200, 100, 100)];
-    iconView.image = [UIImage cutCircleImage:[NSObject getAppIcon]];
+    iconView.image = [UIImage cutPartCircleImage:[NSObject getAppIcon] corners:UIRectCornerTopRight|UIRectCornerBottomLeft radii:CGSizeMake(30, 40)];
     [self.view addSubview:iconView];
     
-    
-    [self.waveView setRoundedCorners:UIRectCornerBottomRight radii:CGSizeMake(10, 10)];
+    [self.testView setRoundedCorners:UIRectCornerAllCorners radii:CGSizeMake(10, 10)];
 }
 
 @end

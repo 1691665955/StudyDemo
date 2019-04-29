@@ -15,11 +15,14 @@
     
     //y = A*sin(w*x+φ)+k  正弦三角函数
     
-    CGFloat waveA;   //振幅：波浪最高点到最低点距离的一半
-    CGFloat waveW;   //频率：代表波浪流动的快慢
-    CGFloat offSetF; //初相：外层波浪水平开始点
-    CGFloat offSetS; //初相：内层波浪水平开始点
-    CGFloat currentK; //偏移：波浪垂直起始点
+    CGFloat frontWaveA;        //振幅：外层波浪最高点到最低点距离的一半
+    CGFloat insideWaveA;       //振幅：内层波浪最高点到最低点距离的一半
+    CGFloat frontWaveW;        //频率：代表外层波浪流动的快慢
+    CGFloat insideWaveW;       //频率：代表内层浪流动的快慢
+    CGFloat frontOffSet;       //初相：外层波浪水平开始点
+    CGFloat insideOffSet;      //初相：内层波浪水平开始点
+    CGFloat frontCurrentK;     //偏移：外层波浪垂直起始点
+    CGFloat insideCurrentK;    //偏移：内层波浪垂直起始点
 }
 
 @property (nonatomic ,strong)CAShapeLayer *frontWaveLayer;
@@ -53,23 +56,33 @@
     [super layoutSubviews];
     waveWidth = self.frame.size.width;
     waveHeight = self.frame.size.height;
+    if (self.frontHeight == 0) {
+        self.frontHeight = waveHeight*2/3;
+    }
+    if (self.insideHeight == 0) {
+        self.insideHeight = waveHeight;
+    }
     
-    waveA = waveHeight/2;
-    waveW = 2*M_PI/waveWidth*_wavePI;
+    frontWaveA = self.frontHeight/2;
+    insideWaveA = self.insideHeight/2;
+    frontWaveW = 2*M_PI/waveWidth*_frontWavePI;
+    insideWaveW = 2*M_PI/waveWidth*_insideWavePI;
     
-    offSetF = 0;
-    offSetS = offSetF + _waveOffset;
-    currentK = waveHeight/2;
+    frontOffSet = 0;
+    insideOffSet = frontOffSet + _waveOffset;
+    frontCurrentK = waveHeight-self.frontHeight/2;
+    insideCurrentK = waveHeight-self.insideHeight/2;
 }
 
 //给参数赋初值
 - (void)configWaveProperties {
     _frontColor = [UIColor blackColor];
     _insideColor = [UIColor grayColor];
-    _frontSpeed = 0.01;
-    _insideSpeed = 0.01*1.2;
+    _frontSpeed = 0.02;
+    _insideSpeed = 0.03;
     _waveOffset = M_PI;
-    _wavePI = 1.5;
+    _frontWavePI = 2.5;
+    _insideWavePI = 3;
     _directionType = WaveDirectionTypeBackWard;
 }
 
@@ -78,12 +91,15 @@
     waveWidth = self.frame.size.width;
     waveHeight = self.frame.size.height;
     
-    waveA = waveHeight/2;
-    waveW = 2*M_PI/waveWidth*_wavePI;
+    frontWaveA = self.frontHeight/2;
+    insideWaveA = self.insideHeight/2;
+    frontWaveW = 2*M_PI/waveWidth*_frontWavePI;
+    insideWaveW = 2*M_PI/waveWidth*_insideWavePI;
     
-    offSetF = 0;
-    offSetS = offSetF + _waveOffset;
-    currentK = waveHeight/2;
+    frontOffSet = 0;
+    insideOffSet = frontOffSet + _waveOffset;
+    frontCurrentK = self.frontHeight/2;
+    insideCurrentK = self.insideHeight/2;
     
     _frontWaveLayer = [CAShapeLayer layer];
     _frontWaveLayer.fillColor = _frontColor.CGColor;
@@ -102,26 +118,38 @@
 //根据正弦函数绘制两个波形
 - (void)drawCurrentWaveWithLayer:(CAShapeLayer *)waveLayer offset:(CGFloat)offset {
     CGMutablePathRef path = CGPathCreateMutable();
-    
-    CGFloat y = currentK;
-    CGPathMoveToPoint(path, nil, 0, y);//将坐标移到坐标(0,k);
-    
-    for(int i=0 ;i<= waveWidth; i++) {
-        y = waveA * sin(waveW*i+offset)+currentK;
-        CGPathAddLineToPoint(path, nil, i, y);
+    if (waveLayer == _frontWaveLayer) {
+        CGFloat y = frontCurrentK;
+        CGPathMoveToPoint(path, nil, 0, y);//将坐标移到坐标(0,k);
+        for(int i=0 ;i<= waveWidth; i++) {
+            y = frontWaveA * sin(frontWaveW*i+frontOffSet)+frontCurrentK;
+            CGPathAddLineToPoint(path, nil, i, y);
+        }
+        CGPathAddLineToPoint(path, nil, waveWidth, waveHeight);
+        CGPathAddLineToPoint(path, nil, 0, waveHeight);
+        CGPathCloseSubpath(path);
+        waveLayer.path = path;
+        CGPathRelease(path);
+    } else {
+        CGFloat y = insideCurrentK;
+        CGPathMoveToPoint(path, nil, 0, y);//将坐标移到坐标(0,k);
+        for(int i=0 ;i<= waveWidth; i++) {
+            y = insideWaveA * sin(insideWaveW*i+insideOffSet)+insideCurrentK;
+            CGPathAddLineToPoint(path, nil, i, y);
+        }
+        CGPathAddLineToPoint(path, nil, waveWidth, waveHeight);
+        CGPathAddLineToPoint(path, nil, 0, waveHeight);
+        CGPathCloseSubpath(path);
+        waveLayer.path = path;
+        CGPathRelease(path);
     }
-    CGPathAddLineToPoint(path, nil, waveWidth, waveHeight);
-    CGPathAddLineToPoint(path, nil, 0, waveHeight);
-    CGPathCloseSubpath(path);
-    waveLayer.path = path;
-    CGPathRelease(path);
 }
 
 - (void)refreshCurrentWave:(CADisplayLink *)displayLink {
-    offSetF += _frontSpeed*_directionType;
-    offSetS += _insideSpeed*_directionType;
-    [self drawCurrentWaveWithLayer:_frontWaveLayer offset:offSetF];
-    [self drawCurrentWaveWithLayer:_insideWaveLayer offset:offSetS];
+    frontOffSet += _frontSpeed*_directionType;
+    insideOffSet += _insideSpeed*_directionType;
+    [self drawCurrentWaveWithLayer:_frontWaveLayer offset:frontOffSet];
+    [self drawCurrentWaveWithLayer:_insideWaveLayer offset:insideOffSet];
 }
 
 - (void)setFrontColor:(UIColor *)frontColor {
@@ -141,7 +169,7 @@
 - (void)setWaveOffset:(CGFloat)waveOffset {
     if (_waveOffset != waveOffset) {
         _waveOffset = waveOffset;
-        offSetS = offSetF + waveOffset;
+        insideOffSet = frontOffSet + waveOffset;
     }
 }
 
