@@ -11,6 +11,7 @@
 #import "NSObject+MZTool.h"
 #import "UIView+MZTool.h"
 #import "UIImage+MZTool.h"
+#import "MZAudioPlayTool.h"
 
 @interface MZTestSDWebImageVC ()
 @property (weak, nonatomic) IBOutlet MZWaveView *waveView;
@@ -43,7 +44,23 @@
     iconView.image = [UIImage cutPartCircleImage:[NSObject getAppIcon] corners:UIRectCornerTopRight|UIRectCornerBottomLeft radii:CGSizeMake(30, 40)];
     [self.view addSubview:iconView];
     
-    [self.testView setRoundedCorners:UIRectCornerAllCorners radii:CGSizeMake(10, 10)];
+    [self.testView setRoundedCorners:UIRectCornerTopRight radii:CGSizeMake(10, 10)];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(37.5, 150, SCREEN_WIDTH-75, 44);
+    btn.layer.cornerRadius = 18;
+    btn.layer.masksToBounds = YES;
+    [btn setBackgroundColor:RGB(229, 89, 89)];
+    [btn setTitle:@"播放" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn.titleLabel setFont:[UIFont systemFontOfSize:18]];
+    [btn addTarget:self action:@selector(playAudio) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)playAudio {
+    [MZAudioPlayTool playAudioWithName:@"test.mp3"];
+    [MZAudioPlayTool vibrate];
 }
 
 @end

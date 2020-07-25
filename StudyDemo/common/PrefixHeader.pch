@@ -54,9 +54,9 @@ _Pragma("clang diagnostic pop") \
 
 
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d \n%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String])
+#define NSLog(...) NSLog(@"\n 在文件(%@)第(%d)行\n %@\n",[[NSString stringWithFormat:@"%s",__FILE__] componentsSeparatedByString:@"/"].lastObject,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
 #else
-#define NSLog(FORMAT, ...) nil
+#define NSLog(...) nil
 #endif
 
 #endif /* PrefixHeader_pch */
