@@ -8,6 +8,7 @@
 
 #import "SystemFuncVC.h"
 #import <Social/Social.h>
+#import "NSObject+MZTool.h"
 @interface SystemFuncVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -55,17 +56,8 @@
 #pragma mark -UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-//        NSString *telStr = @"18062022010";
-//        UIWebView *callWebView = [[UIWebView alloc] init];
-//        NSURL *telURL = [NSURL URLWithString:[NSString stringWithFormat:@"tel:%@",telStr]];
-//        [callWebView loadRequest:[NSURLRequest requestWithURL:telURL]];
-//        [self.view addSubview:callWebView];
         NSString *telStr = @"18062022010";
-        if (@available(iOS 10.0, *)) {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@",telStr]] options:@{} completionHandler:nil];
-        } else {
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"telprompt://%@",telStr]]];
-        }
+        [NSObject callPhone:telStr];
     } else if (indexPath.row == 1) {
         if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"sms://18062022010"]]){
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"sms://18062022010"]];
