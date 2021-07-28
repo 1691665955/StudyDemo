@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -35,7 +32,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确认付款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kla-b7-zXb">
-                            <rect key="frame" x="100" y="13.5" width="175" height="22"/>
+                            <rect key="frame" x="100" y="14" width="175" height="22"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="22" id="6LD-kg-Axk"/>
                             </constraints>
@@ -172,7 +169,7 @@
                                 <constraint firstAttribute="height" constant="1" id="ZBB-hX-lql"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-ut-UX6">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xly-ut-UX6">
                             <rect key="frame" x="37.5" y="224" width="300" height="44"/>
                             <color key="backgroundColor" red="0.4941176471" green="0.76470588240000004" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -192,7 +189,7 @@
                                 <action selector="pay:" destination="-1" eventType="touchUpInside" id="3h2-7t-h8U"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yp-Ej-ctR">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yp-Ej-ctR">
                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="FFJ-iS-5oy"/>
@@ -241,6 +238,7 @@
                 <constraint firstItem="zl8-Xd-sLO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Fs7-S8-ze2"/>
                 <constraint firstAttribute="trailing" secondItem="zl8-Xd-sLO" secondAttribute="trailing" id="SqJ-kf-da1"/>
             </constraints>
+            <point key="canvasLocation" x="-385" y="-30"/>
         </view>
         <tapGestureRecognizer id="gKI-kc-cBX">
             <connections>
@@ -254,9 +252,9 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="pay" width="56" height="53"/>
-        <image name="pay2" width="57" height="57"/>
-        <image name="payBack" width="11" height="21"/>
-        <image name="支付－选择" width="31" height="31"/>
+        <image name="pay" width="56" height="53.5"/>
+        <image name="pay2" width="57.5" height="57.5"/>
+        <image name="payBack" width="11.5" height="21.5"/>
+        <image name="支付－选择" width="31.5" height="31.5"/>
     </resources>
 </document>

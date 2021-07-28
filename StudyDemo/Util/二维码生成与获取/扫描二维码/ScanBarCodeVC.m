@@ -59,7 +59,7 @@
     {
         [_session addOutput:self.output];
     }
-    _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode];
+    _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode,AVMetadataObjectTypeCode128Code,AVMetadataObjectTypeEAN8Code, AVMetadataObjectTypeEAN13Code];
     [_output setRectOfInterest:CGRectMake(SCANVIEW_EdgeTop/SCREEN_HEIGHT, SCANVIEW_EdgeLeft/SCREEN_WIDTH, (SCREEN_WIDTH-2*SCANVIEW_EdgeLeft)/SCREEN_HEIGHT , (SCREEN_WIDTH-2*SCANVIEW_EdgeLeft)/SCREEN_WIDTH)];
     
     _preview =[AVCaptureVideoPreviewLayer layerWithSession:_session];

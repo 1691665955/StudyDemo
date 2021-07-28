@@ -87,6 +87,7 @@
 		6A85412E1FFB670700913301 /* ContactsUIVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85412D1FFB670700913301 /* ContactsUIVC.m */; };
 		6A85413D1FFB8E5200913301 /* XibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A85413C1FFB8E5200913301 /* XibView.m */; };
 		6A85413F1FFB8E5F00913301 /* XibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A85413E1FFB8E5F00913301 /* XibView.xib */; };
+		6A8BA30C261E95F00079ABBE /* NSObject+MZAvoidCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8BA30B261E95F00079ABBE /* NSObject+MZAvoidCrash.m */; };
 		6A8F4BDD21747BBA00C6ED6A /* MZTransitioningVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F4BDB21747BBA00C6ED6A /* MZTransitioningVC.m */; };
 		6A8F4BDE21747BBA00C6ED6A /* MZTransitioningVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8F4BDC21747BBA00C6ED6A /* MZTransitioningVC.xib */; };
 		6A8F4BE221747CAF00C6ED6A /* MZImagesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8F4BE021747CAF00C6ED6A /* MZImagesVC.m */; };
@@ -164,6 +165,7 @@
 		6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF7BA03200356B700AC2015 /* MZWebViewVC.m */; };
 		6AF8D7EB200F3E0E00B4EBAA /* TestRuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8D7EA200F3E0E00B4EBAA /* TestRuntimeModel.m */; };
 		6AF8D7F2200F45EA00B4EBAA /* TestRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AF8D7F1200F45EA00B4EBAA /* TestRuntimeVC.m */; };
+		6AFAB92025EE185D00C78810 /* MZLongTapButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAB91F25EE185D00C78810 /* MZLongTapButton.m */; };
 		6AFB8B21238CD25D0083A88F /* MZOtherImagesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFB8B1F238CD25D0083A88F /* MZOtherImagesVC.m */; };
 		6AFB8B22238CD25D0083A88F /* MZOtherImagesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AFB8B20238CD25D0083A88F /* MZOtherImagesVC.xib */; };
 		6AFB8B27238CD3810083A88F /* MZOtherImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFB8B25238CD3810083A88F /* MZOtherImageCell.m */; };
@@ -315,6 +317,8 @@
 		6A85413B1FFB8E5200913301 /* XibView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibView.h; sourceTree = "<group>"; };
 		6A85413C1FFB8E5200913301 /* XibView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibView.m; sourceTree = "<group>"; };
 		6A85413E1FFB8E5F00913301 /* XibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XibView.xib; sourceTree = "<group>"; };
+		6A8BA30A261E95F00079ABBE /* NSObject+MZAvoidCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MZAvoidCrash.h"; sourceTree = "<group>"; };
+		6A8BA30B261E95F00079ABBE /* NSObject+MZAvoidCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MZAvoidCrash.m"; sourceTree = "<group>"; };
 		6A8F4BDA21747BBA00C6ED6A /* MZTransitioningVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZTransitioningVC.h; sourceTree = "<group>"; };
 		6A8F4BDB21747BBA00C6ED6A /* MZTransitioningVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZTransitioningVC.m; sourceTree = "<group>"; };
 		6A8F4BDC21747BBA00C6ED6A /* MZTransitioningVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZTransitioningVC.xib; sourceTree = "<group>"; };
@@ -453,6 +457,8 @@
 		6AF8D7EA200F3E0E00B4EBAA /* TestRuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeModel.m; sourceTree = "<group>"; };
 		6AF8D7F0200F45EA00B4EBAA /* TestRuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeVC.h; sourceTree = "<group>"; };
 		6AF8D7F1200F45EA00B4EBAA /* TestRuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeVC.m; sourceTree = "<group>"; };
+		6AFAB91E25EE185D00C78810 /* MZLongTapButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZLongTapButton.h; sourceTree = "<group>"; };
+		6AFAB91F25EE185D00C78810 /* MZLongTapButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZLongTapButton.m; sourceTree = "<group>"; };
 		6AFB8B1E238CD25D0083A88F /* MZOtherImagesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZOtherImagesVC.h; sourceTree = "<group>"; };
 		6AFB8B1F238CD25D0083A88F /* MZOtherImagesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZOtherImagesVC.m; sourceTree = "<group>"; };
 		6AFB8B20238CD25D0083A88F /* MZOtherImagesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZOtherImagesVC.xib; sourceTree = "<group>"; };
@@ -1146,6 +1152,7 @@
 		6AD5BCA0249DBBD700E13C0A /* Extends */ = {
 			isa = PBXGroup;
 			children = (
+				6AFAB91D25EE182B00C78810 /* MZLongTapButton */,
 				6AD5BCA1249DBBD700E13C0A /* MZAlertController */,
 				6AD5BCAA249DBBD700E13C0A /* MZBannerView */,
 				6AD5BCAD249DBBD700E13C0A /* MZCircleProgress */,
@@ -1301,6 +1308,8 @@
 				6AD5BCCD249DBBD700E13C0A /* UIView+MZTool.m */,
 				6AD5BCD0249DBBD700E13C0A /* UIViewController+MZAlert.h */,
 				6AD5BCE2249DBBD700E13C0A /* UIViewController+MZAlert.m */,
+				6A8BA30A261E95F00079ABBE /* NSObject+MZAvoidCrash.h */,
+				6A8BA30B261E95F00079ABBE /* NSObject+MZAvoidCrash.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1447,6 +1456,15 @@
 				6AF8D7EA200F3E0E00B4EBAA /* TestRuntimeModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6AFAB91D25EE182B00C78810 /* MZLongTapButton */ = {
+			isa = PBXGroup;
+			children = (
+				6AFAB91E25EE185D00C78810 /* MZLongTapButton.h */,
+				6AFAB91F25EE185D00C78810 /* MZLongTapButton.m */,
+			);
+			path = MZLongTapButton;
 			sourceTree = "<group>";
 		};
 		6AFB8B23238CD3630083A88F /* View */ = {
@@ -1642,6 +1660,7 @@
 				6A09B18C2102E065006C818D /* HKTransitionPop.m in Sources */,
 				6AD5BD01249DBBD700E13C0A /* MZMobileField.m in Sources */,
 				6A587BB2200C4F20004D66F8 /* ViewFitFuncVC.m in Sources */,
+				6AFAB92025EE185D00C78810 /* MZLongTapButton.m in Sources */,
 				6AC98F8920E46B2A00ABD44F /* UIViewController+MZAnimation.m in Sources */,
 				6AD5BCFB249DBBD700E13C0A /* MZDrawBoardView.m in Sources */,
 				6AF7BA04200356B700AC2015 /* MZWebViewVC.m in Sources */,
@@ -1650,6 +1669,7 @@
 				6AD5BD0E249DBBD700E13C0A /* UIImage+MZTool.m in Sources */,
 				6AF7B9DD200062B700AC2015 /* JavaScriptAndOCFunVC.m in Sources */,
 				6AD5BD0B249DBBD700E13C0A /* NSArray+MZLog.m in Sources */,
+				6A8BA30C261E95F00079ABBE /* NSObject+MZAvoidCrash.m in Sources */,
 				6AD5BCFF249DBBD700E13C0A /* MZTextField.m in Sources */,
 				6AF7B9E72003219E00AC2015 /* UIWebView_URL.m in Sources */,
 				6A587BBE200C8116004D66F8 /* TestFitCell.m in Sources */,

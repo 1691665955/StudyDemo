@@ -27,7 +27,6 @@
     self.window.rootViewController = nvc;
     
     [self testHttp];
-    
     return YES;
 }
 
